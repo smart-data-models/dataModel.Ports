@@ -21,14 +21,14 @@ notesHeader:
     There are several scenarios possibles
       - **Case 1** Definition of a range starting on a specific date and ending without date binding.
       Allows to define a permanent authorization for example
-      `dateObserved` i.e. 	"2020-01-01T00:00:01Z"
-      `dateObservedFrom` i.e.	"2020-01-01T00:00:01Z"
-      `dateObservedTo`	""
+      `dateObserved` i.e.  "2020-01-01T00:00:01Z"
+      `dateObservedFrom` i.e. "2020-01-01T00:00:01Z"
+      `dateObservedTo` ""
       - **Case 2** Definition of a range starting on a specific date and ending date.
       Allows to define a specific authorization for example for a boatshow or for a type of boat.
-      `dateObserved` i.e. 	"2020-10-10T00:00:01Z:2020-10-14T23:59:59Z"
-      `dateObservedFrom` i.e.	"2020-10-10T00:00:01Z"
-      `dateObservedTo` i.e.	"2020-10-14T23:59:59Z"
+      `dateObserved` i.e.  "2020-10-10T00:00:01Z:2020-10-14T23:59:59Z"
+      `dateObservedFrom` i.e. "2020-10-10T00:00:01Z"
+      `dateObservedTo` i.e. "2020-10-14T23:59:59Z"
 
     Additional Information about this Data Model*
     It can be used with the following data Model.
