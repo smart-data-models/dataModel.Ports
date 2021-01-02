@@ -1,0 +1,38 @@
+notesHeader:
+  Method to design your repository of Boat Authorized*
+    Create a record for each `boatType` authorized to circulate in the harbor with all corresponding `BoatSubType`.
+    - record 1
+      - "id": "BoatAuthorized:MNCA-NCE-BA-001-yatching"
+      - `refSeapPortName`: "MyPort"
+      - `boatType`: "yatching"
+      - `boatSubType`: [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ]
+    - record 2
+      - "id": "BoatAuthorized:MNCA-NCE-BA-001-passenger"
+      - `refSeapPortName`: "MyPort"
+      - `boatType`: "passenger"
+      - `boatSubType`: [ "cruise", "ferrie" ]
+    - record 3
+      - "id": "BoatAuthorized:MNCA-NCE-BA-001-passenger"
+      - `refSeapPortName`: "MyPort"
+      - `boatType`: "passenger"
+      - `boatSubType`: [ "factoryShip", "seiner","artisanVessels","trawler" ]
+
+    Rules about the date - section Information about the date and period of authorization*
+    There are several scenarios possibles:
+      - **Case 1** Definition of a range starting on a specific date and ending without date binding.
+      Allows to define a permanent authorization for example
+      `dateObserved`, 	"2020-01-01T00:00:01Z"
+      `dateObservedFrom`	"2020-01-01T00:00:01Z"
+      `dateObservedTo`	""
+      - **Case 2** Definition of a range starting on a specific date and ending date.
+      Allows to define a specific authorization for example for a boatshow or for a type of boat.
+      `dateObserved`, 	"2020-10-10T00:00:01Z:2020-10-14T23:59:59Z"
+      `dateObservedFrom`	"2020-10-10T00:00:01Z"
+      `dateObservedTo`	"2020-10-14T23:59:59Z"
+
+    Additional Information about this Data Model*
+    It can be used with the following data Model.
+    - **SeaPort** to provide information to the port about authorized Boat in the port.
+notesMiddle:
+
+notesFooter:
