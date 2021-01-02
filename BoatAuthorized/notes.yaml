@@ -2,23 +2,23 @@ notesHeader:
   Method to design your repository of Boat Authorized*
     Create a record for each `boatType` authorized to circulate in the harbor with all corresponding `BoatSubType`.
     - record 1
-      - "id": "BoatAuthorized:MNCA-NCE-BA-001-yatching"
-      - `refSeapPortName`: "MyPort"
-      - `boatType`: "yatching"
-      - `boatSubType`: [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ]
+      - `id` i.e.  "BoatAuthorized:MNCA-NCE-BA-001-yatching"
+      - "refSeapPortName` i.e. "MyPort"
+      - `boatType` i.e. "yatching"
+      - `boatSubType` i.e. [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ]
     - record 2
-      - "id": "BoatAuthorized:MNCA-NCE-BA-001-passenger"
-      - `refSeapPortName`: "MyPort"
-      - `boatType`: "passenger"
-      - `boatSubType`: [ "cruise", "ferrie" ]
+      - "id" i.e.  "BoatAuthorized:MNCA-NCE-BA-001-passenger"
+      - `refSeapPortName` i.e.  "MyPort"
+      - `boatType` i.e.  "passenger"
+      - `boatSubType` i.e.  [ "cruise", "ferrie" ]
     - record 3
-      - "id": "BoatAuthorized:MNCA-NCE-BA-001-passenger"
-      - `refSeapPortName`: "MyPort"
-      - `boatType`: "passenger"
-      - `boatSubType`: [ "factoryShip", "seiner","artisanVessels","trawler" ]
+      - "id" i.e.  "BoatAuthorized:MNCA-NCE-BA-001-passenger"
+      - `refSeapPortName` i.e.  "MyPort"
+      - `boatType` i.e.  "passenger"
+      - `boatSubType` i.e.  [ "factoryShip", "seiner","artisanVessels","trawler" ]
 
     Rules about the date - section Information about the date and period of authorization*
-    There are several scenarios possibles:
+    There are several scenarios possibles
       - **Case 1** Definition of a range starting on a specific date and ending without date binding.
       Allows to define a permanent authorization for example
       `dateObserved`, 	"2020-01-01T00:00:01Z"
