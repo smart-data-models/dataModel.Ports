@@ -164,23 +164,28 @@
         },
         "maxTonnage": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric. Units:'Tons'"
         },
         "minLength": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter. Model:'https://schema.org/length'. Units:'meters'"
         },
         "maxLength": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter. Model:'https://schema.org/length'. Units:'meters'"
         },
         "maxWidth": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter. Model:'https://schema.org/width'. Units:'meters'"
         },
         "maxDraft": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter. Model:'https://schema.org/depth'. Units:'meters'"
         }
       }
     }
