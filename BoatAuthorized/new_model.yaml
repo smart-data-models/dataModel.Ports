@@ -335,20 +335,39 @@ BoatAuthorized:
           type: object
       title: 'GeoJSON Geometry'
     maxDraft:
+      description: 'Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
       minimum: 0
-      type: number
+      type: Property
+      x-ngsi:
+        model: https://schema.org/depth
+        units: meters
     maxLength:
+      description: 'Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
       minimum: 0
-      type: number
+      type: Property
+      x-ngsi:
+        model: https://schema.org/length
+        units: meters
     maxTonnage:
+      description: 'Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric'
       minimum: 0
-      type: number
+      type: Property
+      x-ngsi:
+        units: Tons
     maxWidth:
+      description: 'Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
       minimum: 0
-      type: number
+      type: Property
+      x-ngsi:
+        model: https://schema.org/width
+        units: meters
     minLength:
+      description: 'Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
       minimum: 0
-      type: number
+      type: Property
+      x-ngsi:
+        model: https://schema.org/length
+        units: meters
     name:
       description: 'The name of this item.'
       type: Property
