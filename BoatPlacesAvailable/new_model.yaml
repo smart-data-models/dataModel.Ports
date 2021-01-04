@@ -1,5 +1,5 @@
-BoatAuthorized:
-  description: 'The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.'
+BoatPlacesAvailable:
+  description: 'The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.'
   properties:
     address:
       description: 'The mailing address.'
@@ -34,127 +34,11 @@ BoatAuthorized:
       type: Property
       x-ngsi:
         model: https://schema.org/Text
-    boatSubType:
-      description: 'Sub Type for a boatType. A combination of the elements. Enum:''aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, cruise, cruiser, destroyer, dhow, divingVessel, djong, dredger, drifter, drillRig, factoryShip, ferry, fireBoat, fisheriesResearchVessel, flagshipBoat, floatingProductionStorageUnit, floatingStorageUnit, fluyt, frigate, gabare, galleon, galley, gondola, harbourFerry, helicopterCarrier, highSpeedVessel, houseBoat, hovercraft, iceBreakerShip, jetSki, junk, koch, lifeBoat, lightShip, liner, lineVessel, LiquefiedGasCarrier, littoralCombatShip, livestockCarrier, lngCarrier, longLiner, lpgCarrier, mineSweeping, monoHull, mooringBoat, multipurposeVessel, oceanographicBoat, other, paddleSteamer, pilotBoat, pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'''
-      items:
-        enum:
-          - aircraftCarrier
-          - amphibiousAssaultShip
-          - anchorHandlingVessel
-          - artisanVessel
-          - bac
-          - barge
-          - bargeCarrier
-          - bulkCarrier
-          - buoyTenderBoat
-          - butaneCarrier
-          - cableLayer
-          - canoe
-          - caravel
-          - cargoCarrier
-          - carrack
-          - catamaran
-          - chemicalCarrier
-          - clipper
-          - coastalFerry
-          - cog
-          - containerCarrier
-          - corvette
-          - craneBarge
-          - crudeCarrier
-          - cruise
-          - cruiser
-          - destroyer
-          - dhow
-          - divingVessel
-          - djong
-          - dredger
-          - drifter
-          - drillRig
-          - factoryShip
-          - ferry
-          - fireBoat
-          - fisheriesResearchVessel
-          - flagshipBoat
-          - floatingProductionStorageUnit
-          - floatingStorageUnit
-          - fluyt
-          - frigate
-          - gabare
-          - galleon
-          - galley
-          - gondola
-          - harbourFerry
-          - helicopterCarrier
-          - highSpeedVessel
-          - houseBoat
-          - hovercraft
-          - iceBreakerShip
-          - jetSki
-          - junk
-          - koch
-          - lifeBoat
-          - lightShip
-          - liner
-          - lineVessel
-          - LiquefiedGasCarrier
-          - littoralCombatShip
-          - livestockCarrier
-          - lngCarrier
-          - longLiner
-          - lpgCarrier
-          - mineSweeping
-          - monoHull
-          - mooringBoat
-          - multipurposeVessel
-          - oceanographicBoat
-          - other
-          - paddleSteamer
-          - pilotBoat
-          - pinisi
-          - pipeLayer
-          - productCarrier
-          - productionPlatform
-          - referCarrier
-          - researchVessel
-          - roroCarrier
-          - sailboat
-          - sailingShip
-          - salvageOperation
-          - seiner
-          - speedBoat
-          - submarineAttack
-          - submarineBallisticMissile
-          - submarineCruiseMissile
-          - supplyShip
-          - tanker
-          - timberCarrier
-          - trawler
-          - trimaran
-          - tugBoat
-          - viking
-          - yacht
-          - zodiac
-        type: string
+    availableSpotNumber:
+      description: 'Number of places available in the port for this category'
       type: Property
       x-ngsi:
-        model: https://schema.org/Text
-    boatType:
-      description: 'A unique value of the list. Enum:''cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'''
-      items:
-        enum:
-          - cargo
-          - fishing
-          - historic
-          - passenger
-          - specialist
-          - Tanker
-          - war
-          - yachting
-        type: string
-      type: Property
-      x-ngsi:
-        model: https://schema.org/Text
+        model: https://schema.org/Number
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
       type: Property
@@ -162,21 +46,21 @@ BoatAuthorized:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
       type: Property
-    dateLastReported:
-      description: 'Last time data were gathered'
-      format: date-time
-      type: Property
-      x-ngsi:
-        model: https://schema.org/DateTime
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
       type: Property
+    dateObserved:
+      description: 'The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval'
+      format: date-time
+      type: Property
+      x-ngsi:
+        model: https://schema.org/DateTime
     description:
       description: 'A description of this item'
       type: Property
     id:
-      anyOf: &boatauthorized_-_properties_-_owner_-_items_-_anyof
+      anyOf: &boatplacesavailable_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
           maxLength: 256
           minLength: 1
@@ -336,34 +220,24 @@ BoatAuthorized:
       title: 'GeoJSON Geometry'
     maxDraft:
       description: 'Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
-      minimum: 0
       type: Property
       x-ngsi:
         model: https://schema.org/depth
         units: meters
     maxLength:
       description: 'Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
-      minimum: 0
       type: Property
       x-ngsi:
         model: https://schema.org/length
         units: meters
-    maxTonnage:
-      description: 'Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric'
-      minimum: 0
-      type: Property
-      x-ngsi:
-        units: Tons
     maxWidth:
       description: 'Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
-      minimum: 0
       type: Property
       x-ngsi:
         model: https://schema.org/width
         units: meters
     minLength:
       description: 'Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
-      minimum: 0
       type: Property
       x-ngsi:
         model: https://schema.org/length
@@ -371,50 +245,37 @@ BoatAuthorized:
     name:
       description: 'The name of this item.'
       type: Property
-    openingHoursSpecification:
-      description: 'A structured value providing information about the opening hours of a place or a certain service inside a place.'
-      items:
-        properties:
-          closes:
-            format: time
-            type: string
-          dayOfWeek:
-            enum:
-              - Monday
-              - Tuesday
-              - Wednesday
-              - Thursday
-              - Friday
-              - Saturday
-              - Sunday
-              - PublicHolidays
-            type: string
-          opens:
-            format: time
-            type: string
-          validFrom:
-            format: date-time
-            type: string
-          validThrough:
-            format: date-time
-            type: string
-      minItems: 1
-      type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
-        anyOf: *boatauthorized_-_properties_-_owner_-_items_-_anyof
+        anyOf: *boatplacesavailable_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
       type: Property
     refPointOfInterest:
+      anyOf:
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
       description: 'Point of Interest that the element has relation to'
-      format: uri
       type: Relationship
       x-ngsi:
         model: https://schema.org/URL
     refSeaPort:
+      anyOf:
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
       description: 'Port that belongs to'
-      format: uri
       type: Relationship
       x-ngsi:
         model: https://schema.org/URL
@@ -432,15 +293,75 @@ BoatAuthorized:
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
       type: Property
+    spotCategoryRange:
+      description: ' List from the lowest to the highest categories: A combination of the items listed. Enum:''A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'''
+      items:
+        enum:
+          - A
+          - B
+          - C
+          - D
+          - E
+          - F
+          - G
+          - H
+          - I
+          - J
+          - K
+          - L
+          - M
+          - N
+          - O
+          - P
+          - Q
+          - R
+          - S
+          - T1
+          - T2
+          - U
+          - V
+          - W
+          - X
+          - Y
+          - Z
+          - Z01
+          - Z02
+          - Z03
+          - Z04
+          - Z05
+          - Z06
+          - Z07
+          - Z08
+          - Z08
+          - Z09
+          - Z10
+          - Z11
+          - Z12
+          - Z13
+          - Z14
+          - Z15
+          - Z16
+          - Z17
+        type: string
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    totalCapacitySpotNumber:
+      description: 'Total Capacity of Spot in the port for this range'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Number
     type:
-      description: 'It has to be BoatAuthorized. NGSI Entity type'
+      description: 'NGSI Entity type. It has to be BoatPlaceAvailable'
       enum:
-        - BoatAuthorized
+        - BoatPlaceAvailable
       type: Property
   required:
     - id
     - type
     - location
-    - dateLastReported
+    - dateObserved
     - refSeaPort
+    - spotCategoryRange
+    - availableSpotNumber
   type: object
