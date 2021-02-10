@@ -1,62 +1,21 @@
-Entity: BoatPlacesAvailable  
-===========================
-  
+Entidad: BoatPlacesDisponible  
+=============================  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesAvailable/LICENSE.md)  
+Descripción global: **El propósito del modelo de datos es proporcionar información sobre la disponibilidad de anillos de amarre para los barcos en el puerto por categoría. La información recibida se refiere únicamente a las embarcaciones de recreo y excluye las embarcaciones comerciales y de transporte de pasajeros. La información sobre las categorías Spot para embarcaciones se ha tomado de la norma ISO 8666.**  
 
-[Open License](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesAvailable/LICENSE.md)  
+## Lista de propiedades  
 
-Global description: **The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.**  
-
-
-## List of properties  
-
-
-- `address`: The mailing address.  
-- `alternateName`: An alternative name for this item  
-- `areaServed`: The geographic area where a service or offered item is provided  
-- `availableSpotNumber`: Number of places available in the port for this category  
-- `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  
-- `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  
-- `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
-- `dateObserved`: The date and time of this observation in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval  
-- `description`: A description of this item  
-- `id`: Unique identifier of the entity  
-- `location`:   
-- `maxDraft`: Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  
-- `maxLength`: Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  
-- `maxWidth`: Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  
-- `minLength`: Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  
-- `name`: The name of this item.  
-- `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
-- `refPointOfInterest`: Point of Interest that the element has relation to  
-- `refSeaPort`: Port that belongs to  
-- `seeAlso`: list of uri pointing to additional resources about the item  
-- `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
-- `spotCategoryRange`:  List from the lowest to the highest categories: A combination of the items listed. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  
-- `totalCapacitySpotNumber`: Total Capacity of Spot in the port for this range  
-- `type`: NGSI Entity type. It has to be BoatPlaceAvailable  
-  
-
-Required properties  
-- `availableSpotNumber`  
-- `dateObserved`  
-- `id`  
-- `location`  
-- `refSeaPort`  
-- `spotCategoryRange`  
-- `type`  
-  
-
-Method to design your repository of Boat Authorized To describe the different places available by category (A to Z17) in the section Information about place available, the use of a list is necessary when writing the record. Depending on the port configuration, a record will be created by `spotCategoryRange` to determine the number of space remaining at a given time. Two scenario are possible Scenario 1. Definition of the length range on a single category . `spotCategoryRange`  = ["F"], Boats accepted. length 7.00 to 7.49 and max width =< 2.70. "F"  length 7.00 to 7.49 / max width =< 2.70 Scenario 2. Definition of the length range with consecutive categories. `spotCategoryRange`  = ["F", "G"], Boats accepted. length 7.00 to 7.99 and max width =< 2.80. "F" gives maxLength from 7.00 to 7.49 and maxWidth 2.70 "G" gives maxLength from 7.50 to 7.99 and maxWidth 2.80  
-Additional Information about this Data Model It can be used with the following data Model. - SeaPort to provide information to the port about authorized Boat in the port.  
-This Data Model is complementary to the Data Model BoatPlacesPricing.  
-Data repository (ISO 8666 standard) Categorie Length Max   Width Max A        4.99     2.00 B        5.49     2.15 C        5.99     2.30 D        6.49     2.45 E        6.99     2.60 F        7.49     2.80 G        7.99     2.80 H        8.49     2.95 I        8.99     3.10 J        9.49     3.25 K        9.99     3.40 L       10.49     3.55 M       10.99     3.70 N       11.49     3.85 O       11.99     4.00 P       12.99     4.30 Q       13.99     4.60 R       15.99     4.90 S       17.99     5.20 T1      20.99     5.60 T2      23.99     6.00 U       28.99     7.00 V       33.99     8.00 W       38.99     9.00 X       43.99    10.00 Y       48.99    11.00 Z       53.99    12.00 Z01     58.99    13.00 Z02     64.99    14.00 Z03     71.99    15.00 Z04     78.99    16.00 Z05     85.99    17.00 Z06     92.99    18.00 Z07     99.99    19.00 Z08    106.99    20.00 Z09    113.99    21.00 Z10    120.99    22.00 Z11    127.99    23.00 Z12    134.99    24.00 Z13    142.99    25.00 Z14    150.99    26.00 Z15    158.99    27.00 Z16    166.99    28.00 Z17    174.99    29.00  
-
-## Data Model description of properties  
-
-Sorted alphabetically (click for details)  
+- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `availableSpotNumber`: Número de plazas disponibles en el puerto para esta categoría  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateObserved`: La fecha y la hora de esta observación en formato ISO8601 UTC. Puede ser representada por un instante de tiempo específico o por un intervalo ISO8601  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`:   - `maxDraft`: Máximo calado permitido para acceder al puerto. El código de unidad (texto) se da usando los [Códigos Comunes de UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Por ejemplo, **MTR** representa Meter  - `maxLength`: La longitud máxima permitida para acceder al puerto. El código de la unidad (texto) se da usando los [Códigos Comunes de UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **MTR** representa Meter  - `maxWidth`: El ancho máximo permitido para acceder al puerto. El código de unidad (texto) se da usando los [Códigos Comunes de UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Por ejemplo, **MTR** representa Meter  - `minLength`: Longitud mínima permitida para acceder al puerto. El código de la unidad (texto) se da usando los [Códigos Comunes de UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **MTR** representa Meter  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `refPointOfInterest`: Punto de interés que el elemento tiene relación con  - `refSeaPort`: El puerto que pertenece a  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `spotCategoryRange`:  Lista de las categorías más bajas a las más altas: Una combinación de los artículos listados. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'.  - `totalCapacitySpotNumber`: Capacidad total de Spot en el puerto para este rango  - `type`: Tipo de entidad NGSI. Tiene que ser BoatPlaceAvailable    
+Propiedades requeridas  
+- `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`    
+Método para diseñar su depósito de Barco Autorizado Para describir los diferentes lugares disponibles por categoría (de la A a la Z17) en la sección Información sobre el lugar disponible, es necesario utilizar una lista al escribir el registro. Dependiendo de la configuración del puerto, se creará un registro por `spotCategoryRange` para determinar el número de espacio restante en un momento dado. Dos escenarios son posibles Escenario 1. Definición del rango de longitud en una sola categoría . "SpotCategoryRange" = ["F"], Barcos aceptados. longitud 7.00 a 7.49 y ancho máximo =< 2.70. "F" longitud 7.00 a 7.49 / anchura máxima =< 2.70 Escenario 2. Definición de la gama de longitudes con categorías consecutivas. "SpotCategoryRange" = ["F", "G"], Barcos aceptados. Longitud 7.00 a 7.99 y anchura máxima =< 2.80. "F" da una longitud máxima de 7,00 a 7,49 y una anchura máxima de 2,70 "G" da una longitud máxima de 7,50 a 7,99 y una anchura máxima de 2,80  
+Información adicional sobre este modelo de datos Puede utilizarse con el siguiente modelo de datos. - SeaPort para proporcionar información al puerto sobre los barcos autorizados en el puerto.  
+Este Modelo de Datos es complementario al Modelo de Datos BoatPlacesPricing.  
+Depósito de datos (norma ISO 8666) Categoría Longitud Máxima Anchura Máxima A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 U 28.99 7.00 V 33.99 8.00 W 38.99 9.00 X 43.99 10.00 Y 48.99 11.00 Z 53.99 12.00 Z01 58.99 13.00 Z02 64.99 14.00 Z03 71.99 15.00 Z04 78.99 16.00 Z05 85.99 17.00 Z06 92.99 18.00 Z07 99.99 19.00 Z08 106.99 20.00 Z09 113.99 21.00 Z10 120.99 22.00 Z11 127.99 23.00 Z12 134.99 24.00 Z13 142.99 25.00 Z14 150.99 26.00 Z15 158.99 27.00 Z16 166.99 28.00 Z17 174.99 29.00  
+## Modelo de datos Descripción de las propiedades  
+Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 BoatPlacesAvailable:    
   description: 'The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.'    
   properties:    
@@ -426,16 +385,11 @@ BoatPlacesAvailable:
   type: object    
 ```  
 </details>    
-
-## Example payloads    
-
-#### BoatPlacesAvailable NGSI V2 key-values Example    
-
-Here is an example of a BoatPlacesAvailable in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
-
-```json  
-
-{  
+## Ejemplo de cargas útiles  
+#### BoatPlacesClaves disponibles NGSI V2 Ejemplo  
+Aquí hay un ejemplo de un BoatPlacesDisponible en formato JSON como valores clave. Es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
   "type": "BoatPlaceAvailable",  
   "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
@@ -464,14 +418,10 @@ Here is an example of a BoatPlacesAvailable in JSON format as key-values. This i
   }  
 }  
 ```  
-
-#### BoatPlacesAvailable NGSI V2 normalized Example    
-
-Here is an example of a BoatPlacesAvailable in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
-
-```json  
-
-{  
+#### BoatPlacesDisponible NGSI V2 normalizado Ejemplo  
+Aquí hay un ejemplo de un BoatPlacesDisponible en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
   "type": "BoatPlaceAvailable",  
   "name": {  
@@ -551,14 +501,10 @@ Here is an example of a BoatPlacesAvailable in JSON format as normalized. This i
   }  
 }  
 ```  
-
-#### BoatPlacesAvailable NGSI-LD key-values Example    
-
-Here is an example of a BoatPlacesAvailable in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-
-```json  
-
-{  
+#### BoatPlacesClaves NGSI-LD disponibles Ejemplo  
+Aquí hay un ejemplo de un BoatPlacesDisponible en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
   "type": "BoatPlaceAvailable",  
   "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
@@ -590,14 +536,10 @@ Here is an example of a BoatPlacesAvailable in JSON-LD format as key-values. Thi
   ]  
 }  
 ```  
-
-#### BoatPlacesAvailable NGSI-LD normalized Example    
-
-Here is an example of a BoatPlacesAvailable in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
-
-```json  
-
-{  
+#### BoatPlacesDisponible Ejemplo NGSI-LD normalizado  
+Aquí hay un ejemplo de un BoatPlacesDisponible en formato JSON-LD como normalizado. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
   "type": "BoatPlaceAvailable",  
   "name": {  

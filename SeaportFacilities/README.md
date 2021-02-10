@@ -4,6 +4,10 @@
 ### Specification
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/doc/spec.md)
+
+Link to the [specification in Spanish](https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/doc/spec_ES.md)
+
+Link to the [specification in French](https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/doc/spec_FR.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Ports/SeaportFacilities/examples/example.json) (keyvalues) for NGSI v2
