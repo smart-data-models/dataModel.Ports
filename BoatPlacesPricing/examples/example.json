@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
-  "type": "BoatPlacePricing",
+  "type": "BoatPlacesPricing",
   "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",
   "alternateName": "Riviera Port - Pricing of the Places by Categories",
   "description": "Pricing of the Places by Categories",
