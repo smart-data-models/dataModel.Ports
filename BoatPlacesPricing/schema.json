@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlacePricing/schema.json",
+    "$id": "https://smart-data-models.github.io/dataModel.Ports/BoatPlacePricing/schema.json",
+    "$schemaVersion": "0.0.1",
     "title": "Boat Place Pricing schema",
     "description": "The purpose of the data model is to provide information on the pricing of mooring rings by category (length / Width). The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.",
     "type": "object",
@@ -221,6 +222,5 @@
         "spotCategoryRange",
         "validFrom",
         "validThrough"
-    ],
-    "$schemaVersion": "0.0.1"
+    ]
 }
