@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://github.com/smart-data-models/dataModel.Port/blob/master/BoatAuthorized/schema.json",
+    "$id": "https://smart-data-models.github.io/dataModel.Ports/BoatAuthorized/schema.json",
+    "$schemaVersion": "0.0.1",
     "title": "Boat Authorized schema",
     "description": "The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.",
     "type": "object",
@@ -195,6 +196,5 @@
         "location",
         "dateLastReported",
         "refSeaPort"
-    ],
-    "$schemaVersion": "0.0.1"
+    ]
 }
