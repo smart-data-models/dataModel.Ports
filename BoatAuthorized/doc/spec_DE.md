@@ -1,11 +1,12 @@
 Entität: BoatAuthorized  
 =======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Das Datenmodell soll Informationen über die Boote bereitstellen, die zum Betrieb innerhalb des Hafens gemäß dem ISO 8666-Standard für Bootskategorien berechtigt sind. Dieses Repository wird nach Art der Bootskategorie erstellt (Sportboot, Handel, Passagiere, ...). Für jeden Kategorietyp kann eine Liste von optionalen Untertypen der Kategorie zugeordnet werden.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `boatSubType`: Untertyp für einen boatType. Eine Kombination aus den Elementen. Enum:'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, rawdeCarrier, Kreuzfahrtschiff, Kreuzer, Zerstörer, Dhau, Tauchschiff, Djong, Bagger, Drifter, DrillRig, Fabrikschiff, Fähre, Feuerschiff, Fischereiforschungsschiff, Flaggschiff, schwimmende Produktionslagereinheit, schwimmende Lagereinheit, Flottille, Fregatte, Gabare, Galeone, Galeere, Gondel, Hafenfähre, Helikopterträger, Hochgeschwindigkeitsschiff, Hausboot, Luftkissenboot, Eisbrecherschiff, Jetski, Dschunke, Koch, Rettungsboot, Feuerschiff, Linienschiff, Flüssiggastransporter, Küstenkampfschiff, Viehtransporter, Lng-Transporter, LongLiner, Lpg-Transporter, Minenräumboot, Einhüllenboot, Festmacher, Mehrzweckschiff, Ozeanographisches Schiff, Sonstiges, Schaufelraddampfer, Lotsenboot, Pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seine, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'  - `boatType`: Ein eindeutiger Wert der Liste. Enum:'Fracht, Fischerei, Historisch, Passagier, Spezialist, Tanker, Krieg, Yachting'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastReported`: Letztes Mal, als Daten gesammelt wurden  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `maxDraft`: Maximal zulässiger Tiefgang für den Zugang zum Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxTonnage`: Maximale Tonnage, die für den Zugang zum Hafen zugelassen ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **TNE** für Tonne Metrisch  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel, **MTR** steht für Meter  - `minLength`: Mindestlänge, die für den Zugriff auf den Hafen erlaubt ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `name`: Der Name dieses Elements.  - `openingHoursSpecification`: Ein strukturierter Wert, der Informationen über die Öffnungszeiten eines Ortes oder einen bestimmten Dienst innerhalb eines Ortes liefert  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Punkt von Interesse, zu dem das Element eine Beziehung hat  - `refSeaPort`: Port, der zu  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Es muss BoatAuthorized sein. NGSI Entity-Typ    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `boatSubType`: Untertyp für einen boatType. Eine Kombination aus den Elementen. Enum:'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, rawdeCarrier, Kreuzfahrtschiff, Kreuzer, Zerstörer, Dhau, Tauchschiff, Djong, Bagger, Drifter, DrillRig, Fabrikschiff, Fähre, Feuerschiff, Fischereiforschungsschiff, Flaggschiff, schwimmende Produktionslagereinheit, schwimmende Lagereinheit, Flottille, Fregatte, Gabare, Galeone, Galeere, Gondel, Hafenfähre, Helikopterträger, Hochgeschwindigkeitsschiff, Hausboot, Luftkissenboot, Eisbrecherschiff, Jetski, Dschunke, Koch, Rettungsboot, Feuerschiff, Linienschiff, Flüssiggastransporter, Küstenkampfschiff, Viehtransporter, Lng-Transporter, LongLiner, Lpg-Transporter, Minenräumboot, Einhüllenboot, Festmacher, Mehrzweckschiff, Ozeanographisches Schiff, Sonstiges, Schaufelraddampfer, Lotsenboot, Pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seine, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'  - `boatType`: Ein eindeutiger Wert der Liste. Enum:'Fracht, Fischerei, Historisch, Passagier, Spezialist, Tanker, Krieg, Yachting'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastReported`: Letztes Mal, als Daten gesammelt wurden  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxDraft`: Maximal zulässiger Tiefgang für den Zugang zum Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxTonnage`: Maximale Tonnage, die für den Zugang zum Hafen zugelassen ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **TNE** für Tonne Metrisch  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel, **MTR** steht für Meter  - `minLength`: Mindestlänge, die für den Zugriff auf den Hafen erlaubt ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `name`: Der Name dieses Elements.  - `openingHoursSpecification`: Ein strukturierter Wert, der Informationen über die Öffnungszeiten eines Ortes oder einen bestimmten Dienst innerhalb eines Ortes liefert  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Punkt von Interesse, zu dem das Element eine Beziehung hat  - `refSeaPort`: Port, der zu  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: Es muss BoatAuthorized sein. NGSI Entity-Typ    
 Erforderliche Eigenschaften  
 - `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `type`    
 Methode zur Gestaltung Ihres Repositorys von Boat Authorized* Erstellen Sie einen Datensatz für jeden `boatType`, der berechtigt ist, im Hafen zu verkehren, mit allen zugehörigen `BoatSubType`. - Datensatz 1 - `id` d.h. "BoatAuthorized:MNCA-NCE-BA-001-yatching" - "refSeapPortName` d.h. "MyPort" - `boatType` d.h. "yatching" - `boatSubType` d.h. [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ] - Datensatz 2 - "id" d. h. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` d.d. h. "MyPort" - `boatType` d. h. "passenger" - `boatSubType` d. h. [ "cruise", "ferrie" ] - Datensatz 3 - "id" d. h. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` d.d. "MyPort" - `boatType` d. h. "passenger" - `boatSubType` d. h. [ "factoryShip", "seiner", "artisanVessels", "trawler" ]  
@@ -30,21 +31,18 @@ BoatAuthorized:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
       x-ngsi:    
-        model: https://schema.org/adddress    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -207,10 +205,10 @@ BoatAuthorized:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -230,7 +228,8 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -253,7 +252,8 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -278,7 +278,8 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -300,7 +301,8 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -325,7 +327,8 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -352,7 +355,7 @@ BoatAuthorized:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxDraft:    
       description: 'Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'    
       minimum: 0    
@@ -443,8 +446,8 @@ BoatAuthorized:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
