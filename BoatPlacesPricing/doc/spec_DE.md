@@ -1,11 +1,12 @@
 Entität: BoatPlacesPricing  
 ==========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesPricing/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Der Zweck des Datenmodells ist es, Informationen über die Preisgestaltung von Festmachern nach Kategorie (Länge / Breite) zu liefern. Die erhaltenen Informationen beziehen sich nur auf Freizeitboote und schließen gewerbliche Boote und Boote zur Personenbeförderung aus. Die Informationen zu den Spot-Kategorien für Boote sind der Norm ISO 8666 entnommen.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten gemeldet hat. Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fairing`: Ticketpreis des Platzes für Verkleidungsboote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `maxDraft`: Maximal zulässiger Tiefgang für den Zugriff auf den Spot. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `minLength`: Mindestlänge, die für den Zugriff auf den Spot erlaubt ist. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `passage`: Ticketpreis des Platzes für durchfahrende Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `period`: Typ des Zeitraums, der das Datum von und bis definiert: Ein freier Text oder ein eindeutiger Wert der verschiedenen erlaubten Kombinationen 'season / offSeason' - 'summer / winter' - 'low / medium / high'. enum:'high, low, medium, offSeason, season, summer, winter'  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit dem Repository verknüpft ist  - `refSeaPort`: Verweis auf die Entität [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md), die als Hauptlink verwendet werden soll  - `resident`: Ticketpreis des Platzes für ansässige Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 2 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spotCategoryRange`: Liste von den niedrigsten bis zu den höchsten Kategorien: Eine Kombination von ihnen. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `type`: NGSI-Entitätstyp. Es muss BoatPlacePricing sein  - `validFrom`: Startdatum und Uhrzeit der Preisregeln.  - `validThrough`: Enddatum und Uhrzeit der Preisregeln.  - `wintering`: Ticketpreis des Platzes für überwinternde Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten gemeldet hat. Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fairing`: Ticketpreis des Platzes für Verkleidungsboote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxDraft`: Maximal zulässiger Tiefgang für den Zugriff auf den Spot. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `minLength`: Mindestlänge, die für den Zugriff auf den Spot erlaubt ist. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `passage`: Ticketpreis des Platzes für durchfahrende Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `period`: Typ des Zeitraums, der das Datum von und bis definiert: Ein freier Text oder ein eindeutiger Wert der verschiedenen erlaubten Kombinationen 'season / offSeason' - 'summer / winter' - 'low / medium / high'. enum:'high, low, medium, offSeason, season, summer, winter'  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit dem Repository verknüpft ist  - `refSeaPort`: Verweis auf die Entität [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md), die als Hauptlink verwendet werden soll  - `resident`: Ticketpreis des Platzes für ansässige Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 2 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spotCategoryRange`: Liste von den niedrigsten bis zu den höchsten Kategorien: Eine Kombination von ihnen. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `type`: NGSI-Entitätstyp. Es muss BoatPlacePricing sein  - `validFrom`: Startdatum und Uhrzeit der Preisregeln.  - `validThrough`: Enddatum und Uhrzeit der Preisregeln.  - `wintering`: Ticketpreis des Platzes für überwinternde Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist    
 Erforderliche Eigenschaften  
 - `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  - `validFrom`  - `validThrough`    
 Methode zur Gestaltung Ihres Repositorys für Bootspreise* Um die verschiedenen Preise nach Kategorie (A bis Z17) im Abschnitt *Informationen zur Preisgestaltung* zu beschreiben, ist die Verwendung einer Liste beim Schreiben des Datensatzes erforderlich. Abhängig von der Hafenkonfiguration wird ein Datensatz von 'spotCategoryRange' erstellt, um die Preisgestaltung für einen Zeitraum als Repository zu bestimmen. Es sind zwei Szenarien möglich - Szenario 1. Definition des Längenbereichs für eine einzelne Kategorie . 'spotCategoryRange' = [F], Boote akzeptiert= Länge 7,00 bis 7,49 und max Breite =< 2,70. [F] Länge 7,00 bis 7,49 / max Breite =< 2,70 - Szenario 2. Definition des Längenbereichs mit aufeinanderfolgenden Kategorien. 'spotCategoryRange' = [F, G], Boote akzeptiert= Länge 7,00 bis 7,99 und max Breite =< 2,80.'F' ergibt maxLänge von 7,00 bis 7,49 und maxBreite 2,70, 'G' ergibt maxLänge von 7,50 bis 7,99 und maxBreite 2,80  
@@ -28,14 +29,11 @@ BoatPlacesPricing:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -96,10 +94,10 @@ BoatPlacesPricing:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -119,7 +117,8 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -142,7 +141,8 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -167,7 +167,8 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -189,7 +190,8 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +216,8 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -241,7 +244,7 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxDraft:    
       description: 'Maximum draft allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '    
       type: Property    
@@ -342,8 +345,8 @@ BoatPlacesPricing:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
