@@ -6,7 +6,7 @@ Entität: BoatPlacesAvailable
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `availableSpotNumber`: Anzahl der verfügbaren Plätze im Hafen für diese Kategorie  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `maxDraft`: Maximal zulässiger Tiefgang für den Zugang zum Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel, **MTR** steht für Meter  - `minLength`: Mindestlänge, die für den Zugriff auf den Hafen erlaubt ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Punkt von Interesse, zu dem das Element eine Beziehung hat  - `refSeaPort`: Port, der zu  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spotCategoryRange`:  Liste von den niedrigsten bis zu den höchsten Kategorien: Eine Kombination aus den aufgelisteten Elementen. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `totalCapacitySpotNumber`: Gesamtkapazität des Spots im Hafen für diesen Bereich  - `type`: NGSI-Entitätstyp. Es muss BoatPlaceAvailable sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `availableSpotNumber`: Anzahl der verfügbaren Plätze im Hafen für diese Kategorie  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format. Sie kann durch einen bestimmten Zeitpunkt oder durch ein ISO8601-Intervall dargestellt werden  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxDraft`: Maximal zulässiger Tiefgang für den Zugang zum Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Hafen. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel, **MTR** steht für Meter  - `minLength`: Mindestlänge, die für den Zugriff auf den Hafen erlaubt ist. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **MTR** für Meter  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refPointOfInterest`: Punkt von Interesse, zu dem das Element eine Beziehung hat  - `refSeaPort`: Port, der zu  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spotCategoryRange`:  Liste von den niedrigsten bis zu den höchsten Kategorien: Eine Kombination aus den aufgelisteten Elementen. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `totalCapacitySpotNumber`: Gesamtkapazität des Spots im Hafen für diesen Bereich  - `type`: NGSI-Entitätstyp. Es muss BoatPlaceAvailable sein    
 Erforderliche Eigenschaften  
 - `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`    
 Methode zur Gestaltung Ihres Repositorys von Boat Authorized Um die verschiedenen verfügbaren Plätze nach Kategorie (A bis Z17) im Abschnitt Informationen über verfügbare Plätze zu beschreiben, ist die Verwendung einer Liste beim Schreiben des Datensatzes erforderlich. Abhängig von der Hafenkonfiguration wird ein Datensatz von `spotCategoryRange` erstellt, um die Anzahl der zu einem bestimmten Zeitpunkt verfügbaren Plätze zu bestimmen. Zwei Szenarien sind möglich Szenario 1. Definition des Längenbereichs für eine einzelne Kategorie . `spotCategoryRange` = ["F"], Boote akzeptiert. Länge 7,00 bis 7,49 und max Breite =< 2,70. "F" Länge 7,00 bis 7,49 / max Breite =< 2,70 Szenario 2. Definition des Längenbereichs mit aufeinanderfolgenden Kategorien. `spotCategoryRange` = ["F", "G"], Boote akzeptiert. Länge 7,00 bis 7,99 und max Breite =< 2,80. "F" ergibt maxLänge von 7,00 bis 7,49 und maxBreite 2,70 "G" ergibt maxLänge von 7,50 bis 7,99 und maxBreite 2,80  
@@ -31,9 +31,6 @@ BoatPlacesAvailable:
           type: string    
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
@@ -93,10 +90,10 @@ BoatPlacesAvailable:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -116,7 +113,8 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -139,7 +137,8 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -164,7 +163,8 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -186,7 +186,8 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -211,7 +212,8 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +240,7 @@ BoatPlacesAvailable:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     maxDraft:    
       description: 'Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'    
       type: Property    
