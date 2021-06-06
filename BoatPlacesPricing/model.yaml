@@ -22,37 +22,50 @@ BoatPlacesPricing:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/address
+        type: Property
     alternateName:
       description: 'An alternative name for this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     areaServed:
       description: 'The geographic area where a service or offered item is provided'
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/Text
+        type: Property
     dataProvider:
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateCreated:
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     dateLastReported:
       description: 'A timestamp which denotes the last time when the device successfully reported data. The date and time of this observation in ISO8601 UTCformat'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     dateModified:
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
       format: date-time
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     description:
       description: 'A description of this item'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     fairing:
       description: 'Ticket price of the place for fairing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'
       properties:
@@ -62,9 +75,10 @@ BoatPlacesPricing:
           type: number
         week:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/StructuredValue
+        type: Property
     id:
       anyOf: &boatplacespricing_-_properties_-_owner_-_items_-_anyof
         - description: 'Property. Identifier format of any NGSI entity'
@@ -76,7 +90,8 @@ BoatPlacesPricing:
           format: uri
           type: string
       description: 'Unique identifier of the entity'
-      type: Property
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -228,40 +243,49 @@ BoatPlacesPricing:
             - coordinates
           title: 'GeoJSON MultiPolygon'
           type: object
-      type: Geoproperty
+      x-ngsi:
+        type: Geoproperty
     maxDraft:
       description: 'Maximum draft allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/Number
+        type: Property
         units: metres
     maxLength:
       description: 'Maximum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/number
+        type: Property
         units: metres
     maxWidth:
       description: 'Maximum width allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/width
+        type: Property
         units: metres
     minLength:
       description: 'Minimum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '
-      type: Property
+      type: number
       x-ngsi:
         model: https://schema.org/number
+        type: Property
         units: metres
     name:
       description: 'The name of this item.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     owner:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
       items:
         anyOf: *boatplacespricing_-_properties_-_owner_-_items_-_anyof
         description: 'Property. Unique identifier of the entity'
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     passage:
       description: 'Ticket price of the place for passing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'
       properties:
@@ -271,9 +295,10 @@ BoatPlacesPricing:
           type: number
         week:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/StructuredValue
+        type: Property
     period:
       description: 'Type of period defined the date From and Through: A free text or a unique value of the different combination allowed ''season / offSeason'' - ''summer / winter'' - ''low / medium / high''. enum:''high, low, medium, offSeason, season, summer, winter'''
       enum:
@@ -284,9 +309,10 @@ BoatPlacesPricing:
         - season
         - summer
         - winter
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     refPointOfInterest:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -298,9 +324,9 @@ BoatPlacesPricing:
           format: uri
           type: string
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository'
-      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
+        type: Relationship
     refSeaPort:
       anyOf:
         - description: 'Property. Identifier format of any NGSI entity'
@@ -312,9 +338,9 @@ BoatPlacesPricing:
           format: uri
           type: string
       description: 'Reference to the entity [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md) to use as main link'
-      type: Relationship
       x-ngsi:
         model: https://schema.org/URL
+        type: Relationship
     resident:
       description: 'Ticket price of the place for resident boats for this category / period. A structured value with 2 subproperties where each items is a string in the format `key` : `price` in Euro €'
       properties:
@@ -322,9 +348,10 @@ BoatPlacesPricing:
           type: number
         month:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/StructuredValue
+        type: Property
     seeAlso:
       description: 'list of uri pointing to additional resources about the item'
       oneOf:
@@ -335,10 +362,13 @@ BoatPlacesPricing:
           type: array
         - format: uri
           type: string
-      type: Property
+      x-ngsi:
+        type: Property
     source:
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     spotCategoryRange:
       description: 'List from the lowest to the highest categories: A combination of them. Enum:''A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'''
       items:
@@ -389,24 +419,30 @@ BoatPlacesPricing:
           - Z16
           - Z17
         type: string
-      type: Property
+      type: array
+      x-ngsi:
+        type: Property
     type:
       description: 'NGSI Entity type. It has to be BoatPlacePricing'
       enum:
         - BoatPlacesPricing
-      type: Property
+      type: string
+      x-ngsi:
+        type: Property
     validFrom:
       description: 'Start date and time of the pricing rules.'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     validThrough:
       description: 'End date and time of the pricing rules.'
       format: date-time
-      type: Property
+      type: string
       x-ngsi:
         model: https://schema.org/DateTime
+        type: Property
     wintering:
       description: 'Ticket price of the place for wintering boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'
       properties:
@@ -416,9 +452,10 @@ BoatPlacesPricing:
           type: number
         week:
           type: number
-      type: Property
+      type: object
       x-ngsi:
         model: https://schema.org/StructuredValue
+        type: Property
   required:
     - id
     - type
