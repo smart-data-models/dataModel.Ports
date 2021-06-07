@@ -1,0 +1,348 @@
+{
+    "@id": "dtmi:com:ngsi-ld:BoatPlacesPricing;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Boat Place Pricing schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/BoatPlacesPricing/schema.json",
+    "description": "The purpose of the data model is to provide information on the pricing of mooring rings by category (length / Width). The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.",
+    "displayName": "BoatPlacesPricing",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateLastReported",
+            "writable": true,
+            "displayName": "dateLastReported",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "A timestamp which denotes the last time when the device successfully reported data. The date and time of this observation in ISO8601 UTCformat"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "maxDraft",
+            "writable": true,
+            "displayName": "maxDraft",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum draft allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) "
+        },
+        {
+            "name": "maxLength",
+            "writable": true,
+            "displayName": "maxLength",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) "
+        },
+        {
+            "name": "maxWidth",
+            "writable": true,
+            "displayName": "maxWidth",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum width allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) "
+        },
+        {
+            "name": "minLength",
+            "writable": true,
+            "displayName": "minLength",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) "
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "refPointOfInterest",
+            "writable": true,
+            "displayName": "refPointOfInterest"
+        },
+        {
+            "name": "refSeaPort",
+            "writable": true,
+            "displayName": "refSeaPort"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "validFrom",
+            "writable": true,
+            "displayName": "validFrom",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Start date and time of the pricing rules."
+        },
+        {
+            "name": "validThrough",
+            "writable": true,
+            "displayName": "validThrough",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "End date and time of the pricing rules."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "spotCategoryRange",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "List from the lowest to the highest categories: A combination of them. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'",
+            "displayName": "spotCategoryRange"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "fairing",
+            "comment": "Ticket price of the place for fairing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro \u20ac",
+            "displayName": "fairing",
+            "fields": [
+                {
+                    "name": "day",
+                    "schema": "long"
+                },
+                {
+                    "name": "month",
+                    "schema": "long"
+                },
+                {
+                    "name": "week",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "passage",
+            "comment": "Ticket price of the place for passing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro \u20ac",
+            "displayName": "passage",
+            "fields": [
+                {
+                    "name": "day",
+                    "schema": "long"
+                },
+                {
+                    "name": "month",
+                    "schema": "long"
+                },
+                {
+                    "name": "week",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "resident",
+            "comment": "Ticket price of the place for resident boats for this category / period. A structured value with 2 subproperties where each items is a string in the format `key` : `price` in Euro \u20ac",
+            "displayName": "resident",
+            "fields": [
+                {
+                    "name": "annual",
+                    "schema": "long"
+                },
+                {
+                    "name": "month",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "wintering",
+            "comment": "Ticket price of the place for wintering boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro \u20ac",
+            "displayName": "wintering",
+            "fields": [
+                {
+                    "name": "day",
+                    "schema": "long"
+                },
+                {
+                    "name": "month",
+                    "schema": "long"
+                },
+                {
+                    "name": "week",
+                    "schema": "long"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "period",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "high",
+                        "displayName": "high",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "low",
+                        "displayName": "low",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "medium",
+                        "displayName": "medium",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "offSeason",
+                        "displayName": "offSeason",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "season",
+                        "displayName": "season",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "summer",
+                        "displayName": "summer",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "winter",
+                        "displayName": "winter",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        }
+    ]
+}
