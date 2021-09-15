@@ -527,5 +527,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateLastReported",
+        "typeOfPort"
     ]
 }
