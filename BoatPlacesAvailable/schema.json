@@ -143,5 +143,14 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateObserved",
+        "refSeaPort",
+        "spotCategoryRange",
+        "availableSpotNumber"
     ]
 }
