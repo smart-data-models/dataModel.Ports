@@ -213,5 +213,15 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateLastReported",
+        "refSeaPort",
+        "spotCategoryRange",
+        "validFrom",
+        "validThrough"
     ]
 }
