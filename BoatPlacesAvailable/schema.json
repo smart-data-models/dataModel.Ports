@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Ports/BoatPlaceAvailable/schema.json",
-    "$schemaVersion": "0.0.1"
+    "$schemaVersion": "0.0.1",
+    "title": "Boat Place Available schema"
 }
