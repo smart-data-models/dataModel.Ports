@@ -4,5 +4,6 @@
     "$id": "https://smart-data-models.github.io/dataModel.Ports/BoatPlaceAvailable/schema.json",
     "$schemaVersion": "0.0.1",
     "title": "Boat Place Available schema",
-    "description": "The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard."
+    "description": "The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.",
+    "type": "object"
 }
