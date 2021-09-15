@@ -3,5 +3,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.Ports/SeaPort/schema.json",
     "$schemaVersion": "0.0.1",
-    "title": "Seaport facilities schema"
+    "title": "Seaport facilities schema",
+    "description": "The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger  transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port."
 }
