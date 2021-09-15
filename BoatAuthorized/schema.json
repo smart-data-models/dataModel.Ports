@@ -190,5 +190,12 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateLastReported",
+        "refSeaPort"
     ]
 }
