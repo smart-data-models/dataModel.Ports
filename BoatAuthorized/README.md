@@ -6,7 +6,7 @@ Version: 0.0.1
 The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatAuthorized/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/BoatAuthorized/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatAuthorized/doc/spec.md)
 
