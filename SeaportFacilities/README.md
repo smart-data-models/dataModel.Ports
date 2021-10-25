@@ -6,7 +6,7 @@ Version: 0.0.1
 The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger  transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/SeaportFacilities/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/doc/spec.md)
 
