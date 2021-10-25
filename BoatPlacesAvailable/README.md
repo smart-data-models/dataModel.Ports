@@ -6,7 +6,7 @@ Version: 0.0.1
 The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesAvailable/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/BoatPlacesAvailable/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesAvailable/doc/spec.md)
 
