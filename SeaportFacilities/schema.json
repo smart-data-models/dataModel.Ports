@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.Ports/SeaPort/schema.json",
     "$schemaVersion": "0.0.1",
     "title": "Seaport facilities schema",
