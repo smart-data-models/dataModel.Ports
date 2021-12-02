@@ -887,3 +887,4 @@ Data repository (ISO 8666 standard)** *Categorie Length Max Width Max* A 4.99 2.
   ]  
 }  
 ```  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
