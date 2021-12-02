@@ -844,3 +844,4 @@ Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,0
   ]  
 }  
 ```  
+Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
