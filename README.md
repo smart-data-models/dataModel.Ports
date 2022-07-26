@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [BoatPlacesAvailable](https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesAvailable/README.md). The purpose of the data model is to provide information on the availability of mooring rings for boats in the port by category. The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.
 
+- [BoatPlacesPricing](https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesPricing/README.md). The purpose of the data model is to provide information on the pricing of mooring rings by category (length / Width). The information received relates only to pleasure boats and excludes commercial and passenger transport boats. The information on the Spot categories for boats is taken from the ISO 8666 standard.
+
 
 
 ### Contributors
@@ -17,5 +19,3 @@ The following entity types are available:
 
 ### Contribution
 You can raise an [issue](https://github.com/smart-data-models/dataModel.Ports/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Ports/pulls) on existing data models
-
-

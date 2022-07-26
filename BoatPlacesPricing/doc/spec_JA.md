@@ -1,17 +1,17 @@
-Entität: BoatPlacesPricing  
-==========================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesPricing/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Der Zweck des Datenmodells ist es, Informationen über die Preisgestaltung von Festmachern nach Kategorie (Länge / Breite) zu liefern. Die erhaltenen Informationen beziehen sich nur auf Freizeitboote und schließen gewerbliche Boote und Boote zur Personenbeförderung aus. Die Informationen zu den Spot-Kategorien für Boote sind der Norm ISO 8666 entnommen.**  
+エンティティBoatPlacesPricing  
+=======================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesPricing/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**データモデルの目的は、カテゴリー別（長さ／幅）の係留リングの価格に関する情報を提供することです。受け取った情報はプレジャーボートのみに関するもので、商業用や旅客輸送用のボートは含まれていない。ボートのスポットカテゴリに関する情報は、ISO 8666規格から引用されている。  
 
-## Liste der Eigenschaften  
+## プロパティのリスト  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastReported`: Ein Zeitstempel, der den letzten Zeitpunkt angibt, an dem das Gerät erfolgreich Daten gemeldet hat. Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `fairing`: Ticketpreis des Platzes für Verkleidungsboote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `maxDraft`: Maximal zulässiger Tiefgang für den Zugriff auf den Spot. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxLength`: Maximal zulässige Länge für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `maxWidth`: Maximal zulässige Breite für den Zugriff auf den Spot. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `minLength`: Mindestlänge, die für den Zugriff auf den Spot erlaubt ist. Der Gerätecode (Text) wird unter Verwendung der [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `passage`: Ticketpreis des Platzes für durchfahrende Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `period`: Typ des Zeitraums, der das Datum von und bis definiert: Ein freier Text oder ein eindeutiger Wert der verschiedenen erlaubten Kombinationen 'season / offSeason' - 'summer / winter' - 'low / medium / high'. enum:'high, low, medium, offSeason, season, summer, winter'  - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit dem Repository verknüpft ist  - `refSeaPort`: Verweis auf die Entität [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md), die als Hauptlink verwendet werden soll  - `resident`: Ticketpreis des Platzes für ansässige Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 2 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spotCategoryRange`: Liste von den niedrigsten bis zu den höchsten Kategorien: Eine Kombination von ihnen. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `type`: NGSI-Entitätstyp. Es muss BoatPlacePricing sein  - `validFrom`: Startdatum und Uhrzeit der Preisregeln.  - `validThrough`: Enddatum und Uhrzeit der Preisregeln.  - `wintering`: Ticketpreis des Platzes für überwinternde Boote für diese Kategorie / diesen Zeitraum. Ein strukturierter Wert mit 3 Untereigenschaften, wobei jedes Element ein String im Format `Schlüssel` : `Preis` in Euro € ist    
-Erforderliche Eigenschaften  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastReported`: デバイスがデータの報告に成功した最後の時間を示すタイムスタンプ。ISO8601のUTCフォーマットで、この観測の日付と時刻を表します。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `fairing`: このカテゴリ/期間のボートをフェアにするための場所のチケット価格です。3つのサブプロパティからなる構造化された値で、各項目は `key` : `price` というフォーマットの文字列で、単位はユーロです。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxDraft`: スポットにアクセスできる最大のドラフト。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられる。  - `maxLength`: スポットへのアクセスに許される最大の長さ。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。  - `maxWidth`: スポットにアクセスするために許容される最大の幅です。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。  - `minLength`: スポットにアクセスするために許される最小の長さです。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `passage`: このカテゴリ/期間のボートを通すための場所のチケット価格です。3つのサブプロパティからなる構造化された値で、各項目は `key` : `price` というフォーマットの文字列で、単位はユーロです。  - `period`: From and Throughの日付を定義する期間のタイプ。season / offSeason」、「summer / winter」、「low / medium / high」の組み合わせの中から、フリーテキストまたは固有の値を指定します。 enum:'high, low, medium, offSeason, season, summer, winter'.  - `refPointOfInterest`: リポジトリにリンクされた[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照  - `refSeaPort`: メインリンクとして使用するエンティティ[Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md)への参照  - `resident`: このカテゴリ/期間の居住者用ボートの場所のチケット価格です。2つのサブプロパティからなる構造化された値で、各項目は `key` : `price` というフォーマットの文字列で、単位はユーロです。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spotCategoryRange`: カテゴリーの低いものから高いものへとリストアップします。組み合わせたもの。Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `type`: NGSIのEntityタイプ。BoatPlacePricingでなければならない。  - `validFrom`: 価格設定ルールの開始日時が記載されています。  - `validThrough`: 価格設定ルールの終了日時が記載されています。  - `wintering`: このカテゴリ/期間のボートを越冬させるための場所のチケット価格です。3つのサブプロパティからなる構造化された値で、各項目は `key` : `price` というフォーマットの文字列で、単位はユーロです。    
+必須項目  
 - `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  - `validFrom`  - `validThrough`    
-Methode zur Gestaltung Ihres Repositorys für Bootspreise* Um die verschiedenen Preise nach Kategorie (A bis Z17) im Abschnitt *Informationen zur Preisgestaltung* zu beschreiben, ist die Verwendung einer Liste beim Schreiben des Datensatzes erforderlich. Abhängig von der Hafenkonfiguration wird ein Datensatz von 'spotCategoryRange' erstellt, um die Preisgestaltung für einen Zeitraum als Repository zu bestimmen. Es sind zwei Szenarien möglich - Szenario 1. Definition des Längenbereichs für eine einzelne Kategorie . 'spotCategoryRange' = [F], Boote akzeptiert= Länge 7,00 bis 7,49 und max Breite =< 2,70. [F] Länge 7,00 bis 7,49 / max Breite =< 2,70 - Szenario 2. Definition des Längenbereichs mit aufeinanderfolgenden Kategorien. 'spotCategoryRange' = [F, G], Boote akzeptiert= Länge 7,00 bis 7,99 und max Breite =< 2,80.'F' ergibt maxLänge von 7,00 bis 7,49 und maxBreite 2,70, 'G' ergibt maxLänge von 7,50 bis 7,99 und maxBreite 2,80  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+Boat Pricing*のリポジトリを設計する方法 価格設定に関する情報*のセクションで、カテゴリー（A～Z17）ごとに異なる価格設定を記述するためには、レコードを記述する際にリストの使用が必要となります。ポートの設定に応じて、「spotCategoryRange」によってレコードが作成され、リポジトリとしての期間の価格設定が決定されます。2 つのシナリオが考えられる - シナリオ 1.シナリオ 1. 1 つのカテゴリーに対する長さの範囲の定義 .spotCategoryRange' = [F], Boats accepted= 長さ7.00～7.49、最大幅=<2.70。[F] 長さ 7.00 から 7.49 / 最大幅 =< 2.70 - シナリオ 2.連続したカテゴリーによる長さの範囲の定義。'spotCategoryRange' = [F, G], Boats accepted= length 7.00 to 7.99 and max width =< 2.80.'F'はmaxLengthを7.00から7.49、maxWidthを2.70とし、'G'はmaxLengthを7.50から7.99、maxWidthを2.80とする。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BoatPlacesPricing:    
@@ -38,37 +38,50 @@ BoatPlacesPricing:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateLastReported:    
       description: 'A timestamp which denotes the last time when the device successfully reported data. The date and time of this observation in ISO8601 UTCformat'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     fairing:    
       description: 'Ticket price of the place for fairing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'    
       properties:    
@@ -78,9 +91,10 @@ BoatPlacesPricing:
           type: number    
         week:    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     id:    
       anyOf: &boatplacespricing_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -92,7 +106,8 @@ BoatPlacesPricing:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -244,40 +259,49 @@ BoatPlacesPricing:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     maxDraft:    
       description: 'Maximum draft allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: metres    
     maxLength:    
       description: 'Maximum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/number    
+        type: Property    
         units: metres    
     maxWidth:    
       description: 'Maximum width allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/width    
+        type: Property    
         units: metres    
     minLength:    
       description: 'Minimum length allowed to access the spot. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) '    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/number    
+        type: Property    
         units: metres    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *boatplacespricing_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     passage:    
       description: 'Ticket price of the place for passing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'    
       properties:    
@@ -287,9 +311,10 @@ BoatPlacesPricing:
           type: number    
         week:    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     period:    
       description: 'Type of period defined the date From and Through: A free text or a unique value of the different combination allowed ''season / offSeason'' - ''summer / winter'' - ''low / medium / high''. enum:''high, low, medium, offSeason, season, summer, winter'''    
       enum:    
@@ -300,9 +325,10 @@ BoatPlacesPricing:
         - season    
         - summer    
         - winter    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -314,9 +340,9 @@ BoatPlacesPricing:
           format: uri    
           type: string    
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     refSeaPort:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -328,9 +354,9 @@ BoatPlacesPricing:
           format: uri    
           type: string    
       description: 'Reference to the entity [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md) to use as main link'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     resident:    
       description: 'Ticket price of the place for resident boats for this category / period. A structured value with 2 subproperties where each items is a string in the format `key` : `price` in Euro €'    
       properties:    
@@ -338,9 +364,10 @@ BoatPlacesPricing:
           type: number    
         month:    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -351,10 +378,13 @@ BoatPlacesPricing:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     spotCategoryRange:    
       description: 'List from the lowest to the highest categories: A combination of them. Enum:''A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'''    
       items:    
@@ -405,24 +435,30 @@ BoatPlacesPricing:
           - Z16    
           - Z17    
         type: string    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be BoatPlacePricing'    
       enum:    
         - BoatPlacesPricing    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     validFrom:    
       description: 'Start date and time of the pricing rules.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     validThrough:    
       description: 'End date and time of the pricing rules.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     wintering:    
       description: 'Ticket price of the place for wintering boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €'    
       properties:    
@@ -432,9 +468,10 @@ BoatPlacesPricing:
           type: number    
         week:    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
   required:    
     - id    
     - type    
@@ -445,14 +482,20 @@ BoatPlacesPricing:
     - validFrom    
     - validThrough    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesPricing/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Ports/BoatPlacePricing/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
-Zusätzliche Informationen zu diesem Datenmodell* Es kann mit dem folgenden Datenmodell verwendet werden. - **SeaPort** verwendet werden, um dem Hafen Informationen über autorisierte Boote im Hafen bereitzustellen.  
-Dieses Datenmodell ist komplementär zum Datenmodell **BoatPlacesAvailable**.  
-Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,00 B 5,49 2,15 C 5,99 2,30 D 6,49 2,45 E 6,99 2,60 F 7,49 2,80 G 7,99 2,80 H 8,49 2,95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 U 28,99 7,00 V 33,99 8,00 W 38,99 9,00 X 43,99 10,00 Y 48,99 11,00 Z 53,99 12,00 Z01 58,99 13,00 Z02 64,99 14,00 Z03 71,99 15,00 Z04 78,99 16,00 Z05 85,99 17,00 Z06 92,99 18.00 Z07 99.99 19.00 Z08 106.99 20.00 Z09 113.99 21.00 Z10 120.99 22.00 Z11 127.99 23.00 Z12 134.99 24.00 Z13 142.99 25.00 Z14 150.99 26.00 Z15 158.99 27.00 Z16 166.99 28.00 Z17 174.99 29.00  
-## Beispiel-Nutzlasten  
-#### BoatPlacesPricing NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine BoatPlacesPricing im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+このデータモデルに関する追加情報* 以下のデータモデルと一緒に使用することができます。- **SeaPort** 港で認可されたBoatに関する情報を港に提供する。  
+このデータモデルは、データモデル **BoatPlacesAvailable** を補完するものである。  
+Data repository (ISO 8666 standard)** *Categorie Length Max Width Max* A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 u 28.99 7.00 v 33.99 8.00 w 38.99 9.00 x 43.99 10.00 y 48.99 11.00 z 53.99 12.00 z01 58.99 13.00 z02 64.99 14.00 z03 71.99 15.00 z04 78.99 16.00 z05 85.99 17.00 z06 92.99 18.00 z07 99.99 19.00 z08 106.99 20.00 z09 113.99 21.00 z10 120.99 22.00 z11 127.99 23.00 z12 134.99 24.00 z13 142.99 25.00 z14 150.99 26.00 z15 158.99 27.00 z16 166.99 28.00 z17 174.99 29.00  
+## ペイロードの例  
+#### BoatPlacesPricing NGSI-v2 key-values例  
+BoatPlacesPricingをkey-valuesとしてJSON-LD形式で出力した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -500,8 +543,8 @@ Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,0
   }  
 }  
 ```  
-#### BoatPlacesPricing NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für eine BoatPlacesPricing im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### BoatPlacesPricing NGSI-v2で正規化された例。  
+ここでは、正規化されたJSON-LD形式のBoatPlacesPricingの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -632,8 +675,8 @@ Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,0
   }  
 }  
 ```  
-#### BoatPlacesPricing NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine BoatPlacesPricing im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### BoatPlacesPricing NGSI-LD key-values例  
+BoatPlacesPricingをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -768,8 +811,8 @@ Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,0
   ]  
 }  
 ```  
-#### BootsplätzePreisgestaltung NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für eine BoatPlacesPricing im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### BoatPlacesPricing NGSI-LDの正規化例  
+ここでは、正規化されたJSON-LD形式のBoatPlacesPricingの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -844,4 +887,4 @@ Datenspeicher (ISO 8666-Standard)** *Kategorie Länge Max Breite Max* A 4,99 2,0
   ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
