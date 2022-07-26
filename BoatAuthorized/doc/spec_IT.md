@@ -1,18 +1,20 @@
-Entità: BarcaAutorizzata  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: BarcaAutorizzata  
 ========================  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Il modello di dati è destinato a fornire informazioni sulle imbarcazioni autorizzate ad operare all'interno del porto secondo lo standard ISO 8666 per la categoria di imbarcazioni. Questo repository è creato per tipo di categoria di barca (imbarcazioni da diporto, commercio, passeggeri, ...). Per ogni tipo di categoria, può essere associato un elenco di sottotipi opzionali di categoria.**  
+Descrizione globale: **Il modello di dati è destinato a fornire informazioni sulle imbarcazioni autorizzate a operare all'interno del porto secondo lo standard ISO 8666 per la categoria di imbarcazioni. Questo archivio è creato per tipo di categoria di imbarcazione (da diporto, commerciale, passeggeri, ...). Per ogni tipo di categoria, è possibile associare un elenco di sottotipi opzionali di categoria.**  
+versione: 0.0.1  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `boatSubType`: Sottotipo per un boatType. Una combinazione di elementi. Enum:'aircraftCarrier, anphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, cruise, cruiser, destroyer, dhow, divingVessel, djong, dredger, drifter, drillRig, factoryShip, ferry, fireBoat, fisheriesResearchVessel, flagshipBoat, floatingProductionStorageUnit, floatingStorageUnit, fluyt, frigate, gabare, galleon, galley, gondola, harbourFerry, helicopterCarrier, highSpeedVessel, houseBoat, hovercraft, iceBreakerShip, jetSki, junk, koch, lifeBoat, lightShip, liner, lineVessel, LiquefiedGasCarrier, littoralCombatShip, livestockCarrier, lngCarrier, longLiner, lpgCarrier, mineSweeping, monoHull, mooringBoat, multipurposeVessel, oceanographicBoat, other, paddleSteamer, pilotBoat, pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'  - `boatType`: Un valore unico della lista. Enum:'cargo, pesca, storico, passeggero, specialista, petroliera, guerra, yachting'  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateLastReported`: L'ultima volta che i dati sono stati raccolti  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxDraft`: Pescaggio massimo consentito per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Per esempio, **MTR** rappresenta Meter  - `maxLength`: Lunghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **MTR** rappresenta Meter  - `maxTonnage`: Tonnellaggio massimo autorizzato ad accedere al porto. Il codice dell'unità (testo) è dato utilizzando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Per esempio, **TNE** rappresenta la tonnellata metrica  - `maxWidth`: Larghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Per esempio, **MTR** rappresenta Meter  - `minLength`: Lunghezza minima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **MTR** rappresenta Meter  - `name`: Il nome di questo articolo.  - `openingHoursSpecification`: Un valore strutturato che fornisce informazioni sugli orari di apertura di un luogo o di un certo servizio all'interno di un luogo  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `refPointOfInterest`: Punto di interesse che l'elemento ha relazione con  - `refSeaPort`: Porta che appartiene a  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Deve essere BoatAuthorized. Tipo di entità NGSI    
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `boatSubType`: Sottotipo per un tipo di barca. Una combinazione di elementi. Enum:'aircraftCarrier, anphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoa, caravel, cargoCarrier, carrack, catamarano, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, crociera, incrociatore, cacciatorpediniere, dhow, divingVessel, djong, draga, drifter, drillRig, factoryShip, traghetto, fireBoat, fisheriesResearchVessel, flagshipBoat, floatingProductionStorageUnit, floatingStorageUnit, fluyt, fregata, gabare, galeone, galea, gondola, harbourFerry, helicopterCarrier, highSpeedVessel, houseBoat, hovercraft, iceBreakerShip, jetSki, junk, koch, lifeBoat, lightShip, liner, lineVessel, LiquefiedGasCarrier, littoralCombatShip, livestockCarrier, lngCarrier, longLiner, lpgCarrier, mineSweeping, monoscafo, mooringBoat, multipurposeVessel, oceanographicBoat, other, paddleSteamer, pilotBoat, pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac".  - `boatType`: Un valore unico dell'elenco. Enum:'cargo, pesca, storico, passeggeri, specializzato, Tanker, guerra, yachting'.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateLastReported`: L'ultima volta che sono stati raccolti i dati  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `id`: Identificatore univoco dell'entità  - `location`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxDraft`: Pescaggio massimo consentito per accedere al porto. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Ad esempio, **MTR** rappresenta il Metro  - `maxLength`: Lunghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **MTR** rappresenta il Metro  - `maxTonnage`: Stazza massima autorizzata ad accedere al porto. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Ad esempio, **TNE** rappresenta la Tonnellata Metrica  - `maxWidth`: Larghezza massima consentita per accedere al porto. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Ad esempio, **MTR** rappresenta il Metro  - `minLength`: Lunghezza minima consentita per accedere al porto. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **MTR** rappresenta il Metro  - `name`: Il nome di questo elemento.  - `openingHoursSpecification`: Un valore strutturato che fornisce informazioni sugli orari di apertura di un luogo o di un determinato servizio all'interno di un luogo.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refPointOfInterest`: Punto di interesse con cui l'elemento è in relazione  - `refSeaPort`: Porta che appartiene a  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type`: Deve essere BoatAuthorized. Tipo di entità NGSI    
 Proprietà richieste  
 - `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `type`    
-Metodo per progettare il vostro repository di barche autorizzate* Creare un record per ogni `bootType` autorizzato a circolare nel porto con tutti i corrispondenti `BoatSubType`. - record 1 - `id` cioè "BoatAuthorized:MNCA-NCE-BA-001-yatching" - "refSeapPortName` cioè "MyPort" - `boatType` cioè "yatching" - `boatSubType` cioè [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ] - record 2 - "id" i.e. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.e. "MyPort" - `boatType` cioè "passenger" - `boatSubType` cioè [ "cruise", "ferrie" ] - record 3 - "id" cioè "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.e. "MyPort" - `boatType` i.e. "passenger" - `boatSubType` i.e. [ "factoryShip", "seiner", "artisanVessels", "trawler" ]  
-Regole sulla data - sezione Informazioni sulla data e sul periodo di autorizzazione* Ci sono diversi scenari possibili - **Caso 1** Definizione di un intervallo che inizia in una data specifica e finisce senza data vincolante. Permette di definire un'autorizzazione permanente per esempio `dateObserved` cioè "2020-01-01T00:00:01Z" `dateObservedFrom` cioè "2020-01-01T00:00:01Z" `dateObservedTo` "" - **Caso 2** Definizione di un intervallo che inizia in una data specifica e finisce in una data. Permette di definire un'autorizzazione specifica per esempio per un boatshow o per un tipo di barca. `dateObserved` cioè "2020-10-10T00:00:01Z:2020-10-14T23:59:59Z" `dateObservedFrom` cioè "2020-10-10T00:00:01Z" `dateObservedTo` cioè "2020-10-14T23:59:59Z"  
-Informazioni aggiuntive su questo modello di dati* Può essere usato con il seguente modello di dati. - **SeaPort** per fornire informazioni al porto sulla barca autorizzata nel porto.  
-## Descrizione del modello di dati delle proprietà  
+Metodo per progettare il proprio repository di barche autorizzate* Creare un record per ogni `tipo di barca` autorizzato a circolare nel porto con tutti i corrispondenti `sottotipi di barca`. - record 1 - `id` cioè "BoatAuthorized:MNCA-NCE-BA-001-yatching" - "refSeapPortName` cioè "MyPort" - `boatType` cioè "yatching" - `boatSubType` cioè ["zodiac", "boatSubType"]. [ "zodiac", "monoHull", "catamarano", "yacht", "barca a vela", "jetSki" ] - record 2 - "id" cioè "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` cioè "MyPort".e. "MyPort" - `boatType` i.e. "passenger" - `boatSubType` i.e. [ "cruise", "ferrie" ] - record 3 - "id" i.e. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.cioè "MyPort" - `boatType` cioè "passenger" - `boatSubType` cioè [ "factoryShip", "seiner", "artisanVessels", "trawler" ].  
+Regole sulla data - sezione Informazioni sulla data e sul periodo di autorizzazione* Sono possibili diversi scenari - **Caso 1** Definizione di un intervallo che inizia in una data specifica e termina senza vincolo di data. Permette di definire un'autorizzazione permanente, ad esempio `dataOsservata` cioè "2020-01-01T00:00:01Z" `dataOsservataDa` cioè "2020-01-01T00:00:01Z" `dataOsservataA` "" - **Caso 2** Definizione di un intervallo che inizia in una data specifica e termina in una data specifica. Permette di definire un'autorizzazione specifica, ad esempio per un salone nautico o per un tipo di barca. `dataOsservata` cioè "2020-10-10T00:00:01Z:2020-10-14T23:59:59Z" `dataOsservataDa` cioè "2020-10-10T00:00:01Z" `dataOsservataA` cioè "2020-10-14T23:59:59Z"  
+Informazioni aggiuntive su questo modello di dati* Può essere utilizzato con il seguente modello di dati. - **Porto marittimo** per fornire informazioni al porto sulle imbarcazioni autorizzate nel porto.  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -423,27 +425,58 @@ BoatAuthorized:
         properties:    
           closes:    
             format: time    
+            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
           dayOfWeek:    
-            enum:    
-              - Monday    
-              - Tuesday    
-              - Wednesday    
-              - Thursday    
-              - Friday    
-              - Saturday    
-              - Sunday    
-              - PublicHolidays    
+            anyOf:    
+              - description: 'Property. Array of days of the week.'    
+                enum:    
+                  - Monday    
+                  - Tuesday    
+                  - Wednesday    
+                  - Thursday    
+                  - Friday    
+                  - Saturday    
+                  - Sunday    
+                  - PublicHolidays    
+                type: string    
+              - description: 'Property. Array of days of the week.'    
+                enum:    
+                  - https://schema.org/Monday    
+                  - https://schema.org/Tuesday    
+                  - https://schema.org/Wednesday    
+                  - https://schema.org/Thursday    
+                  - https://schema.org/Friday    
+                  - https://schema.org/Saturday    
+                  - https://schema.org/Sunday    
+                  - https://schema.org/PublicHolidays    
+                type: string    
+            description: 'Property. Model:''http://schema.org/dayOfWeek''. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays).'    
             type: string    
           opens:    
             format: time    
+            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
           validFrom:    
-            format: date-time    
-            type: string    
+            anyOf:    
+              - description: 'Property. Model:''http://schema.org/Date.'    
+                format: date    
+                type: string    
+              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                format: date-time    
+                type: string    
+            description: 'Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
           validThrough:    
-            format: date-time    
+            anyOf:    
+              - description: 'Property. Model:''http://schema.org/Date.'    
+                format: date    
+                type: string    
+              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                format: date-time    
+                type: string    
+            description: 'Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
             type: string    
+        type: object    
       minItems: 1    
       type: array    
       x-ngsi:    
@@ -510,9 +543,9 @@ BoatAuthorized:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### BoatAuthorized NGSI-v2 key-values Esempio  
-Ecco un esempio di un BoatAuthorized in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+## Esempi di payload  
+#### Valori-chiave NGSI-v2 autorizzati dalla barca Esempio  
+Ecco un esempio di BoatAuthorized in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -605,8 +638,8 @@ BoatAuthorized:
   }  
 }  
 ```  
-#### BoatAuthorized NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un BoatAuthorized in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+#### BarcaAutorizzata NGSI-v2 normalizzata Esempio  
+Ecco un esempio di BoatAuthorized in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -702,237 +735,236 @@ BoatAuthorized:
   }  
 }  
 ```  
-#### BoatAuthorized NGSI-LD key-values Esempio  
+#### Valori chiave NGSI-LD autorizzati dalla barca Esempio  
 Ecco un esempio di BoatAuthorized in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-  "type": "BoatAuthorized",  
-  "name": "Riviera-Port-NCE-BA-001-yatching",  
-  "alternateName": "Riviera Port - Autorized Boats in the port",  
-  "description": "List of Type and SubType of boats authorized to move and moor in the harbor",  
-  "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
-  "areaServed": "Nice Port",  
-  "dateObserved": "2020-01-01T00:00:01Z",  
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
-  "refBoatType": "yatching",  
-  "refBoatSubType": [  
-    "monoHull",  
-    "catamaran",  
-    "yacht",  
-    "sailboat",  
-    "jetSki"  
-  ],  
-  "openingHoursSpecification": [  
-    {  
-      "dayOfWeek": "Monday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+    "type": "BoatAuthorized",  
+    "alternateName": "Riviera Port - Autorized Boats in the port",  
+    "areaServed": "Nice Port",  
+    "dateLastReported": "2021-12-31T23:59:59",  
+    "dateObserved": "2020-01-01T00:00:01Z",  
+    "description": "List of Type and SubType of boats authorized to move and moor in the harbor",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            23,  
+            45  
+        ]  
     },  
-    {  
-      "dayOfWeek": "Tuesday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "Wednesday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "Thursday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "Friday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "Saturday",  
-      "opens": "08:30:00",  
-      "closes": "21:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "Sunday",  
-      "opens": "08:30:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    },  
-    {  
-      "dayOfWeek": "PublicHolidays",  
-      "opens": "08:30:00",  
-      "closes": "19:30:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    }  
-  ],  
-  "maxTonnage": 3855,  
-  "minLength": 3,  
-  "maxLength": 35,  
-  "maxWidth": 15,  
-  "maxDraft": 6.0,  
-  "dateLastReported": "2021-12-31T23:59:59",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      23,  
-      45  
+    "maxDraft": 6.0,  
+    "maxLength": 35,  
+    "maxTonnage": 3855,  
+    "maxWidth": 15,  
+    "minLength": 3,  
+    "name": "Riviera-Port-NCE-BA-001-yatching",  
+    "openingHoursSpecification": [  
+        {  
+            "dayOfWeek": "Monday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Tuesday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Wednesday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Thursday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Friday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Saturday",  
+            "opens": "08:30:00",  
+            "closes": "21:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Sunday",  
+            "opens": "08:30:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "PublicHolidays",  
+            "opens": "08:30:00",  
+            "closes": "19:30:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        }  
+    ],  
+    "refBoatSubType": [  
+        "monoHull",  
+        "catamaran",  
+        "yacht",  
+        "sailboat",  
+        "jetSki"  
+    ],  
+    "refBoatType": "yatching",  
+    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
+    "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### BoatAuthorized NGSI-LD normalizzato Esempio  
-Ecco un esempio di un BoatAuthorized in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+#### BarcaAutorizzata NGSI-LD normalizzata Esempio  
+Ecco un esempio di BoatAuthorized in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-  "type": "BoatAuthorized",  
-  "name": {  
-    "type": "Property",  
-    "value": "Riviera-Port-NCE-BA-001-yatching"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Riviera Port - Autorized Boats in the port"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "List of Type and SubType of boats authorized to move and moor in the harbor"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Port"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2020-01-01T00:00:01Z"  
-  },  
-  "refSeaPort": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
-  },  
-  "refBoatType": {  
-    "type": "Property",  
-    "value": "yatching"  
-  },  
-  "refBoatSubType": {  
-    "type": "Property",  
-    "value": [  
-      "monoHull",  
-      "catamaran",  
-      "yacht",  
-      "sailboat",  
-      "jetSki"  
+    "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+    "type": "BoatAuthorized",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Riviera Port - Autorized Boats in the port"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Port"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2020-01-01T00:00:01Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "List of Type and SubType of boats authorized to move and moor in the harbor"  
+    },  
+    "maxDraft": {  
+        "type": "Property",  
+        "value": 6.0  
+    },  
+    "maxLength": {  
+        "type": "Property",  
+        "value": 35  
+    },  
+    "maxTonnage": {  
+        "type": "Property",  
+        "value": 3855  
+    },  
+    "maxWidth": {  
+        "type": "Property",  
+        "value": 15  
+    },  
+    "minLength": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Riviera-Port-NCE-BA-001-yatching"  
+    },  
+    "openingHoursSpecification": {  
+        "type": "object",  
+        "value": [  
+            {  
+                "dayOfWeek": "Monday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Tuesday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Wednesday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Thursday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Friday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Saturday",  
+                "opens": "08:30:00",  
+                "closes": "21:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Sunday",  
+                "opens": "08:30:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "PublicHolidays",  
+                "opens": "08:30:00",  
+                "closes": "19:30:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            }  
+        ]  
+    },  
+    "refBoatSubType": {  
+        "type": "Property",  
+        "value": [  
+            "monoHull",  
+            "catamaran",  
+            "yacht",  
+            "sailboat",  
+            "jetSki"  
+        ]  
+    },  
+    "refBoatType": {  
+        "type": "Property",  
+        "value": "yatching"  
+    },  
+    "refSeaPort": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
     ]  
-  },  
-  "openingHoursSpecification": {  
-    "type": "object",  
-    "value": [  
-      {  
-        "dayOfWeek": "Monday",  
-        "opens": "07:00:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Tuesday",  
-        "opens": "07:00:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Wednesday",  
-        "opens": "07:00:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Thursday",  
-        "opens": "07:00:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Friday",  
-        "opens": "07:00:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Saturday",  
-        "opens": "08:30:00",  
-        "closes": "21:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "Sunday",  
-        "opens": "08:30:00",  
-        "closes": "20:00:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      },  
-      {  
-        "dayOfWeek": "PublicHolidays",  
-        "opens": "08:30:00",  
-        "closes": "19:30:00",  
-        "validFrom": "2021-01-01T00:00:00",  
-        "validThrough": "2021-12-31T23:59:59"  
-      }  
-    ]  
-  },  
-  "maxTonnage": {  
-    "type": "Property",  
-    "value": 3855  
-  },  
-  "minLength": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "maxLength": {  
-    "type": "Property",  
-    "value": 35  
-  },  
-  "maxWidth": {  
-    "type": "Property",  
-    "value": 15  
-  },  
-  "maxDraft": {  
-    "type": "Property",  
-    "value": 6.0  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
