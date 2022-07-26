@@ -1,8 +1,10 @@
-Entity: BoatAuthorized  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: BoatAuthorized  
 ======================  
 [Open License](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.**  
+version: 0.0.1  
 
 ## List of properties  
 
@@ -423,27 +425,58 @@ BoatAuthorized:
         properties:    
           closes:    
             format: time    
+            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
           dayOfWeek:    
-            enum:    
-              - Monday    
-              - Tuesday    
-              - Wednesday    
-              - Thursday    
-              - Friday    
-              - Saturday    
-              - Sunday    
-              - PublicHolidays    
+            anyOf:    
+              - description: 'Property. Array of days of the week.'    
+                enum:    
+                  - Monday    
+                  - Tuesday    
+                  - Wednesday    
+                  - Thursday    
+                  - Friday    
+                  - Saturday    
+                  - Sunday    
+                  - PublicHolidays    
+                type: string    
+              - description: 'Property. Array of days of the week.'    
+                enum:    
+                  - https://schema.org/Monday    
+                  - https://schema.org/Tuesday    
+                  - https://schema.org/Wednesday    
+                  - https://schema.org/Thursday    
+                  - https://schema.org/Friday    
+                  - https://schema.org/Saturday    
+                  - https://schema.org/Sunday    
+                  - https://schema.org/PublicHolidays    
+                type: string    
+            description: 'Property. Model:''http://schema.org/dayOfWeek''. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays).'    
             type: string    
           opens:    
             format: time    
+            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
           validFrom:    
-            format: date-time    
-            type: string    
+            anyOf:    
+              - description: 'Property. Model:''http://schema.org/Date.'    
+                format: date    
+                type: string    
+              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                format: date-time    
+                type: string    
+            description: 'Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
           validThrough:    
-            format: date-time    
+            anyOf:    
+              - description: 'Property. Model:''http://schema.org/Date.'    
+                format: date    
+                type: string    
+              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                format: date-time    
+                type: string    
+            description: 'Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
             type: string    
+        type: object    
       minItems: 1    
       type: array    
       x-ngsi:    
@@ -502,6 +535,12 @@ BoatAuthorized:
     - dateLastReported    
     - refSeaPort    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Ports/BoatAuthorized/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Example payloads    
@@ -603,120 +642,30 @@ BoatAuthorized:
 Here is an example of a BoatAuthorized in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-	"id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-	"type": "BoatAuthorized",  
-	"name": {  
-		"type": "Property",  
-		"value": "Riviera-Port-NCE-BA-001-yatching"  
-	},  
-	"alternateName": {  
-		"type": "Property",  
-		"value": "Riviera Port - Autorized Boats in the port"  
-	},  
-	"description": {  
-		"type": "Property",  
-		"value": "List of Type and SubType of boats authorized to move and moor in the harbor"  
-	},  
-	"seeAlso": {  
-		"type": "Property",  
-		"value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
-	},  
-	"areaServed": {  
-		"type": "Property",  
-		"value": "Nice Port"  
-	},  
-	"dateObserved": {  
-		"type": "Property",  
-		"value": "2020-01-01T00:00:01Z"  
-	},  
-	"refSeaPort": {  
-		"type": "Relationship",  
-		"object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
-	},  
-	"refBoatType": {  
-		"type": "Property",  
-		"value": "yatching"  
-	},  
-	"refBoatSubType": {  
-		"type": "Property",  
-		"value": ["monoHull", "catamaran", "yacht", "sailboat", "jetSki"]  
-	},  
-	"openingHoursSpecification": {  
-		"type": "object",  
-		"value": [{  
-				"dayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",  
-				"opens": "07.00",  
-				"closes": "20.00"  
-			},  
-			{  
-				"dayOfWeek": "Saturday",  
-				"opens": "08.30",  
-				"closes": "21.00"  
-			},  
-			{  
-				"dayOfWeek": "Sunday",  
-				"opens": "8.30",  
-				"closes": "20.00"  
-			},  
-			{  
-				"dayOfWeek": "PublicHolidays",  
-				"opens": "8.30",  
-				"closes": "19.30"  
-			}  
-		],  
-		"validFrom": "-01-01",  
-		"validThrough": "-31-12"  
-	},  
-	"maxTonnage": {  
-		"type": "Property",  
-		"value": 3855  
-	},  
-	"minLength": {  
-		"type": "Property",  
-		"value": 3  
-	},  
-	"maxLength": {  
-		"type": "Property",  
-		"value": 35  
-	},  
-	"maxWidth": {  
-		"type": "Property",  
-		"value": 15  
-	},  
-	"maxDraft": {  
-		"type": "Property",  
-		"value": 6.00  
-	}  
-}  
-```  
-#### BoatAuthorized NGSI-LD key-values Example    
-Here is an example of a BoatAuthorized in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-```json  
-{  
   "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
   "type": "BoatAuthorized",  
   "name": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Riviera-Port-NCE-BA-001-yatching"  
   },  
   "alternateName": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Riviera Port - Autorized Boats in the port"  
   },  
   "description": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "List of Type and SubType of boats authorized to move and moor in the harbor"  
   },  
   "seeAlso": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
   },  
   "areaServed": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Nice Port"  
   },  
   "dateObserved": {  
-    "type": "Property",  
+    "type": "DateTime",  
     "value": "2020-01-01T00:00:01Z"  
   },  
   "refSeaPort": {  
@@ -724,11 +673,11 @@ BoatAuthorized:
     "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
   },  
   "refBoatType": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "yatching"  
   },  
   "refBoatSubType": {  
-    "type": "Property",  
+    "type": "array",  
     "value": [  
       "monoHull",  
       "catamaran",  
@@ -738,7 +687,7 @@ BoatAuthorized:
     ]  
   },  
   "openingHoursSpecification": {  
-    "type": "object",  
+    "type": "StructuredValue",  
     "value": [  
       {  
         "dayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",  
@@ -765,127 +714,257 @@ BoatAuthorized:
     "validThrough": "-31-12"  
   },  
   "maxTonnage": {  
-    "type": "Property",  
+    "type": "Number",  
     "value": 3855  
   },  
   "minLength": {  
-    "type": "Property",  
+    "type": "Number",  
     "value": 3  
   },  
   "maxLength": {  
-    "type": "Property",  
+    "type": "Number",  
     "value": 35  
   },  
   "maxWidth": {  
-    "type": "Property",  
+    "type": "Number",  
     "value": 15  
   },  
   "maxDraft": {  
-    "type": "Property",  
-    "value": 6.0  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "type": "Number",  
+    "value": 6.00  
+  }  
+}  
+```  
+#### BoatAuthorized NGSI-LD key-values Example    
+Here is an example of a BoatAuthorized in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+```json  
+{  
+    "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+    "type": "BoatAuthorized",  
+    "alternateName": "Riviera Port - Autorized Boats in the port",  
+    "areaServed": "Nice Port",  
+    "dateLastReported": "2021-12-31T23:59:59",  
+    "dateObserved": "2020-01-01T00:00:01Z",  
+    "description": "List of Type and SubType of boats authorized to move and moor in the harbor",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            23,  
+            45  
+        ]  
+    },  
+    "maxDraft": 6.0,  
+    "maxLength": 35,  
+    "maxTonnage": 3855,  
+    "maxWidth": 15,  
+    "minLength": 3,  
+    "name": "Riviera-Port-NCE-BA-001-yatching",  
+    "openingHoursSpecification": [  
+        {  
+            "dayOfWeek": "Monday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Tuesday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Wednesday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Thursday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Friday",  
+            "opens": "07:00:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Saturday",  
+            "opens": "08:30:00",  
+            "closes": "21:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "Sunday",  
+            "opens": "08:30:00",  
+            "closes": "20:00:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        },  
+        {  
+            "dayOfWeek": "PublicHolidays",  
+            "opens": "08:30:00",  
+            "closes": "19:30:00",  
+            "validFrom": "2021-01-01T00:00:00",  
+            "validThrough": "2021-12-31T23:59:59"  
+        }  
+    ],  
+    "refBoatSubType": [  
+        "monoHull",  
+        "catamaran",  
+        "yacht",  
+        "sailboat",  
+        "jetSki"  
+    ],  
+    "refBoatType": "yatching",  
+    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
+    "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### BoatAuthorized NGSI-LD normalized Example    
 Here is an example of a BoatAuthorized in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-  "type": "BoatAuthorized",  
-  "name": "Riviera-Port-NCE-BA-001-yatching",  
-  "alternateName": "Riviera Port - Autorized Boats in the port",  
-  "description": "List of Type and SubType of boats authorized to move and moor in the harbor",  
-  "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
-  "areaServed": "Nice Port",  
-  "dateObserved": "2020-01-01T00:00:01Z",  
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
-  "refBoatType": "yatching",  
-  "refBoatSubType": [  
-    "monoHull",  
-    "catamaran",  
-    "yacht",  
-    "sailboat",  
-    "jetSki"  
-  ],  
-  "openingHoursSpecification": [  
-    {  
-      "dayOfWeek": "Monday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+    "type": "BoatAuthorized",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Riviera Port - Autorized Boats in the port"  
     },  
-    {  
-      "dayOfWeek": "Tuesday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Port"  
     },  
-    {  
-      "dayOfWeek": "Wednesday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2020-01-01T00:00:01Z"  
     },  
-    {  
-      "dayOfWeek": "Thursday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "description": {  
+        "type": "Property",  
+        "value": "List of Type and SubType of boats authorized to move and moor in the harbor"  
     },  
-    {  
-      "dayOfWeek": "Friday",  
-      "opens": "07:00:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "maxDraft": {  
+        "type": "Property",  
+        "value": 6.0  
     },  
-    {  
-      "dayOfWeek": "Saturday",  
-      "opens": "08:30:00",  
-      "closes": "21:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "maxLength": {  
+        "type": "Property",  
+        "value": 35  
     },  
-    {  
-      "dayOfWeek": "Sunday",  
-      "opens": "08:30:00",  
-      "closes": "20:00:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
+    "maxTonnage": {  
+        "type": "Property",  
+        "value": 3855  
     },  
-    {  
-      "dayOfWeek": "PublicHolidays",  
-      "opens": "08:30:00",  
-      "closes": "19:30:00",  
-      "validFrom": "2021-01-01T00:00:00",  
-      "validThrough": "2021-12-31T23:59:59"  
-    }  
-  ],  
-  "maxTonnage": 3855,  
-  "minLength": 3,  
-  "maxLength": 35,  
-  "maxWidth": 15,  
-  "maxDraft": 6.0,  
-  "dateLastReported": "2021-12-31T23:59:59",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      23,  
-      45  
+    "maxWidth": {  
+        "type": "Property",  
+        "value": 15  
+    },  
+    "minLength": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Riviera-Port-NCE-BA-001-yatching"  
+    },  
+    "openingHoursSpecification": {  
+        "type": "object",  
+        "value": [  
+            {  
+                "dayOfWeek": "Monday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Tuesday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Wednesday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Thursday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Friday",  
+                "opens": "07:00:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Saturday",  
+                "opens": "08:30:00",  
+                "closes": "21:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "Sunday",  
+                "opens": "08:30:00",  
+                "closes": "20:00:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            },  
+            {  
+                "dayOfWeek": "PublicHolidays",  
+                "opens": "08:30:00",  
+                "closes": "19:30:00",  
+                "validFrom": "2021-01-01T00:00:00",  
+                "validThrough": "2021-12-31T23:59:59"  
+            }  
+        ]  
+    },  
+    "refBoatSubType": {  
+        "type": "Property",  
+        "value": [  
+            "monoHull",  
+            "catamaran",  
+            "yacht",  
+            "sailboat",  
+            "jetSki"  
+        ]  
+    },  
+    "refBoatType": {  
+        "type": "Property",  
+        "value": "yatching"  
+    },  
+    "refSeaPort": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
