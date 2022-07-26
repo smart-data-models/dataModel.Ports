@@ -18,9 +18,9 @@
                 "type": {
                     "type": "string",
                     "enum": [
-                        "BoatPlaceAvailable"
+                        "BoatPlacesAvailable"
                     ],
-                    "description": "Property. NGSI Entity type. It has to be BoatPlaceAvailable"
+                    "description": "Property. NGSI Entity type. It has to be BoatPlacesAvailable"
                 },
                 "dateObserved": {
                     "type": "string",
