@@ -1,20 +1,35 @@
-Entità: BoatPlacesAvailable  
-===========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Posti BarcaDisponibili  
+==============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesAvailable/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Lo scopo del modello di dati è quello di fornire informazioni sulla disponibilità di anelli di ormeggio per le barche nel porto per categoria. Le informazioni ricevute si riferiscono solo alle imbarcazioni da diporto ed escludono le imbarcazioni commerciali e da trasporto passeggeri. Le informazioni sulle categorie di Spot per le barche sono prese dallo standard ISO 8666.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Lo scopo del modello di dati è fornire informazioni sulla disponibilità di anelli di ormeggio per le imbarcazioni nel porto per categoria. Le informazioni ricevute riguardano solo le imbarcazioni da diporto ed escludono le imbarcazioni commerciali e da trasporto passeggeri. Le informazioni sulle categorie di spot per le imbarcazioni sono tratte dallo standard ISO 8666.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `availableSpotNumber`: Numero di posti disponibili nel porto per questa categoria  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: La data e l'ora di questa osservazione nel formato ISO8601 UTC. Può essere rappresentato da un istante specifico o da un intervallo ISO8601  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxDraft`: Pescaggio massimo consentito per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Per esempio, **MTR** rappresenta Meter  - `maxLength`: Lunghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **MTR** rappresenta Meter  - `maxWidth`: Larghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Per esempio, **MTR** rappresenta Meter  - `minLength`: Lunghezza minima consentita per accedere al porto. Il codice dell'unità (testo) è dato usando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **MTR** rappresenta Meter  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `refPointOfInterest`: Punto di interesse che l'elemento ha relazione con  - `refSeaPort`: Porta che appartiene a  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio pienamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `spotCategoryRange`:  Elenca dalle categorie più basse a quelle più alte: Una combinazione delle voci elencate. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `totalCapacitySpotNumber`: Capacità totale dello spot nel porto per questo intervallo  - `type`: Tipo di entità NGSI. Deve essere BoatPlaceAvailable    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `availableSpotNumber[number]`: Numero di posti disponibili nel porto per questa categoria  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved[string]`: La data e l'ora di questa osservazione nel formato ISO8601 UTC. Può essere rappresentata da un istante temporale specifico o da un intervallo ISO8601.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxDraft[number]`: Pescaggio massimo consentito per accedere al porto. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Ad esempio, **MTR** rappresenta il Metro  . Model: [https://schema.org/depth](https://schema.org/depth)- `maxLength[number]`: Lunghezza massima consentita per accedere al porto. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Ad esempio, **MTR** rappresenta il Metro  . Model: [https://schema.org/length](https://schema.org/length)- `maxWidth[number]`: Larghezza massima consentita per accedere al porto. Il codice dell'unità di misura (testo) è indicato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . Ad esempio, **MTR** rappresenta il Metro  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: Lunghezza minima consentita per accedere al porto. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Per esempio, **MTR** rappresenta il Metro  . Model: [https://schema.org/length](https://schema.org/length)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `refPointOfInterest[string]`: Punto di interesse con cui l'elemento è in relazione  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[string]`: Porta che appartiene a  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spotCategoryRange[array]`:  Elenco dalle categorie più basse a quelle più alte: Una combinazione degli elementi elencati. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalCapacitySpotNumber[number]`: Capacità totale di Spot nella porta per questo intervallo  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo di entità NGSI. Deve essere BoatPlaceAvailable  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`    
-Metodo per progettare il tuo repository di Boat Authorized Per descrivere i diversi posti disponibili per categoria (da A a Z17) nella sezione Informazioni sul posto disponibile, l'uso di una lista è necessario quando si scrive il record. A seconda della configurazione del porto, un record sarà creato da `spotCategoryRange` per determinare il numero di spazio rimanente in un dato momento. Sono possibili due scenari Scenario 1. Definizione dell'intervallo di lunghezza su una singola categoria . `spotCategoryRange` = ["F"], Barche accettate. lunghezza da 7.00 a 7.49 e larghezza massima =< 2.70. "F" lunghezza da 7.00 a 7.49 / larghezza massima =< 2.70 Scenario 2. Definizione dell'intervallo di lunghezza con categorie consecutive. `spotCategoryRange` = ["F", "G"], Barche accettate. lunghezza 7.00 a 7.99 e larghezza max =< 2.80. "F" dà lunghezza massima da 7.00 a 7.49 e larghezza massima 2.70 "G" dà lunghezza massima da 7.50 a 7.99 e larghezza massima 2.80  
+- `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Per descrivere i diversi posti disponibili per categoria (da A a Z17) nella sezione Informazioni sui posti disponibili, è necessario l'uso di un elenco quando si scrive il record. A seconda della configurazione del porto, verrà creato un record da `spotCategoryRange` per determinare il numero di posti rimanenti in un determinato momento. Sono possibili due scenari Scenario 1. Definizione dell'intervallo di lunghezza su una singola categoria. `spotCategoryRange` = ["F"], Barche accettate. lunghezza da 7,00 a 7,49 e larghezza massima =< 2,70. "F" lunghezza da 7,00 a 7,49 / larghezza massima =< 2,70 Scenario 2. Definizione dell'intervallo di lunghezza con categorie consecutive. `spotCategoryRange` = ["F", "G"], Barche accettate. lunghezza da 7,00 a 7,99 e larghezza massima =< 2,80. "F" dà lunghezza massima da 7,00 a 7,49 e larghezza massima 2,70 "G" dà lunghezza massima da 7,50 a 7,99 e larghezza massima 2,80  
 Informazioni aggiuntive su questo modello di dati Può essere utilizzato con il seguente modello di dati. - SeaPort per fornire informazioni al porto sulle imbarcazioni autorizzate nel porto.  
 Questo modello di dati è complementare al modello di dati BoatPlacesPricing.  
-Data repository (ISO 8666 standard) Categorie Lunghezza Max Larghezza Max A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 U 28.99 7.00 V 33.99 8.00 W 38.99 9.00 X 43.99 10.00 Y 48.99 11.00 Z 53.99 12.00 Z01 58.99 13.00 Z02 64.99 14.00 Z03 71.99 15.00 Z04 78.99 16.00 Z05 85.99 17.00 Z06 92.99 18.00 Z07 99.99 19.00 Z08 106.99 20.00 Z09 113.99 21.00 Z10 120.99 22.00 Z11 127.99 23.00 Z12 134.99 24.00 Z13 142.99 25.00 Z14 150.99 26.00 Z15 158.99 27.00 Z16 166.99 28.00 Z17 174.99 29.00  
-## Descrizione del modello di dati delle proprietà  
+Repository dati (standard ISO 8666) Categorie Lunghezza Max Larghezza Max A 4,99 2,00 B 5,49 2,15 C 5,99 2,30 D 6,49 2,45 E 6,99 2,60 F 7,49 2,80 G 7,99 2,80 H 8,49 2,95 I 8,99 3.10 J 9,49 3,25 K 9,99 3,40 L 10,49 3,55 M 10,99 3,70 N 11,49 3,85 O 11,99 4,00 P 12,99 4,30 Q 13,99 4,60 R 15,99 4,90 S 17,99 5,20 T1 20,99 5,60 T2 23..6.00 U 28.99 7.00 V 33.99 8.00 W 38.99 9.00 X 43.99 10.00 Y 48.99 11.00 Z 53.99 12.00 Z01 58.99 13.00 Z02 64.99 14.00 Z03 71.99 15.00 Z04 78.99 16.00 Z05 85.99 17.00 Z06 92.99 18,00 Z07 99,99 19,00 Z08 106,99 20,00 Z09 113,99 21,00 Z10 120,99 22,00 Z11 127,99 23,00 Z12 134,99 24,00 Z13 142,99 25,00 Z14 150,99 26,00 Z15 158,99 27,00 Z16 166,99 28,00 Z17 174,99 29,00  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BoatPlacesAvailable:    
@@ -429,9 +444,14 @@ BoatPlacesAvailable:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### BoatPlacesAvailable valori chiave NGSI-v2 Esempio  
-Ecco un esempio di BoatPlacesAvailable in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### BoatPlacesAvailable Valori chiave NGSI-v2 Esempio  
+Ecco un esempio di BoatPlacesAvailable in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
@@ -462,8 +482,10 @@ BoatPlacesAvailable:
   }  
 }  
 ```  
+</details>  
 #### BoatPlacesAvailable NGSI-v2 normalizzato Esempio  
-Ecco un esempio di BoatPlacesAvailable in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BoatPlacesAvailable in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
@@ -545,126 +567,138 @@ BoatPlacesAvailable:
   }  
 }  
 ```  
-#### BoatPlacesAvailable valori chiave NGSI-LD Esempio  
-Ecco un esempio di BoatPlacesAvailable in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### BoatPlacesAvailable Valori chiave NGSI-LD Esempio  
+Ecco un esempio di BoatPlacesAvailable in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-  "type": "BoatPlaceAvailable",  
-  "name": {  
-    "type": "Property",  
-    "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Riviera Port - Available places"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Availability places"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Riviera Port"  
-  },  
-  "dateObserved": {  
-    "type": "DateTime",  
-    "value": "2020-03-17T08:45:00Z",  
-    "metadata": {  
-      "TimeInstant": {  
-        "type": "Text",  
-        "value": "2020-03-17T08:45:00Z"  
-      }  
-    }  
-  },  
-  "refSeaPort": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
-  },  
-  "spotCategoryRange": {  
-    "type": "property",  
-    "value": [  
-      "F",  
-      "G"  
+    "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+    "type": "BoatPlaceAvailable",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Riviera Port - Available places"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Riviera Port"  
+    },  
+    "availableSpotNumber": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "dateObserved": {  
+        "type": "DateTime",  
+        "value": "2020-03-17T08:45:00Z",  
+        "metadata": {  
+            "TimeInstant": {  
+                "type": "Text",  
+                "value": "2020-03-17T08:45:00Z"  
+            }  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Availability places"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                123,  
+                45  
+            ]  
+        }  
+    },  
+    "maxDraft": {  
+        "type": "Property",  
+        "value": 2.55  
+    },  
+    "maxLength": {  
+        "type": "Property",  
+        "value": 7.99  
+    },  
+    "maxWidth": {  
+        "type": "Property",  
+        "value": 2.8  
+    },  
+    "minLength": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
+    },  
+    "refSeaPort": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
+    },  
+    "spotCategoryRange": {  
+        "type": "property",  
+        "value": [  
+            "F",  
+            "G"  
+        ]  
+    },  
+    "totalCapacitySpotNumber": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "minLength": {  
-    "type": "Property",  
-    "value": 7  
-  },  
-  "maxLength": {  
-    "type": "Property",  
-    "value": 7.99  
-  },  
-  "maxWidth": {  
-    "type": "Property",  
-    "value": 2.8  
-  },  
-  "maxDraft": {  
-    "type": "Property",  
-    "value": 2.55  
-  },  
-  "totalCapacitySpotNumber": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "availableSpotNumber": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        123,  
-        45  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### BoatPlacesAvailable NGSI-LD normalizzato Esempio  
-Ecco un esempio di BoatPlacesAvailable in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BoatPlacesAvailable in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-  "type": "BoatPlaceAvailable",  
-  "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
-  "alternateName": "Riviera Port - Available places",  
-  "description": "Availability places",  
-  "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
-  "areaServed": "Riviera Port",  
-  "dateObserved": "2020-03-17T08:45:00Z",  
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
-  "spotCategoryRange": [  
-    "F",  
-    "G"  
-  ],  
-  "minLength": 7,  
-  "maxLength": 7.99,  
-  "maxWidth": 2.8,  
-  "maxDraft": 2.55,  
-  "totalCapacitySpotNumber": 10,  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      123,  
-      45  
+    "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+    "type": "BoatPlaceAvailable",  
+    "alternateName": "Riviera Port - Available places",  
+    "areaServed": "Riviera Port",  
+    "dateObserved": "2020-03-17T08:45:00Z",  
+    "description": "Availability places",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            123,  
+            45  
+        ]  
+    },  
+    "maxDraft": 2.55,  
+    "maxLength": 7.99,  
+    "maxWidth": 2.8,  
+    "minLength": 7,  
+    "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
+    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
+    "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
+    "spotCategoryRange": [  
+        "F",  
+        "G"  
+    ],  
+    "totalCapacitySpotNumber": 10,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
