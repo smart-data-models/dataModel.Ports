@@ -1,17 +1,32 @@
-Entità: BoatPlacesPricing  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: Posti BarcaPrezzi  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesPricing/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Lo scopo del modello di dati è quello di fornire informazioni sui prezzi degli anelli di ormeggio per categoria (lunghezza / larghezza). Le informazioni ricevute si riferiscono solo alle imbarcazioni da diporto ed escludono le imbarcazioni commerciali e da trasporto passeggeri. Le informazioni sulle categorie di Spot per le barche sono prese dallo standard ISO 8666.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Lo scopo del modello di dati è quello di fornire informazioni sul prezzo degli anelli di ormeggio per categoria (lunghezza / larghezza). Le informazioni ricevute riguardano solo le imbarcazioni da diporto ed escludono le imbarcazioni commerciali e da trasporto passeggeri. Le informazioni sulle categorie di spot per le imbarcazioni sono tratte dallo standard ISO 8666.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateLastReported`: Un timestamp che denota l'ultima volta in cui il dispositivo ha segnalato con successo dei dati. La data e l'ora di questa osservazione in formato ISO8601 UTC  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `fairing`: Prezzo del biglietto del posto per le barche da carenaggio per questa categoria / periodo. Un valore strutturato con 3 sottoproprietà dove ogni voce è una stringa nel formato `chiave` : `prezzo` in Euro €  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxDraft`: Massimo sforzo consentito per accedere al punto. Il codice dell'unità (testo) è dato utilizzando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `maxLength`: Lunghezza massima consentita per accedere al punto. Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `maxWidth`: Larghezza massima consentita per accedere al punto. Il codice dell'unità (testo) è dato utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `minLength`: Lunghezza minima consentita per accedere al punto. Il codice dell'unità (testo) è dato utilizzando i [codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `passage`: Prezzo del biglietto del posto per le barche di passaggio per questa categoria / periodo. Un valore strutturato con 3 sottoproprietà dove ogni voce è una stringa nel formato `chiave` : `prezzo` in Euro €  - `period`: Tipo di periodo definito la data Da e Attraverso: Un testo libero o un valore unico della diversa combinazione permessa 'season / offSeason' - 'summer / winter' - 'low / medium / high'. enum:'high, low, medium, offSeason, season, summer, winter'  - `refPointOfInterest`: Riferimento a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) collegato al Repository  - `refSeaPort`: Riferimento all'entità [Seaport](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md) da usare come collegamento principale  - `resident`: Prezzo del posto per le barche residenti per questa categoria / periodo. Un valore strutturato con 2 sottoproprietà dove ogni voce è una stringa nel formato `chiave` : `prezzo` in Euro €  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `spotCategoryRange`: Elenco dalle categorie più basse a quelle più alte: Una combinazione di esse. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `type`: Tipo di entità NGSI. Deve essere BoatPlacePricing  - `validFrom`: Data e ora di inizio delle regole dei prezzi.  - `validThrough`: Data e ora di fine delle regole di prezzo.  - `wintering`: Prezzo del posto per lo svernamento delle barche per questa categoria / periodo. Un valore strutturato con 3 sottoproprietà dove ogni voce è una stringa nel formato `chiave` : `prezzo` in Euro €    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateLastReported[string]`: Un timestamp che indica l'ultima volta in cui il dispositivo ha riportato dati con successo. La data e l'ora di questa osservazione in formato ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `fairing[object]`: Prezzo del biglietto del posto per le barche carenate per questa categoria / periodo. Un valore strutturato con 3 sottoproprietà in cui ogni voce è una stringa nel formato `chiave` : `prezzo` in euro €  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `maxDraft[number]`: Bozza massima consentita per l'accesso al punto. Il codice dell'unità (testo) è indicato utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxLength[number]`: Lunghezza massima consentita per accedere al punto. Il codice dell'unità (testo) è fornito utilizzando i [Codici comuni UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/number](https://schema.org/number)- `maxWidth[number]`: Larghezza massima consentita per accedere al punto. Il codice dell'unità (testo) viene fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: Lunghezza minima consentita per accedere al punto. Il codice dell'unità (testo) viene fornito utilizzando i [Codici comuni UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes).  . Model: [https://schema.org/number](https://schema.org/number)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `passage[object]`: Prezzo del biglietto del posto per le imbarcazioni di passaggio per questa categoria/periodo. Un valore strutturato con 3 sottoproprietà in cui ogni voce è una stringa nel formato `chiave` : `prezzo` in euro €  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `period[string]`: Tipo di periodo definito dalla data Da e Attraverso: Un testo libero o un valore univoco delle diverse combinazioni consentite 'stagione / fuori stagione' - 'estate / inverno' - 'basso / medio / alto'. enum:'alto, basso, medio, fuori stagione, stagione, estate, inverno'  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `refPointOfInterest[*]`: Riferimento a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) collegato con il Repository  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[*]`: Riferimento all'entità [Porto marittimo](https://github.com/smart-data-models/dataModel.Port/blob/master/Seaport/doc/spec.md) da utilizzare come collegamento principale  . Model: [https://schema.org/URL](https://schema.org/URL)- `resident[object]`: Prezzo del biglietto del posto per le imbarcazioni residenti per questa categoria / periodo. Un valore strutturato con 2 sottoproprietà dove ogni voce è una stringa nel formato `chiave` : `prezzo` in euro €  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spotCategoryRange[array]`: Elenco dalle categorie più basse a quelle più alte: Una combinazione di esse. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'.  - `type[string]`: Tipo di entità NGSI. Deve essere BoatPlacePricing  - `validFrom[string]`: Data e ora di inizio delle regole di tariffazione.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `validThrough[string]`: Data e ora di scadenza delle regole di tariffazione.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `wintering[object]`: Prezzo del biglietto del posto per l'invernaggio delle imbarcazioni per questa categoria/periodo. Un valore strutturato con 3 sottoproprietà in cui ogni voce è una stringa nel formato `chiave` : `prezzo` in euro €  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  - `validFrom`  - `validThrough`    
-Metodo per progettare il tuo repository di Boat Pricing* Per descrivere i diversi prezzi per categoria (da A a Z17) nella sezione *Informazioni sui prezzi*, l'uso di un elenco è necessario quando si scrive il record. A seconda della configurazione della porta, un record sarà creato da 'spotCategoryRange' per determinare il pricing per un periodo come repository. Sono possibili due scenari - Scenario 1. Definizione dell'intervallo di lunghezza su una singola categoria . 'spotCategoryRange' = [F], Barche accettate= lunghezza 7.00 a 7.49 e larghezza massima =< 2.70. [F] lunghezza da 7,00 a 7,49 / larghezza massima =< 2,70 - Scenario 2. Definizione dell'intervallo di lunghezza con categorie consecutive. 'spotCategoryRange' = [F, G], Barche accettate= lunghezza da 7.00 a 7.99 e larghezza massima =< 2.80. 'F' dà lunghezza massima da 7.00 a 7.49 e larghezza massima 2.70, 'G' dà lunghezza massima da 7.50 a 7.99 e larghezza massima 2.80  
-## Descrizione del modello di dati delle proprietà  
+- `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  - `validFrom`  - `validThrough`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Metodo per progettare il repository dei prezzi delle imbarcazioni* Per descrivere i diversi prezzi per categoria (da A a Z17) nella sezione *Informazioni sui prezzi*, è necessario l'uso di un elenco quando si scrive il record. A seconda della configurazione del porto, verrà creato un record da 'spotCategoryRange' per determinare i prezzi per un periodo come repository. Sono possibili due scenari - Scenario 1. Definizione dell'intervallo di lunghezza su una singola categoria. 'spotCategoryRange' = [F], Barche accettate= lunghezza da 7,00 a 7,49 e larghezza massima =< 2,70. [F] lunghezza da 7,00 a 7,49 / larghezza massima =< 2,70 - Scenario 2. Definizione dell'intervallo di lunghezza con categorie consecutive. 'spotCategoryRange' = [F, G], Barche accettate= lunghezza da 7,00 a 7,99 e larghezza massima =< 2,80. 'F' dà lunghezza massima da 7,00 a 7,49 e larghezza massima 2,70, 'G' dà lunghezza massima da 7,50 a 7,99 e larghezza massima 2,80.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BoatPlacesPricing:    
@@ -490,12 +505,17 @@ BoatPlacesPricing:
   x-version: 0.0.1    
 ```  
 </details>    
-Informazioni aggiuntive su questo modello di dati* Può essere usato con il seguente modello di dati. - **SeaPort** per fornire informazioni al porto sulle imbarcazioni autorizzate nel porto.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+Informazioni aggiuntive su questo modello di dati* Può essere utilizzato con il seguente modello di dati. - **Porto marittimo** per fornire informazioni al porto sulle imbarcazioni autorizzate nel porto.  
 Questo modello di dati è complementare al modello di dati **BoatPlacesAvailable**.  
-Data repository (ISO 8666 standard)** *Categoria Lunghezza Max Larghezza Max* A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 U 28,99 7,00 V 33,99 8,00 W 38,99 9,00 X 43,99 10,00 Y 48,99 11,00 Z 53,99 12,00 Z01 58,99 13,00 Z02 64,99 14,00 Z03 71,99 15,00 Z04 78,99 16,00 Z05 85,99 17,00 Z06 92,99 18.00 Z07 99.99 19.00 Z08 106.99 20.00 Z09 113.99 21.00 Z10 120.99 22.00 Z11 127.99 23.00 Z12 134.99 24.00 Z13 142.99 25.00 Z14 150.99 26.00 Z15 158.99 27.00 Z16 166.99 28.00 Z17 174.99 29.00  
-## Esempio di payloads  
-#### BoatPlacesPricing Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di BoatPlacesPricing in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Repository dei dati (standard ISO 8666)** *Categoria Lunghezza Max Larghezza Max* A 4,99 2,00 B 5,49 2,15 C 5,99 2,30 D 6,49 2,45 E 6,99 2,60 F 7,49 2,80 G 7,99 2,80 H 8,49 2,95 I 8..99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 U 28,99 7,00 V 33,99 8,00 W 38,99 9,00 X 43,99 10,00 Y 48,99 11,00 Z 53,99 12,00 Z01 58,99 13,00 Z02 64,99 14,00 Z03 71,99 15,00 Z04 78,99 16,00 Z05 85,99 17,00 Z06 92,99 18.00 Z07 99,99 19,00 Z08 106,99 20,00 Z09 113,99 21,00 Z10 120,99 22,00 Z11 127,99 23,00 Z12 134,99 24,00 Z13 142,99 25,00 Z14 150,99 26,00 Z15 158,99 27,00 Z16 166,99 28,00 Z17 174,99 29,00  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### BoatPlacesPricing Valori-chiave NGSI-v2 Esempio  
+Ecco un esempio di BoatPlacesPricing in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -543,8 +563,10 @@ Data repository (ISO 8666 standard)** *Categoria Lunghezza Max Larghezza Max* A 
   }  
 }  
 ```  
+</details>  
 #### BoatPlacesPricing NGSI-v2 normalizzato Esempio  
-Ecco un esempio di BoatPlacesPricing in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BoatPlacesPricing in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -675,216 +697,228 @@ Data repository (ISO 8666 standard)** *Categoria Lunghezza Max Larghezza Max* A 
   }  
 }  
 ```  
-#### BoatPlacesPricing Valori chiave NGSI-LD Esempio  
-Ecco un esempio di BoatPlacesPricing in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### BoatPlacesPricing Valori-chiave NGSI-LD Esempio  
+Ecco un esempio di BoatPlacesPricing in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
-  "type": "BoatPlacePricing",  
-  "name": {  
-    "type": "Property",  
-    "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Riviera Port - Pricing of the Places by Categories"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Pricing of the Places by Categories"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Riviera Port"  
-  },  
-  "dateLastReported": {  
-    "type": "DateTime",  
-    "value": "2020-03-17T08:45:00Z"  
-  },  
-  "refSeaPort": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
-  },  
-  "spotCategoryRange": {  
-    "type": "property",  
-    "value": [  
-      "F",  
-      "G"  
-    ]  
-  },  
-  "minLength": {  
-    "type": "Property",  
-    "value": 7  
-  },  
-  "maxLength": {  
-    "type": "Property",  
-    "value": 7.99  
-  },  
-  "maxWidth": {  
-    "type": "Property",  
-    "value": 2.8  
-  },  
-  "maxDraft": {  
-    "type": "Property",  
-    "value": 2.55  
-  },  
-  "validFrom": {  
-    "type": "DateTime",  
-    "value": "2021-01-01T17:21:20Z"  
-  },  
-  "validThrough": {  
-    "type": "DateTime",  
-    "value": "2021-02-10T17:21:20Z"  
-  },  
-  "period": {  
-    "type": "Property",  
-    "value": "season"  
-  },  
-  "passage": {  
-    "type": "Property",  
-    "value": {  
-      "day": 29.45,  
-      "week": 200.15,  
-      "month": 821.2  
-    }  
-  },  
-  "resident": {  
-    "type": "Property",  
-    "value": {  
-      "month": 760.41,  
-      "annual": 9125.0  
-    }  
-  },  
-  "wintering": {  
-    "type": "Property",  
-    "value": {  
-      "day": 27.0,  
-      "week": 185.0,  
-      "month": 775.0  
-    }  
-  },  
-  "fairing": {  
-    "type": "Property",  
-    "value": {  
-      "day": 17.3,  
-      "week": 87.0,  
-      "month": 260.9  
-    }  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Polygon",  
-      "coordinates": [  
-        [  
-          [  
-            100,  
-            0  
-          ],  
-          [  
-            101,  
-            0  
-          ],  
-          [  
-            101,  
-            1  
-          ],  
-          [  
-            100,  
-            1  
-          ],  
-          [  
-            100,  
-            0  
-          ]  
+    "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
+    "type": "BoatPlacePricing",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Riviera Port - Pricing of the Places by Categories"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Riviera Port"  
+    },  
+    "dateLastReported": {  
+        "type": "DateTime",  
+        "value": "2020-03-17T08:45:00Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Pricing of the Places by Categories"  
+    },  
+    "fairing": {  
+        "type": "Property",  
+        "value": {  
+            "day": 17.3,  
+            "week": 87.0,  
+            "month": 260.9  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Polygon",  
+            "coordinates": [  
+                [  
+                    [  
+                        100,  
+                        0  
+                    ],  
+                    [  
+                        101,  
+                        0  
+                    ],  
+                    [  
+                        101,  
+                        1  
+                    ],  
+                    [  
+                        100,  
+                        1  
+                    ],  
+                    [  
+                        100,  
+                        0  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "maxDraft": {  
+        "type": "Property",  
+        "value": 2.55  
+    },  
+    "maxLength": {  
+        "type": "Property",  
+        "value": 7.99  
+    },  
+    "maxWidth": {  
+        "type": "Property",  
+        "value": 2.8  
+    },  
+    "minLength": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
+    },  
+    "passage": {  
+        "type": "Property",  
+        "value": {  
+            "day": 29.45,  
+            "week": 200.15,  
+            "month": 821.2  
+        }  
+    },  
+    "period": {  
+        "type": "Property",  
+        "value": "season"  
+    },  
+    "refSeaPort": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
+    },  
+    "resident": {  
+        "type": "Property",  
+        "value": {  
+            "month": 760.41,  
+            "annual": 9125.0  
+        }  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
+    },  
+    "spotCategoryRange": {  
+        "type": "property",  
+        "value": [  
+            "F",  
+            "G"  
         ]  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    },  
+    "validFrom": {  
+        "type": "DateTime",  
+        "value": "2021-01-01T17:21:20Z"  
+    },  
+    "validThrough": {  
+        "type": "DateTime",  
+        "value": "2021-02-10T17:21:20Z"  
+    },  
+    "wintering": {  
+        "type": "Property",  
+        "value": {  
+            "day": 27.0,  
+            "week": 185.0,  
+            "month": 775.0  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### BoatPlacesPricing NGSI-LD normalizzato Esempio  
-Ecco un esempio di BoatPlacesPricing in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di BoatPlacesPricing in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
-  "type": "BoatPlacePricing",  
-  "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
-  "alternateName": "Riviera Port - Pricing of the Places by Categories",  
-  "description": "Pricing of the Places by Categories",  
-  "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
-  "areaServed": "Riviera Port",  
-  "dateLastReported": "2020-03-17T08:45:00Z",  
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
-  "spotCategoryRange": [  
-    "F",  
-    "G"  
-  ],  
-  "minLength": 7,  
-  "maxLength": 7.99,  
-  "maxWidth": 2.8,  
-  "maxDraft": 2.55,  
-  "validFrom": "2021-01-01T17:21:20Z",  
-  "validThrough": "2021-02-10T17:21:20Z",  
-  "period": "season",  
-  "passage": {  
-    "day": 29.45,  
-    "week": 200.15,  
-    "month": 821.2  
-  },  
-  "resident": {  
-    "month": 760.41,  
-    "annual": 9125.0  
-  },  
-  "wintering": {  
-    "day": 27.0,  
-    "week": 185.0,  
-    "month": 775.0  
-  },  
-  "fairing": {  
-    "day": 17.3,  
-    "week": 87.0,  
-    "month": 260.9  
-  },  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          100,  
-          0  
-        ],  
-        [  
-          101,  
-          0  
-        ],  
-        [  
-          101,  
-          1  
-        ],  
-        [  
-          100,  
-          1  
-        ],  
-        [  
-          100,  
-          0  
+    "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",  
+    "type": "BoatPlacePricing",  
+    "alternateName": "Riviera Port - Pricing of the Places by Categories",  
+    "areaServed": "Riviera Port",  
+    "dateLastReported": "2020-03-17T08:45:00Z",  
+    "description": "Pricing of the Places by Categories",  
+    "fairing": {  
+        "day": 17.3,  
+        "week": 87.0,  
+        "month": 260.9  
+    },  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    100,  
+                    0  
+                ],  
+                [  
+                    101,  
+                    0  
+                ],  
+                [  
+                    101,  
+                    1  
+                ],  
+                [  
+                    100,  
+                    1  
+                ],  
+                [  
+                    100,  
+                    0  
+                ]  
+            ]  
         ]  
-      ]  
+    },  
+    "maxDraft": 2.55,  
+    "maxLength": 7.99,  
+    "maxWidth": 2.8,  
+    "minLength": 7,  
+    "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
+    "passage": {  
+        "day": 29.45,  
+        "week": 200.15,  
+        "month": 821.2  
+    },  
+    "period": "season",  
+    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
+    "resident": {  
+        "month": 760.41,  
+        "annual": 9125.0  
+    },  
+    "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
+    "spotCategoryRange": [  
+        "F",  
+        "G"  
+    ],  
+    "validFrom": "2021-01-01T17:21:20Z",  
+    "validThrough": "2021-02-10T17:21:20Z",  
+    "wintering": {  
+        "day": 27.0,  
+        "week": 185.0,  
+        "month": 775.0  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
