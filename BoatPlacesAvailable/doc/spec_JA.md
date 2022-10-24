@@ -1,20 +1,35 @@
-エンティティBoatPlacesAvailable  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティBoatPlacesAvailable  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatPlacesAvailable/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**データモデルの目的は、港内のボートのための係留リングの可用性に関する情報をカテゴリー別に提供することである。受信した情報はプレジャーボートのみに関するもので、商業用や旅客輸送用のボートは含まれていない。ボートのスポットカテゴリに関する情報は、ISO 8666規格から取得している。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**このデータモデルの目的は、港に停泊しているボートの係留リングの可用性に関する情報をカテゴリー別に提供することである。受け取った情報はプレジャーボートのみに関するもので、商業用ボートや旅客輸送用ボートは除外されている。ボートのスポットカテゴリに関する情報は、ISO8666規格から引用されている。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `availableSpotNumber`: このカテゴリのポートで利用可能な場所の数  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: この観測の日付と時刻をISO8601 UTC形式で表したもの。特定の時間の瞬間、またはISO8601のインターバルで表すことができます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxDraft`: 港にアクセスするために許される最大の喫水。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR**はメートルを表します。  - `maxLength`: ハーバーへのアクセスに許される最大の長さ。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**MTR**はメートルを表します。  - `maxWidth`: ハーバーにアクセスするために許される最大の幅。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MTR**はメートルを表します。  - `minLength`: ハーバーへのアクセスに許される最小の長さ。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**MTR**はメートルを表します。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refPointOfInterest`: その要素が関係しているポイントオブインタレスト  - `refSeaPort`: に属するポートです。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spotCategoryRange`: カテゴリの低いものから高いものへとリストアップします。リストアップされた項目の組み合わせです。Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'  - `totalCapacitySpotNumber`: この範囲のポートのスポットの総容量  - `type`: NGSI エンティティタイプ。それはBoatPlaceAvailableでなければならない。    
-必須項目  
-- `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`    
-Boat Authorizedのリポジトリを設計する方法 利用可能な場所に関する情報」でカテゴリー別（A～Z17）に異なる場所を記述するためには、レコードを書く際にリストの使用が必要となります。ポートの設定に応じて、`spotCategoryRange`でレコードが作成され、ある時点で残っているスペースの数が決定されます。2つのシナリオが考えられます。 シナリオ1.1つのカテゴリーに対する長さの範囲の定義 .`spotCategoryRange` = ["F"], Boats accepted. 長さ7.00～7.49、最大幅=< 2.70."F" 長さ7.00～7.49 / 最大幅 =< 2.70 シナリオ2.連続したカテゴリーによる長さの範囲の定義。`spotCategoryRange` = ["F", "G"], Boats accepted. 長さ7.00から7.99、最大幅=< 2.80.「F "は長さが7.00から7.49、最大幅が2.70、"G "は長さが7.50から7.99、最大幅が2.80となる。  
-このデータモデルに関する追加情報 このデータモデルは、以下のデータモデルと一緒に使用することができます。- SeaPort は、港内の許可された Boat に関する情報を港に提供する。  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `availableSpotNumber[number]`: このカテゴリの港の空席数  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: ISO8601 UTCフォーマットでのこの観測の日付と時間。これは特定の時間の瞬間かISO8601のインターバルで表すことができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxDraft[number]`: 港にアクセスするために許容される最大喫水。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/depth](https://schema.org/depth)- `maxLength[number]`: 港にアクセスするために許される最大長。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/length](https://schema.org/length)- `maxWidth[number]`: ハーバーにアクセスするために許容される最大幅。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられます。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: ハーバーにアクセスするために許される最小の長さ。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/length](https://schema.org/length)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refPointOfInterest[string]`: 要素が関係するPoint of Interest  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[string]`: に属するポート  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spotCategoryRange[array]`: カテゴリが低いものから高いものへリストアップします。リストアップされた項目の組み合わせ。Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `totalCapacitySpotNumber[number]`: この範囲のポート内のスポットの合計容量  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI Entity タイプ。BoatPlaceAvailable である必要があります。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `availableSpotNumber`  - `dateObserved`  - `id`  - `location`  - `refSeaPort`  - `spotCategoryRange`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Boatのリポジトリを設計する方法 Authorized 利用可能な場所に関する情報のセクションで、カテゴリ(AからZ17)ごとに利用可能な異なる場所を記述するために、レコードを書くときにリストを使用する必要があります。ポートの設定によっては、`spotCategoryRange`によって、ある時点の残りスペース数を決定するためのレコードが作成されます。2つのシナリオが考えられる シナリオ1.1つのカテゴリでの長さ範囲の定義 .`spotCategoryRange` = ["F"], ボート可。長さ 7.00 から 7.49 と最大幅 =< 2.70."F" length 7.00 to 7.49 / max width =< 2.70 シナリオ2.連続したカテゴリーを持つ長さ範囲の定義。スポットカテゴリーレンジ` = ["F", "G"], ボート可、長さ 7.00 から 7.99 および最大幅 =< 2.80.「F "はmaxLengthが7.00から7.49、maxWidthが2.70 "G "はmaxLengthが7.50から7.99、maxWidthが2.80  
+このデータモデルに関する補足説明 以下のデータモデルと組み合わせて使用することができる。- SeaPort は、港で許可されたボートに関する情報を港に提供するために使用される。  
 このデータモデルは、データモデル BoatPlacesPricing を補完するものである。  
-データリポジトリ（ISO 8666規格） カテゴリー 長さ 最大 幅 最大 A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99 6.00 u 28.99 7.00 v 33.99 8.00 w 38.99 9.00 x 43.99 10.00 y 48.99 11.00 z 53.99 12.00 z01 58.99 13.00 z02 64.99 14.00 z03 71.99 15.00 z04 78.99 16.00 z05 85.99 17.00 z06 92.99 18.00 z07 99.99 19.00 z08 106.99 20.00 z09 113.99 21.00 z10 120.99 22.00 z11 127.99 23.00 z12 134.99 24.00 z13 142.99 25.00 z14 150.99 26.00 z15 158.99 27.00 z16 166.99 28.00 z17 174.99 29.00  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+Data repository (ISO 8666 standard) Categorie Length Max Width Max A 4.99 2.00 B 5.49 2.15 C 5.99 2.30 D 6.49 2.45 E 6.99 2.60 F 7.49 2.80 G 7.99 2.80 H 8.49 2.95 I 8.99 3.10 J 9.49 3.25 K 9.99 3.40 L 10.49 3.55 M 10.99 3.70 N 11.49 3.85 O 11.99 4.00 P 12.99 4.30 Q 13.99 4.60 R 15.99 4.90 S 17.99 5.20 T1 20.99 5.60 T2 23.99の6.99 6.00 u 28.99 7.00 v 33.99 8.00 w 38.99 9.00 x 43.99 10.00 y 48.99 11.00 z 53.99 12.00 z01 58.99 13.00 z02 64.99 14.00 z03 71.99 15.00 z04 78.99 16.00 z05 85.99 17.00 z06 92.99 18.00 Z07 99.99 19.00 Z08 106.99 20.00 Z09 113.99 21.00 Z10 120.99 22.00 Z11 127.99 23.00 Z12 134.99 24.00 Z13 142.99 25.00 Z14 150.99 26.00 Z15 158.99 27.00 Z16166.99 28.00 Z17 174.99 29.00  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BoatPlacesAvailable:    
@@ -429,9 +444,14 @@ BoatPlacesAvailable:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### BoatPlacesAvailable NGSI-v2のキーバリューの例。  
-BoatPlacesAvailableをJSON-LD形式のkey-valuesで表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### BoatPlacesAvailable NGSI-v2 key-value 例．  
+以下は、BoatPlacesAvailableをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
@@ -462,8 +482,10 @@ BoatPlacesAvailable:
   }  
 }  
 ```  
-#### BoatPlacesAvailable NGSI-v2で正規化された例。  
-ここでは、正規化されたJSON-LD形式のBoatPlacesAvailableの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### BoatPlacesAvailable NGSI-v2 正規化例  
+以下は、BoatPlacesAvailableをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
@@ -545,126 +567,138 @@ BoatPlacesAvailable:
   }  
 }  
 ```  
-#### BoatPlacesAvailable NGSI-LDのキーバリューの例。  
-BoatPlacesAvailableをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### BoatPlacesAvailable NGSI-LD key-value 例．  
+BoatPlacesAvailableをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-  "type": "BoatPlaceAvailable",  
-  "name": {  
-    "type": "Property",  
-    "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Riviera Port - Available places"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Availability places"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Riviera Port"  
-  },  
-  "dateObserved": {  
-    "type": "DateTime",  
-    "value": "2020-03-17T08:45:00Z",  
-    "metadata": {  
-      "TimeInstant": {  
-        "type": "Text",  
-        "value": "2020-03-17T08:45:00Z"  
-      }  
-    }  
-  },  
-  "refSeaPort": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
-  },  
-  "spotCategoryRange": {  
-    "type": "property",  
-    "value": [  
-      "F",  
-      "G"  
+    "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+    "type": "BoatPlaceAvailable",  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Riviera Port - Available places"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Riviera Port"  
+    },  
+    "availableSpotNumber": {  
+        "type": "Property",  
+        "value": 3  
+    },  
+    "dateObserved": {  
+        "type": "DateTime",  
+        "value": "2020-03-17T08:45:00Z",  
+        "metadata": {  
+            "TimeInstant": {  
+                "type": "Text",  
+                "value": "2020-03-17T08:45:00Z"  
+            }  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Availability places"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                123,  
+                45  
+            ]  
+        }  
+    },  
+    "maxDraft": {  
+        "type": "Property",  
+        "value": 2.55  
+    },  
+    "maxLength": {  
+        "type": "Property",  
+        "value": 7.99  
+    },  
+    "maxWidth": {  
+        "type": "Property",  
+        "value": 2.8  
+    },  
+    "minLength": {  
+        "type": "Property",  
+        "value": 7  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"  
+    },  
+    "refSeaPort": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"  
+    },  
+    "spotCategoryRange": {  
+        "type": "property",  
+        "value": [  
+            "F",  
+            "G"  
+        ]  
+    },  
+    "totalCapacitySpotNumber": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "minLength": {  
-    "type": "Property",  
-    "value": 7  
-  },  
-  "maxLength": {  
-    "type": "Property",  
-    "value": 7.99  
-  },  
-  "maxWidth": {  
-    "type": "Property",  
-    "value": 2.8  
-  },  
-  "maxDraft": {  
-    "type": "Property",  
-    "value": 2.55  
-  },  
-  "totalCapacitySpotNumber": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "availableSpotNumber": {  
-    "type": "Property",  
-    "value": 3  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        123,  
-        45  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### BoatPlacesAvailable NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のBoatPlacesAvailableの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### BoatPlacesAvailable NGSI-LD 正規化例  
+以下は、BoatPlacesAvailableをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-  "type": "BoatPlaceAvailable",  
-  "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
-  "alternateName": "Riviera Port - Available places",  
-  "description": "Availability places",  
-  "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
-  "areaServed": "Riviera Port",  
-  "dateObserved": "2020-03-17T08:45:00Z",  
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
-  "spotCategoryRange": [  
-    "F",  
-    "G"  
-  ],  
-  "minLength": 7,  
-  "maxLength": 7.99,  
-  "maxWidth": 2.8,  
-  "maxDraft": 2.55,  
-  "totalCapacitySpotNumber": 10,  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      123,  
-      45  
+    "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+    "type": "BoatPlaceAvailable",  
+    "alternateName": "Riviera Port - Available places",  
+    "areaServed": "Riviera Port",  
+    "dateObserved": "2020-03-17T08:45:00Z",  
+    "description": "Availability places",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            123,  
+            45  
+        ]  
+    },  
+    "maxDraft": 2.55,  
+    "maxLength": 7.99,  
+    "maxWidth": 2.8,  
+    "minLength": 7,  
+    "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",  
+    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
+    "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",  
+    "spotCategoryRange": [  
+        "F",  
+        "G"  
+    ],  
+    "totalCapacitySpotNumber": 10,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
