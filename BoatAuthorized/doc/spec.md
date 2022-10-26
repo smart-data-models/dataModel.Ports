@@ -1,21 +1,34 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entity: BoatAuthorized  
-======================  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.**  
 version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `boatSubType`: Sub Type for a boatType. A combination of the elements. Enum:'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, cruise, cruiser, destroyer, dhow, divingVessel, djong, dredger, drifter, drillRig, factoryShip, ferry, fireBoat, fisheriesResearchVessel, flagshipBoat, floatingProductionStorageUnit, floatingStorageUnit, fluyt, frigate, gabare, galleon, galley, gondola, harbourFerry, helicopterCarrier, highSpeedVessel, houseBoat, hovercraft, iceBreakerShip, jetSki, junk, koch, lifeBoat, lightShip, liner, lineVessel, LiquefiedGasCarrier, littoralCombatShip, livestockCarrier, lngCarrier, longLiner, lpgCarrier, mineSweeping, monoHull, mooringBoat, multipurposeVessel, oceanographicBoat, other, paddleSteamer, pilotBoat, pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'  - `boatType`: A unique value of the list. Enum:'cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateLastReported`: Last time data were gathered  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxDraft`: Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  - `maxLength`: Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  - `maxTonnage`: Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric  - `maxWidth`: Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  - `minLength`: Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  - `name`: The name of this item.  - `openingHoursSpecification`: A structured value providing information about the opening hours of a place or a certain service inside a place  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refPointOfInterest`: Point of Interest that the element has relation to  - `refSeaPort`: Port that belongs to  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: It has to be BoatAuthorized. NGSI Entity type    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatSubType[array]`: Sub Type for a boatType. A combination of the elements. Enum:'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, cruise, cruiser, destroyer, dhow, divingVessel, djong, dredger, drifter, drillRig, factoryShip, ferry, fireBoat, fisheriesResearchVessel, flagshipBoat, floatingProductionStorageUnit, floatingStorageUnit, fluyt, frigate, gabare, galleon, galley, gondola, harbourFerry, helicopterCarrier, highSpeedVessel, houseBoat, hovercraft, iceBreakerShip, jetSki, junk, koch, lifeBoat, lightShip, liner, lineVessel, LiquefiedGasCarrier, littoralCombatShip, livestockCarrier, lngCarrier, longLiner, lpgCarrier, mineSweeping, monoHull, mooringBoat, multipurposeVessel, oceanographicBoat, other, paddleSteamer, pilotBoat, pinisi, pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatType[array]`: A unique value of the list. Enum:'cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateLastReported[string]`: Last time data were gathered  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `maxDraft[number]`: Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  . Model: [https://schema.org/depth](https://schema.org/depth)- `maxLength[number]`: Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  . Model: [https://schema.org/length](https://schema.org/length)- `maxTonnage[number]`: Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric  - `maxWidth[number]`: Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter  . Model: [https://schema.org/length](https://schema.org/length)- `name[string]`: The name of this item.  - `openingHoursSpecification[array]`: A structured value providing information about the opening hours of a place or a certain service inside a place  . Model: [https://schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refPointOfInterest[string]`: Point of Interest that the element has relation to  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[string]`: Port that belongs to  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type[string]`: It has to be BoatAuthorized. NGSI Entity type  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
-- `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `type`    
+- `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Method to design your repository of Boat Authorized* Create a record for each `boatType` authorized to circulate in the harbor with all corresponding `BoatSubType`. - record 1 - `id` i.e.  "BoatAuthorized:MNCA-NCE-BA-001-yatching" - "refSeapPortName` i.e. "MyPort" - `boatType` i.e. "yatching" - `boatSubType` i.e. [ "zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ] - record 2 - "id" i.e.  "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.e.  "MyPort" - `boatType` i.e.  "passenger" - `boatSubType` i.e.  [ "cruise", "ferrie" ] - record 3 - "id" i.e.  "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.e.  "MyPort" - `boatType` i.e.  "passenger" - `boatSubType` i.e.  [ "factoryShip", "seiner","artisanVessels","trawler" ]  
 Rules about the date - section Information about the date and period of authorization* There are several scenarios possibles - **Case 1** Definition of a range starting on a specific date and ending without date binding. Allows to define a permanent authorization for example `dateObserved` i.e.  "2020-01-01T00:00:01Z" `dateObservedFrom` i.e. "2020-01-01T00:00:01Z" `dateObservedTo` "" - **Case 2** Definition of a range starting on a specific date and ending date. Allows to define a specific authorization for example for a boatshow or for a type of boat. `dateObserved` i.e.  "2020-10-10T00:00:01Z:2020-10-14T23:59:59Z" `dateObservedFrom` i.e. "2020-10-10T00:00:01Z" `dateObservedTo` i.e. "2020-10-14T23:59:59Z"  
 Additional Information about this Data Model* It can be used with the following data Model. - **SeaPort** to provide information to the port about authorized Boat in the port.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 BoatAuthorized:    
@@ -543,9 +556,14 @@ BoatAuthorized:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### BoatAuthorized NGSI-v2 key-values Example    
 Here is an example of a BoatAuthorized in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -638,8 +656,10 @@ BoatAuthorized:
   }  
 }  
 ```  
+</details>  
 #### BoatAuthorized NGSI-v2 normalized Example    
 Here is an example of a BoatAuthorized in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -735,8 +755,10 @@ BoatAuthorized:
   }  
 }  
 ```  
+</details>  
 #### BoatAuthorized NGSI-LD key-values Example    
 Here is an example of a BoatAuthorized in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -833,8 +855,10 @@ BoatAuthorized:
     ]  
 }  
 ```  
+</details>  
 #### BoatAuthorized NGSI-LD normalized Example    
 Here is an example of a BoatAuthorized in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
@@ -963,8 +987,17 @@ BoatAuthorized:
         "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
