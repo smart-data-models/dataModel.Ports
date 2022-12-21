@@ -1,0 +1,3 @@
+/* (Beta) Export of data model SeaportFacilities of the subject dataModel.Ports for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE SeaportFacilities_type AS ENUM ('SeaPortFacilities');
+CREATE TABLE SeaportFacilities (address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateLastReported timestamp, dateModified timestamp, description text, id text, location json, name text, openingHoursSpecification json, owner json, refDevice text, seeAlso json, source text, type SeaportFacilities_type);
