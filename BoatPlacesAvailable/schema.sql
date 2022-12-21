@@ -1,0 +1,3 @@
+/* (Beta) Export of data model BoatPlacesAvailable of the subject dataModel.Ports for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE BoatPlacesAvailable_type AS ENUM ('BoatPlaceAvailable');
+CREATE TABLE BoatPlacesAvailable (address json, alternateName text, areaServed text, availableSpotNumber text, dataProvider text, dateCreated timestamp, dateModified timestamp, dateObserved timestamp, description text, id text, location json, maxDraft text, maxLength text, maxWidth text, minLength text, name text, owner json, refPointOfInterest text, refSeaPort text, seeAlso json, source text, spotCategoryRange json, totalCapacitySpotNumber text, type BoatPlacesAvailable_type);
