@@ -1,5 +1,9 @@
 {
     "@context": {
+        "BoatAuthorized": "https://smartdatamodels.org/dataModel.Ports/BoatAuthorized",
+        "BoatPlacesAvailable": "https://smartdatamodels.org/dataModel.Ports/BoatPlacesAvailable",
+        "BoatPlacesPricing": "https://smartdatamodels.org/dataModel.Ports/BoatPlacesPricing",
+        "SeaportFacilities": "https://smartdatamodels.org/dataModel.Ports/SeaportFacilities",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
