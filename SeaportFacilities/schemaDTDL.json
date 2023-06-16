@@ -44,7 +44,7 @@
             "displayName": "dateLastReported",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat"
+            "comment": "Property. Model:'http://schema.org/DateTime'. A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat"
         },
         {
             "name": "dateModified",
@@ -61,6 +61,11 @@
             "@type": "Property",
             "schema": "string",
             "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
         },
         {
             "name": "name",
@@ -127,6 +132,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -137,38 +146,12 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         }
     ]
 }
