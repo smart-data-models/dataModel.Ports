@@ -55,7 +55,7 @@ SeaportFacilities:
       x-ngsi:
         type: Property
     dateLastReported:
-      description: A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat
+      description: 'Property. Model:''http://schema.org/DateTime''. A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat'
       format: date-time
       type: string
       x-ngsi:
@@ -322,7 +322,7 @@ SeaportFacilities:
         - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'
+      description: 'Relationship. Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'
       x-ngsi:
         type: Relationship
     seeAlso:
@@ -343,7 +343,7 @@ SeaportFacilities:
       x-ngsi:
         type: Property
     type:
-      description: It has to be SeaPortFacilities
+      description: Property. It has to be SeaPortFacilities
       enum:
         - SeaPortFacilities
       type: string
