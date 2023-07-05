@@ -126,7 +126,6 @@
         }
     },
     "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
     ]
 }
