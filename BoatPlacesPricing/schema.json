@@ -134,12 +134,12 @@
                 "validFrom": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. Start date and time of the pricing rules."
+                    "description": "Property. Model:'https://schema.org/DateTime'. Start date and time of the pricing rules"
                 },
                 "validThrough": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. End date and time of the pricing rules."
+                    "description": "Property. Model:'https://schema.org/DateTime'. End date and time of the pricing rules"
                 },
                 "period": {
                     "type": "string",
