@@ -1,90 +1,72 @@
 SeaportFacilities:
-
-  description: The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger  transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port.
-
+  description: 'The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger  transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port.'
   properties:
-
     address:
-
       description: The mailing address
-
       properties:
-
         addressCountry:
-          description: The country. For example, Spain
+          description: 'The country. For example, Spain'
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
-
         addressLocality:
-          description: The locality in which the street address is, and which is in the region
+          description: 'The locality in which the street address is, and which is in the region'
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
-
         addressRegion:
-          description: The region in which the locality is, and which is in the country
+          description: 'The region in which the locality is, and which is in the country'
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
-
         district:
-          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
           x-ngsi:
             type: Property
-
         postOfficeBoxNumber:
-          description: The post office box number for PO box addresses. For example, 03578
+          description: 'The post office box number for PO box addresses. For example, 03578'
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
-
         postalCode:
-          description: The postal code. For example, 24004
+          description: 'The postal code. For example, 24004'
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
             type: Property
-
         streetAddress:
           description: The street address
           type: string
           x-ngsi:
             model: https://schema.org/streetAddress
             type: Property
-
         streetNr:
           description: Number identifying a specific property on a public street
           type: string
           x-ngsi:
             type: Property
-
       type: object
-
       x-ngsi:
         model: https://schema.org/address
         type: Property
-
     alternateName:
       description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
-
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     authorizedPropulsion:
-      description: A Type of propulsion authorized to enter in the harbor. A combination of motor, sail, electric, oar, nuclear, lng, lpg, other
+      description: 'A Type of propulsion authorized to enter in the harbor. A combination of motor, sail, electric, oar, nuclear, lng, lpg, other'
       items:
         enum:
           - motor
@@ -100,9 +82,8 @@ SeaportFacilities:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     boatSupplyingServices:
-      description: Description of the complementary supplying services for the boat offered by professionals working on or near the harbor. A combination of guarding, fuelStation, fuelTankerTruck , drinkingWaterTankerTruck, provisioning, dryFairing, waterFairing, repair, expertise, gangways, liftingCranes, towing, wasteWaterPumping, boatConveying, boatTransfer, other
+      description: 'Description of the complementary supplying services for the boat offered by professionals working on or near the harbor. A combination of guarding, fuelStation, fuelTankerTruck , drinkingWaterTankerTruck, provisioning, dryFairing, waterFairing, repair, expertise, gangways, liftingCranes, towing, wasteWaterPumping, boatConveying, boatTransfer, other'
       items:
         enum:
           - boatConveying
@@ -126,410 +107,220 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     contactPoint:
       description: https://schema.org/ContactPoint
       type: object
       x-ngsi:
         type: Property
-
     contractingAuthority:
       description: Name of the contracting authority
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
     contractingCompany:
       description: The Contracting Company responsible of the management of the port
       type: string
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     currencyAccepted:
-
-      description: A combination of a list of active codes defined in the model [Norme ISO 4217](http://en.wikipedia.org/wiki/ISO_4217), [Crypto Currencies](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) , [Exchange Trading System](https://en.wikipedia.org/wiki/Local_exchange_trading_system
-
+      description: 'A combination of a list of active codes defined in the model [Norme ISO 4217](http://en.wikipedia.org/wiki/ISO_4217), [Crypto Currencies](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) , [Exchange Trading System](https://en.wikipedia.org/wiki/Local_exchange_trading_system'
       items:
-
         enum:
-
           - AUD
-
           - GBP
-
           - EUR
-
           - JPY
-
           - CHF
-
           - USD
-
           - AFN
-
           - ALL
-
           - DZD
-
           - AOA
-
           - ARS
-
           - AMD
-
           - AWG
-
           - AUD
-
           - ATS (EURO)
-
           - BEF (EURO)
-
           - AZN
-
           - BSD
-
           - BHD
-
           - BDT
-
           - BBD
-
           - BYR
-
           - BZD
-
           - BMD
-
           - BTN
-
           - BOB
-
           - BAM
-
           - BWP
-
           - BRL
-
           - GBP
-
           - BND
-
           - BGN
-
           - BIF
-
           - XOF
-
           - XAF
-
           - XPF
-
           - KHR
-
           - CAD
-
           - CVE
-
           - KYD
-
           - CLP
-
           - CNY
-
           - COP
-
           - KMF
-
           - CDF
-
           - CRC
-
           - HRK
-
           - CUC
-
           - CUP
-
           - CYP (EURO)
-
           - CZK
-
           - DKK
-
           - DJF
-
           - DOP
-
           - XCD
-
           - EGP
-
           - SVC
-
           - EEK (EURO)
-
           - ETB
-
           - EUR
-
           - FKP
-
           - FIM (EURO)
-
           - FJD
-
           - GMD
-
           - GEL
-
           - DMK (EURO)
-
           - GHS
-
           - GIP
-
           - GRD (EURO)
-
           - GTQ
-
           - GNF
-
           - GYD
-
           - HTG
-
           - HNL
-
           - HKD
-
           - HUF
-
           - ISK
-
           - INR
-
           - IDR
-
           - IRR
-
           - IQD
-
           - IED (EURO)
-
           - ILS
-
           - ITL (EURO)
-
           - JMD
-
           - JPY
-
           - JOD
-
           - KZT
-
           - KES
-
           - KWD
-
           - KGS
-
           - LAK
-
           - LVL (EURO)
-
           - LBP
-
           - LSL
-
           - LRD
-
           - LYD
-
           - LTL (EURO)
-
           - LUF (EURO)
-
           - MOP
-
           - MKD
-
           - MGA
-
           - MWK
-
           - MYR
-
           - MVR
-
           - MTL (EURO)
-
           - MRO
-
           - MUR
-
           - MXN
-
           - MDL
-
           - MNT
-
           - MAD
-
           - MZN
-
           - MMK
-
           - ANG
-
           - NAD
-
           - NPR
-
           - NLG (EURO)
-
           - NZD
-
           - NIO
-
           - NGN
-
           - KPW
-
           - NOK
-
           - OMR
-
           - PKR
-
           - PAB
-
           - PGK
-
           - PYG
-
           - PEN
-
           - PHP
-
           - PLN
-
           - PTE (EURO)
-
           - QAR
-
           - RON
-
           - RUB
-
           - RWF
-
           - WST
-
           - STD
-
           - SAR
-
           - RSD
-
           - SCR
-
           - SLL
-
           - SGD
-
           - SKK (EURO)
-
           - SIT (EURO)
-
           - SBD
-
           - SOS
-
           - ZAR
-
           - KRW
-
           - ESP (EURO)
-
           - LKR
-
           - SHP
-
           - SDG
-
           - SRD
-
           - SZL
-
           - SEK
-
           - CHF
-
           - SYP
-
           - TWD
-
           - TZS
-
           - THB
-
           - TOP
-
           - TTD
-
           - TND
-
           - TRY
-
           - TMM
-
           - USD
-
           - UGX
-
           - UAH
-
           - UYU
-
           - AED
-
           - VUV
-
           - VEB
-
           - VND
-
           - YER
-
           - ZMK
-
           - ZWD
-
         type: string
-
       type: array
-
       x-ngsi:
-        model: https://schema.org/currenciesAccepted, .Currency accepted for payment
+        model: 'https://schema.org/currenciesAccepted, .Currency accepted for payment'
         type: Property
-
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
       x-ngsi:
         type: Property
-
     dateCreated:
       description: Entity creation timestamp. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     dateLastReported:
       description: A timestamp which denotes the last time when a flow successfully reported data. The date and time of this Repository in ISO8601 UTCformat
       format: date-time
@@ -537,20 +328,17 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     dateModified:
       description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
       format: date-time
       type: string
       x-ngsi:
         type: Property
-
     description:
       description: A description of this item
       type: string
       x-ngsi:
         type: Property
-
     electricTransport:
       description: ' List of the different types of electric transport proposed by the city. A combination of electricCar, electricBycicle, electricMotorBike, electricScooter '
       items:
@@ -564,7 +352,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     endDate:
       description: The end date and time of the item (in ISO 8601 date format).
       format: date-time
@@ -572,7 +359,6 @@ SeaportFacilities:
       x-ngsi:
         model: https://schema.org/endDate
         type: Property
-
     facilities:
       description: 'Description of the proposed facilities on the harbor. A combination of : toilets, showers, laundry, telephone, dustbins, dumpsters, container, selectiveSortingWaste, electricTerminal, waterTerminal, indoorRoomReservation, wifi, other'
       items:
@@ -595,7 +381,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     id:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -613,13 +398,9 @@ SeaportFacilities:
       description: Unique identifier of the entity
       x-ngsi:
         type: Property
-
     location:
-
-      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
-
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-
         - description: Geojson reference to the item. Point
           properties:
             bbox:
@@ -643,7 +424,6 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
@@ -670,7 +450,6 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
@@ -699,7 +478,6 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
@@ -725,7 +503,6 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -754,7 +531,6 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
@@ -785,63 +561,55 @@ SeaportFacilities:
           type: object
           x-ngsi:
             type: GeoProperty
-
       x-ngsi:
         type: GeoProperty
-
     maxDraft:
-      description: A Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter
+      description: 'A Maximum draft allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
       minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: MTR
-
     maxTonnage:
-      description: Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric
+      description: 'Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric'
       minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: TNE
-
     maxWidth:
-      description: A Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter
+      description: 'A Maximum width allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
       minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: MTR
-
     maximumLength:
-      description: A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter
+      description: 'A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
       minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: MTR
-
     minimumLength:
-      description: A Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter
+      description: 'A Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
       minimum: 0
       type: number
       x-ngsi:
         model: http://schema.org/Number
         type: Property
         units: MTR
-
     name:
       description: The name of this item
       type: string
       x-ngsi:
         type: Property
-
     nearbyServices:
-      description: Description of the additional services on the geographical area on or near the harbor. A combination of :touristOffice, fittingsStores, travelAgency, exchangeOffice, medicalOffice, pharmacy, groceryStores, restaurants, presses, bar, shops, seaExcursions, cityTour, touristicExcursions, others
+      description: 'Description of the additional services on the geographical area on or near the harbor. A combination of :touristOffice, fittingsStores, travelAgency, exchangeOffice, medicalOffice, pharmacy, groceryStores, restaurants, presses, bar, shops, seaExcursions, cityTour, touristicExcursions, others'
       items:
         enum:
           - bar
@@ -864,7 +632,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     numberOfPlace:
       description: Total number of place in the harbor
       minimum: 0
@@ -872,29 +639,22 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/Number
         type: Property
-
     openingHours:
       description: 'The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas '','' separating each day. Day or time ranges are specified using a hyphen ''-''. Days are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. Times are specified using 24:00 format. For example, 3pm is specified as 15:00, 10am as 10:00. Here is an example: <time itemprop=''openingHours'' datetime=''Tu,Th 16:00-20:00''>Tuesdays and Thursdays 4-8pm</time>. If a business is open 7 days a week, then it can be specified as <time itemprop=''openingHours'' datetime=''Mo-Su''>Monday through Sunday, all day</time>'
       type: string
       x-ngsi:
         model: https://schema.org/openingHours
         type: Property
-
     openingHoursSpecification:
-
       description: A structured value providing information about the opening hours of a place or a certain service inside a place
-
       items:
-
         properties:
-
           closes:
-            description: " \tThe closing hour of the place or service on the given day(s) of the week"
+            description: ' 	The closing hour of the place or service on the given day(s) of the week'
             format: time
             type: string
             x-ngsi:
               type: Property
-
           dayOfWeek:
             anyOf:
               - description: Array of days of the week
@@ -923,66 +683,58 @@ SeaportFacilities:
                 type: string
                 x-ngsi:
                   type: Property
-            description: The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)
+            description: 'The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)'
             type: string
             x-ngsi:
               model: http://schema.org/dayOfWeek
               type: Property
-
           opens:
             description: The opening hour of the place or service on the given day(s) of the week
             format: time
             type: string
             x-ngsi:
               type: Property
-
           validFrom:
             anyOf:
-              - description: ''
+              - description: ""
                 format: date
                 type: string
                 x-ngsi:
                   model: http://schema.org/Date
                   type: Property
-              - description: ''
+              - description: ""
                 format: date-time
                 type: string
                 x-ngsi:
                   model: http://schema.org/DateTime
                   type: Property
-            description: The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format
+            description: 'The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format'
             x-ngsi:
               type: Property
-
           validThrough:
             anyOf:
-              - description: ''
+              - description: ""
                 format: date
                 type: string
                 x-ngsi:
                   model: http://schema.org/Date
                   type: Property
-              - description: ''
+              - description: ""
                 format: date-time
                 type: string
                 x-ngsi:
                   model: http://schema.org/DateTime
                   type: Property
-            description: The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format
+            description: 'The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format'
             type: string
             x-ngsi:
               type: Property
-
         type: object
-
       minItems: 1
-
       type: array
-
       x-ngsi:
         model: https://schema.org/openingHoursSpecification
         type: Property
-
     owner:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
@@ -1005,7 +757,6 @@ SeaportFacilities:
       type: array
       x-ngsi:
         type: Property
-
     paymentAccepted:
       description: 'Accepted payment. A combination of a list of active codes defined in the model : Cash, CreditCard, CryptoCurrency, other'
       items:
@@ -1019,7 +770,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     portServicesProvided:
       description: 'Description of the services provided directly by the harbor. A combination of : harborOffice, weather, customsServices, porters, boatRingRental, mooringAssistance, handlingAssistance, publicWifi, privateWifi, other'
       items:
@@ -1039,9 +789,8 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     refBoatAuthorized:
-      description: Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatAuthorized/doc/spec.md)
+      description: 'Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatAuthorized/doc/spec.md)'
       items:
         anyOf:
           - description: Identifier format of any NGSI entity
@@ -1062,9 +811,8 @@ SeaportFacilities:
       type: array
       x-ngsi:
         type: Relationship
-
     refBoatPlaceAvailable:
-      description: Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlaceAvailable/doc/spec.md)
+      description: 'Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlaceAvailable/doc/spec.md)'
       items:
         anyOf:
           - description: Identifier format of any NGSI entity
@@ -1086,9 +834,8 @@ SeaportFacilities:
       x-ngsi:
         model: https://schema.org/URL
         type: Property
-
     refBoatPlacePricing:
-      description: Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlacePricing/doc/spec.md)
+      description: 'Reference to a list of [Entity](https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlacePricing/doc/spec.md)'
       items:
         anyOf:
           - description: Identifier format of any NGSI entity
@@ -1110,7 +857,6 @@ SeaportFacilities:
       x-ngsi:
         model: https://schema.org/URL
         type: Relationship
-
     refDevice:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -1125,10 +871,9 @@ SeaportFacilities:
           type: string
           x-ngsi:
             type: Property
-      description: Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link
+      description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'
       x-ngsi:
         type: Relationship
-
     refPointOfInterest:
       anyOf:
         - description: Identifier format of any NGSI entity
@@ -1143,10 +888,9 @@ SeaportFacilities:
           type: string
           x-ngsi:
             type: Property
-      description: Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository
+      description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository'
       x-ngsi:
         type: Relationship
-
     rentalSaleServices:
       description: 'ADescription of services provided by professional sales or rental agencies on the geographical area on or near the harbor. A combination of : boatRental, boatSale, jetSkiRental, jetSkiSale, carRental, luxuryCarRental, vanRental, bikeRental, scooterRental, Caddie, palletTransport, other'
       items:
@@ -1168,9 +912,8 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     routeType:
-      description: List of the different types of urban transport Mode (Metro, Bus, Tram, ...) from the urban transport Mode GFTS standard [STOP](https://developers.google.com/transit/gtfs/reference/#stopstxt). A combination of values composed only of the attribute 'description' tram(0), metro(1), train(2), bus(3), ferry(4), cableTram(5), cableCar(6), funicular(7), trolleybus(11), monorail(12)
+      description: "List of the different types of urban transport Mode (Metro, Bus, Tram, ...) from the urban transport Mode GFTS standard [STOP](https://developers.google.com/transit/gtfs/reference/#stopstxt). A combination of values composed only of the attribute 'description' tram(0), metro(1), train(2), bus(3), ferry(4), cableTram(5), cableCar(6), funicular(7), trolleybus(11), monorail(12)"
       items:
         enum:
           - bus
@@ -1188,7 +931,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/Text
         type: Property
-
     seeAlso:
       description: list of uri pointing to additional resources about the item
       oneOf:
@@ -1201,13 +943,11 @@ SeaportFacilities:
           type: string
       x-ngsi:
         type: Property
-
     source:
-      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'
       type: string
       x-ngsi:
         type: Property
-
     startDate:
       description: The start date and time of the item (in ISO 8601 date format).
       format: date-time
@@ -1215,7 +955,6 @@ SeaportFacilities:
       x-ngsi:
         model: https://schema.org/startDate
         type: Property
-
     transportServices:
       description: 'Description of the services provided for dedicated transport and shuttle services. A combination of : parking, shuttlesToAirport, shuttlesToRailway, internalShuttles, taxis, heliport, other'
       items:
@@ -1232,7 +971,6 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     type:
       description: It has to be SeaPortFacilities
       enum:
@@ -1240,7 +978,6 @@ SeaportFacilities:
       type: string
       x-ngsi:
         type: Property
-
     typeOfPort:
       description: 'A Type of harbor. A combination of : marina, merchandise, cruise, ferry, passengers, yachting, fishing, military, river, other'
       items:
@@ -1260,31 +997,22 @@ SeaportFacilities:
       x-ngsi:
         model: http://schema.org/DateTime
         type: Property
-
     webSite:
       description: Link to the official website of the harbor for more information
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-
   required:
     - id
     - type
     - location
     - dateLastReported
     - typeOfPort
-
   type: object
-
-  x-derived-from: ''
-
-  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program
-
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/LICENSE.md
-
   x-model-schema: https://smart-data-models.github.io/dataModels.Ports/SeaPortFacilities/schema.json
-
-  x-model-tags: ''
-
+  x-model-tags: ""
   x-version: 0.0.1
