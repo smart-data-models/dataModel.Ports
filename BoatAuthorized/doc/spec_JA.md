@@ -1,32 +1,39 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-事業者BoatAuthorized  
-=================<!-- /10-Header -->  
+エンティティボート公認  
+===========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です。**このデータモデルは、ISO8666 の Boat Category に従って、港内で運航を許可されているボートの情報を提供することを目的としています。このリポジトリは、ボートのカテゴリのタイプ（プレジャー・クラフト、貿易、乗客、...）ごとに作成されます。各カテゴリーの種類には、オプションでサブタイプのカテゴリーのリストを関連付けることができます**。  
+グローバルな記述：**このデータモデルは、Boat Category の ISO 8666 規格に従って、港湾内で操業することを許可されたボートの情報を提供することを意図している。このリポジトリは、ボートのカテゴリのタイプ（プレジャーボート、貿易、旅客、...）ごとに作成される。各カテゴリの種類ごとに、カテゴリのオプションのサブタイプのリストを関連付けることができます。  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatSubType[array]`: boatType のサブタイプ。要素の組み合わせ。Enum'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier.Com, craserCarrier, craserCarrier, cog, cararrierCarry, cararry, carararanCarry, craserCarry, cararararry, cararararry, carararry, carararry, carararrier, cararararryクルーズ、クルーザー、駆逐艦、ダウ船、潜水艦、ドジョン、浚渫船、ドリフター、ドリルリグ、工場船、フェリー、消防艇、漁業調査船、旗艦船、浮遊生産貯蔵ユニット、浮遊貯蔵ユニット、フルート、フリゲート、ガバー、ガレオン、ガレー、ゴンドラ、ハーバーフェリー、ヘリコプターキャリア、高速船。ハウスボート、ホバークラフト、砕氷船、ジェットスキー、ジャンク、コッホ、ライフボート、ライトシップ、ライナー、ライン船、液化ガスキャリア、沿岸戦闘艦、家畜運搬船、LNGキャリア、ロングライナー、LPGキャリア、鉱山掃海、モノハル、係船、多目的船、海洋調査船、その他、パドルスティーマー、パイロットボート、ピニーシ。pipeLayer, productCarrier, productionPlatform, referCarrier, researchVessel, roroCarrier, sailboat, sailingShip, salvageOperation, seiner, speedBoat, submarineAttack, submarineBallisticMissile, submarineCruiseMissile, supplyShip, tanker, timberCarrier, trawler, trimaran, tugBoat, viking, yacht, zodiac'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatType[array]`: リストのユニークな値。Enum:'cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastReported[string]`: 前回データ収集時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxDraft[number]`: 港にアクセスするために許容される最大喫水。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/depth](https://schema.org/depth)- `maxLength[number]`: 港にアクセスするために許される最大長。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/length](https://schema.org/length)- `maxTonnage[number]`: 港への入港を許可された最大トン数。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**TNE**はTonne Metricを表す。  - `maxWidth[number]`: ハーバーにアクセスするために許容される最大幅。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられます。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: ハーバーにアクセスするために許される最小の長さ。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/length](https://schema.org/length)- `name[string]`: このアイテムの名称です。  - `openingHoursSpecification[array]`: ある場所の営業時間や、ある場所の中の特定のサービスに関する情報を提供する構造化された値  . Model: [https://schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refPointOfInterest[string]`: 要素が関係するPoint of Interest  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[string]`: に属するポート  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: BoatAuthorized である必要がある。NGSI エンティティタイプ  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatSubType[array]`: boatTypeのサブタイプ。要素の組み合わせ。列挙：'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier、クルーズ、巡洋艦、駆逐艦、ダウ船、潜水艦、ドジョン、浚渫船、ドリフター、ドリルリグ、工場船、フェリー、消防艇、漁業調査船、旗艦船、浮体式生産貯蔵ユニット、浮体式貯蔵ユニット、フリュイ、フリゲート、ガバレ、ガレオン船、ガレー船、ゴンドラ、港湾フェリー、ヘリコプター運搬船、高速船、ハウスボート、ホバークラフト、砕氷船、ジェットスキー、ジャンク、コッホ、ライフボート、軽船、定期船、ライン船、液化ガス運搬船、沿岸戦闘艦、家畜運搬船、LNG運搬船、ロングライナー、LPG運搬船、機雷掃海船、モノハル、係留船、多目的船、海洋観測船、その他、パドルスチーマー、パイロットボート、ピニシ、パイプレイヤー, プロダクトキャリア, プロダクションプラットフォーム, リファーキャリア, 調査船, ロロキャリア, ヨット, セーリング船, サルベージオペレーション, 船びき網, スピードボート, 潜水艦攻撃, 潜水艦弾道ミサイル, 潜水艦巡航ミサイル, サプライシップ, タンカー, 木材運搬船, トロール船, トリマラン, タグボート, バイキング, ヨット, ゾディアック'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatType[array]`: リストのユニークな値。Enum:'貨物, 漁業, 歴史的, 旅客, 専門家, タンカー, 戦争, ヨット'  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastReported[date-time]`: 前回のデータ収集  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `maxDraft[number]`: 港に入港できる最大喫水。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR** は Meter を表す。  . Model: [https://schema.org/depth](https://schema.org/depth)- `maxLength[number]`: 港へのアクセスに許される最大長。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR**はMeterを表す。  . Model: [https://schema.org/length](https://schema.org/length)- `maxTonnage[number]`: 港への入港を許可された最大トン数。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**TNE** はトン・メートルを表す。  - `maxWidth[number]`: 港へのアクセスに許される最大幅。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR** は Meter を表す。  . Model: [https://schema.org/width](https://schema.org/width)- `minLength[number]`: 港へのアクセスに許される最小の長さ。単位コード（テキスト）は、[UN/CEFACT 共通コード](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) を用いて与えられる。例えば、**MTR**はMeter（メートル）を表す。  . Model: [https://schema.org/length](https://schema.org/length)- `name[string]`: このアイテムの名前  - `openingHoursSpecification[array]`: 場所の営業時間や場所内の特定のサービスに関する情報を提供する構造化された値。  . Model: [https://schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `refPointOfInterest[uri]`: その要素が関係している注目点  . Model: [https://schema.org/URL](https://schema.org/URL)- `refSeaPort[uri]`: に属するポート  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: BoatAuthorizedでなければならない。NGSIエンティティタイプ  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `dateLastReported`  - `id`  - `location`  - `refSeaPort`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-ボートオーソライズドレポジトリの設計方法* 港で循環することを許可された`ボートタイプ`ごとに、対応するすべての`ボートサブタイプ`のレコードを作成します。- record 1 - `id` すなわち "BoatAuthorized:MNCA-NCE-BA-001-yatching" - "refSeapPortName` すなわち "MyPort" - `boatType` すなわち "yatching" - `boatSubType` すなわち "zodiac", "monphir", "monphir" - `boatSubType` すなわち "monphir"。[zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ] - レコード2 - "id" すなわち "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` すなわち.e. "MyPort" - `boatType` i.e. "passenger" - `boatSubType` i.e. [ "cruise", "ferrie" ] - レコード 3 - "id" i.e. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i. "MyPort" - `refSeapPortNeger' - i. "MNCA-BA-001-passenger" - 'MNCA-BCP" - `refSeapPortNeger' - 'MNCA-9".e. "MyPort" - `boatType` i.e. "passenger" - `boatSubType` i.e. ["factoryShip", "seiner", "artisanVessels", "trawler" ]である。  
-日付に関するルール - セクション 日付と認可の期間に関する情報* いくつかのシナリオが考えられます - **ケース1** 特定の日付から始まり、日付の拘束なしに終わる範囲を定義します。例えば、`dateObserved` すなわち "2020-01-01T00:00:01Z" `dateObservedFrom` すなわち "2020-01-01T00:00:01Z" `dateObservedTo` "" - **Case 2** 特定の日付から始まり、終了日までを定義することが可能です。ボートショーやボートの種類など、特定の認可を定義することができる。dateObserved` すなわち "2020-10-10T00:00:01Z:2020-10-14T23:59:59Z" `dateObservedFrom` すなわち "2020-10-10T00:00:01Z" `dateObservedTo` すなわち "2020-10-14T23:59:59Z".  
-このデータモデルに関する追加情報* 以下のデータモデルと一緒に使用することができます。- **SeaPort** 港で許可されたボートに関する情報を港に提供するために使用されます。  
+許可されたボートのリポジトリを設計する方法* 港で循環することを許可された `boatType` ごとに、対応するすべての `BoatSubType` のレコードを作成する。[zodiac", "monoHull", "catamaran", "yacht", "sailboat", "jetSki" ] - record 2 - "id" i.e. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.e. "MyPort" - `boatType` i. e. "passenger" - `boatSubType` i. e. [ "cruise", "ferrie" ] - レコード 3 - "id" i. e. "BoatAuthorized:MNCA-NCE-BA-001-passenger" - `refSeapPortName` i.すなわち "MyPort" - `boatType` すなわち "passenger" - `boatSubType` すなわち ["factoryShip", "seiner", "artisanVessels", "trawler" ]である。  
+日付に関するルール - セクション 権限の日付と期間に関する情報* いくつかのシナリオが考えられる - **ケース1** 特定の日付から始まり、日付の拘束なしに終わる範囲の定義。例えば、`dateObserved`すなわち "2020-01-01T00:00:01Z" `dateObservedFrom` すなわち "2020-01-01T00:00:01Z" `dateObservedTo` "" - **ケース2** 特定の日付から開始し、終了する日付までの範囲の定義。ボートショーやボートの種類など、特定の認可を定義することができる。dateObserved` 例："2020-10-10T00:00:01Z:2020-10-14T23:59:59Z" `dateObservedFrom` 例："2020-10-10T00:00:01Z" `dateObservedTo` 例："2020-10-14T23:59:59Z" このデータモデルには、以下の情報が含まれます。  
+このデータモデルに関する追加情報* 以下のデータモデルと一緒に使用することができます。- SeaPort**は、港で許可されたボートに関する情報を港に提供する。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -35,37 +42,65 @@ BoatAuthorized:
   description: 'The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.'    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -194,51 +229,55 @@ BoatAuthorized:
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateLastReported:    
-      description: 'Last time data were gathered'    
+      description: Last time data were gathered    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &boatauthorized_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -257,9 +296,11 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -281,9 +322,11 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -307,9 +350,11 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -330,9 +375,11 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -356,9 +403,11 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -384,8 +433,10 @@ BoatAuthorized:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxDraft:    
@@ -428,21 +479,23 @@ BoatAuthorized:
         type: Property    
         units: meters    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     openingHoursSpecification:    
-      description: 'A structured value providing information about the opening hours of a place or a certain service inside a place'    
+      description: A structured value providing information about the opening hours of a place or a certain service inside a place    
       items:    
         properties:    
           closes:    
+            description: ' 	The closing hour of the place or service on the given day(s) of the week'    
             format: time    
-            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
+            x-ngsi:    
+              type: Property    
           dayOfWeek:    
             anyOf:    
-              - description: 'Property. Array of days of the week.'    
+              - description: Array of days of the week    
                 enum:    
                   - Monday    
                   - Tuesday    
@@ -453,7 +506,9 @@ BoatAuthorized:
                   - Sunday    
                   - PublicHolidays    
                 type: string    
-              - description: 'Property. Array of days of the week.'    
+                x-ngsi:    
+                  type: Property    
+              - description: Array of days of the week    
                 enum:    
                   - https://schema.org/Monday    
                   - https://schema.org/Tuesday    
@@ -464,31 +519,54 @@ BoatAuthorized:
                   - https://schema.org/Sunday    
                   - https://schema.org/PublicHolidays    
                 type: string    
-            description: 'Property. Model:''http://schema.org/dayOfWeek''. The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays).'    
+                x-ngsi:    
+                  type: Property    
+            description: 'The day of the week for which these opening hours are valid. URLs from GoodRelations (http://purl.org/goodrelations/v1) are used (for Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday plus a special entry for PublicHolidays)'    
             type: string    
+            x-ngsi:    
+              model: http://schema.org/dayOfWeek    
+              type: Property    
           opens:    
+            description: The opening hour of the place or service on the given day(s) of the week    
             format: time    
-            pattern: ^(2[0-3]|[01][0-9]):?([0-5][0-9]):?([0-5][0-9])(\.[0-9]*)?(Z|[+-](?:2[0-3]|[01][0-9])(?::?(?:[0-5][0-9]))?)$    
             type: string    
+            x-ngsi:    
+              type: Property    
           validFrom:    
             anyOf:    
-              - description: 'Property. Model:''http://schema.org/Date.'    
+              - description: ""    
                 format: date    
                 type: string    
-              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                x-ngsi:    
+                  model: http://schema.org/Date    
+                  type: Property    
+              - description: ""    
                 format: date-time    
                 type: string    
-            description: 'Property. The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
+                x-ngsi:    
+                  model: http://schema.org/DateTime    
+                  type: Property    
+            description: 'The date when the item becomes valid. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format'    
+            x-ngsi:    
+              type: Property    
           validThrough:    
             anyOf:    
-              - description: 'Property. Model:''http://schema.org/Date.'    
+              - description: ""    
                 format: date    
                 type: string    
-              - description: 'Property. Model:''http://schema.org/DateTime.'    
+                x-ngsi:    
+                  model: http://schema.org/Date    
+                  type: Property    
+              - description: ""    
                 format: date-time    
                 type: string    
-            description: 'Property. The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format.'    
+                x-ngsi:    
+                  model: http://schema.org/DateTime    
+                  type: Property    
+            description: 'The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours. A date value in the form CCYY-MM-DD or a combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in ISO 8601 date format'    
             type: string    
+            x-ngsi:    
+              type: Property    
         type: object    
       minItems: 1    
       type: array    
@@ -496,29 +574,43 @@ BoatAuthorized:
         model: https://schema.org/openingHoursSpecification    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *boatauthorized_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     refPointOfInterest:    
-      description: 'Point of Interest that the element has relation to'    
+      description: Point of Interest that the element has relation to    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Relationship    
     refSeaPort:    
-      description: 'Port that belongs to'    
+      description: Port that belongs to    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Relationship    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -530,12 +622,12 @@ BoatAuthorized:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'It has to be BoatAuthorized. NGSI Entity type'    
+      description: It has to be BoatAuthorized. NGSI Entity type    
       enum:    
         - BoatAuthorized    
       type: string    
@@ -549,7 +641,7 @@ BoatAuthorized:
     - refSeaPort    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatAuthorized/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Ports/BoatAuthorized/schema.json    
   x-model-tags: ""    
@@ -561,8 +653,8 @@ BoatAuthorized:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### BoatAuthorized NGSI-v2 key-value の例。  
-以下は、BoatAuthorizedをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### BoatAuthorized NGSI-v2 キー値の例  
+以下はBoatAuthorizedをJSON-LD形式でkey-valuesとした例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -658,7 +750,7 @@ BoatAuthorized:
 ```  
 </details>  
 #### BoatAuthorized NGSI-v2 正規化例  
-以下は、BoatAuthorized を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化されたJSON-LD形式のBoatAuthorizedの例である。これはNGSI-v2と互換性があり、オプションを使用しない場合、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -756,8 +848,8 @@ BoatAuthorized:
 }  
 ```  
 </details>  
-#### BoatAuthorized NGSI-LD key-value の例。  
-以下は、BoatAuthorizedをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### BoatAuthorized NGSI-LD キー値の例  
+BoatAuthorizedをJSON-LD形式でkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -850,14 +942,13 @@ BoatAuthorized:
     "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",  
     "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
 #### BoatAuthorized NGSI-LD 正規化例  
-以下は、BoatAuthorized を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD フォーマットの BoatAuthorized の例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -987,7 +1078,6 @@ BoatAuthorized:
         "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
 }  
@@ -996,7 +1086,7 @@ BoatAuthorized:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
