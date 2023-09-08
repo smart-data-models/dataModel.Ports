@@ -13,12 +13,21 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "authorizedPropulsion": "https://smartdatamodels.org/dataModel.Ports/authorizedPropulsion",
         "availableSpotNumber": "https://smartdatamodels.org/dataModel.Ports/availableSpotNumber",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "boatSubType": "https://smartdatamodels.org/dataModel.Ports/boatSubType",
         "boatSupplyingServices": "https://smartdatamodels.org/dataModel.Ports/boatSupplyingServices",
         "boatType": "https://smartdatamodels.org/dataModel.Ports/boatType",
+        "closes": "https://smartdatamodels.org/closes",
         "contactPoint": "https://smartdatamodels.org/contactPoint",
         "contractingAuthority": "https://smartdatamodels.org/dataModel.Ports/contractingAuthority",
         "contractingCompany": "https://smartdatamodels.org/dataModel.Ports/contractingCompany",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "currencyAccepted": "https://smartdatamodels.org/dataModel.Ports/currencyAccepted",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -26,6 +35,7 @@
         "dateModified": "https://smartdatamodels.org/dateModified",
         "dateObserved": "https://smartdatamodels.org/dateObserved",
         "day": "https://smartdatamodels.org/dataModel.Ports/day",
+        "dayOfWeek": "https://smartdatamodels.org/dayOfWeek",
         "description": "http://purl.org/dc/terms/description",
         "district": "https://smartdatamodels.org/district",
         "electricTransport": "https://smartdatamodels.org/dataModel.Ports/electricTransport",
@@ -48,6 +58,7 @@
         "numberOfPlace": "https://smartdatamodels.org/dataModel.Ports/numberOfPlace",
         "openingHours": "https://smartdatamodels.org/openingHours",
         "openingHoursSpecification": "https://smartdatamodels.org/openingHoursSpecification",
+        "opens": "https://smartdatamodels.org/opens",
         "owner": "https://smartdatamodels.org/owner",
         "passage": "https://smartdatamodels.org/dataModel.Ports/passage",
         "paymentAccepted": "https://smartdatamodels.org/dataModel.Ports/paymentAccepted",
@@ -74,8 +85,8 @@
         "transportServices": "https://smartdatamodels.org/dataModel.Ports/transportServices",
         "type": "@type",
         "typeOfPort": "https://smartdatamodels.org/dataModel.Ports/typeOfPort",
-        "validFrom": "https://smartdatamodels.org/dataModel.Ports/validFrom",
-        "validThrough": "https://smartdatamodels.org/dataModel.Ports/validThrough",
+        "validFrom": "https://smartdatamodels.org/validFrom",
+        "validThrough": "https://smartdatamodels.org/validThrough",
         "webSite": "https://smartdatamodels.org/dataModel.Ports/webSite",
         "week": "https://smartdatamodels.org/dataModel.Ports/week",
         "wintering": "https://smartdatamodels.org/dataModel.Ports/wintering"
