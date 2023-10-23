@@ -1,6 +1,6 @@
 {
     "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",
-    "type": "BoatPlaceAvailable",
+    "type": "BoatPlacesAvailable",
     "alternateName": {
         "type": "Property",
         "value": "Riviera Port - Available places"
