@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",
-  "type": "Feature",
+  "type": "BoatPlacesAvailable",
   "geometry": {
     "type": "Geoproperty",
     "value": {
