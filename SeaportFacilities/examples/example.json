@@ -61,7 +61,9 @@
   ],
   "contractingAuthority": "CCI",
   "contractingCompany": "Régie Autonome des ports",
-  "contactPoint": "Capitainerie",
+  "contactPoint": {
+    "name": "Capitainerie"
+  },
   "webSite": "https://riviera-ports.com/ports/port-de-nice",
   "typeOfPort": [
     "marina",
