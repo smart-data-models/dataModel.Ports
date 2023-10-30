@@ -40,7 +40,7 @@
 	},
 	"refBoatAuthorized": {
 		"type": "Relationship",
-		"Object": ["urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",
+		"value": ["urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",
@@ -52,7 +52,7 @@
 	},
 	"refBoatPlaceAvailable": {
 		"type": "Relationship",
-		"Object": ["urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",
+		"value": ["urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",
@@ -70,7 +70,7 @@
 	},
 	"refBoatPlacePricing": {
 		"type": "Relationship",
-		"Object": ["urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",
+		"value": ["urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",
