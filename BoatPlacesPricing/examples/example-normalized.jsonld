@@ -1,71 +1,140 @@
 {
-  "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
-  "type": "BoatPlacePricing",
-  "alternateName": "Riviera Port - Pricing of the Places by Categories",
-  "areaServed": "Riviera Port",
-  "dateLastReported": "2020-03-17T08:45:00Z",
-  "description": "Pricing of the Places by Categories",
-  "fairing": {
-    "day": 17.3,
-    "week": 87.0,
-    "month": 260.9
-  },
-  "location": {
-    "type": "Polygon",
-    "coordinates": [
-      [
-        [
-          100,
-          0
-        ],
-        [
-          101,
-          0
-        ],
-        [
-          101,
-          1
-        ],
-        [
-          100,
-          1
-        ],
-        [
-          100,
-          0
+    "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
+    "type": "BoatPlacePricing",
+    "alternateName": {
+        "type": "Property",
+        "value": "Riviera Port - Pricing of the Places by Categories"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Riviera Port"
+    },
+    "dateLastReported": {
+      "type": "Property",
+        "value": {
+          "@type": "DateTime",
+          "@value": "2020-03-17T08:45:00Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "Pricing of the Places by Categories"
+    },
+    "fairing": {
+        "type": "Property",
+        "value": {
+            "day": 17.3,
+            "week": 87.0,
+            "month": 260.9
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        100,
+                        0
+                    ],
+                    [
+                        101,
+                        0
+                    ],
+                    [
+                        101,
+                        1
+                    ],
+                    [
+                        100,
+                        1
+                    ],
+                    [
+                        100,
+                        0
+                    ]
+                ]
+            ]
+        }
+    },
+    "maxDraft": {
+        "type": "Property",
+        "value": 2.55
+    },
+    "maxLength": {
+        "type": "Property",
+        "value": 7.99
+    },
+    "maxWidth": {
+        "type": "Property",
+        "value": 2.8
+    },
+    "minLength": {
+        "type": "Property",
+        "value": 7
+    },
+    "name": {
+        "type": "Property",
+        "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"
+    },
+    "passage": {
+        "type": "Property",
+        "value": {
+            "day": 29.45,
+            "week": 200.15,
+            "month": 821.2
+        }
+    },
+    "period": {
+        "type": "Property",
+        "value": "season"
+    },
+    "refSeaPort": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
+    },
+    "resident": {
+        "type": "Property",
+        "value": {
+            "month": 760.41,
+            "annual": 9125.0
+        }
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"
+    },
+    "spotCategoryRange": {
+        "type": "Property",
+        "value": [
+            "F",
+            "G"
         ]
-      ]
+    },
+    "validFrom": {
+        "type": "Property",
+        "value": {
+          "@type": "DateTime",
+          "@value": "2021-02-10T17:21:20Z"
+        }
+    },
+    "validThrough": {
+        "type": "Property",
+        "value": {
+          "@type": "DateTime",
+          "@value": "2021-02-10T17:21:20Z"
+        }
+    },
+    "wintering": {
+        "type": "Property",
+        "value": {
+            "day": 27.0,
+            "week": 185.0,
+            "month": 775.0
+        }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
     ]
-  },
-  "maxDraft": 2.55,
-  "maxLength": 7.99,
-  "maxWidth": 2.8,
-  "minLength": 7,
-  "name": "Riviera-Port-NCE-SPAP-BPA-Range-FG",
-  "passage": {
-    "day": 29.45,
-    "week": 200.15,
-    "month": 821.2
-  },
-  "period": "season",
-  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
-  "resident": {
-    "month": 760.41,
-    "annual": 9125.0
-  },
-  "seeAlso": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019",
-  "spotCategoryRange": [
-    "F",
-    "G"
-  ],
-  "validFrom": "2021-01-01T17:21:20Z",
-  "validThrough": "2021-02-10T17:21:20Z",
-  "wintering": {
-    "day": 27.0,
-    "week": 185.0,
-    "month": 775.0
-  },
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
-  ]
 }
