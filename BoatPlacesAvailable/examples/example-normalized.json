@@ -2,72 +2,66 @@
   "id": "urn:ngsi-ld:BoatPlaceAvailable:BoatPlaceAvailable:MNCA-BPA-Range-FG",
   "type": "BoatPlacesAvailable",
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera Port - Available places"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Availability places"
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera Port"
   },
   "dateObserved": {
     "type": "DateTime",
     "value": "2020-03-17T08:45:00Z",
-    "metadata": {
-      "TimeInstant": {
-        "type": "Text",
-        "value": "2020-03-17T08:45:00Z"
-      }
-    }
   },
   "refSeaPort": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
+    "type": "Text",
+    "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
   },
   "spotCategoryRange": {
-    "type": "property",
+    "type": "StructuredValue",
     "value": [
       "F",
       "G"
     ]
   },
   "minLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 7
   },
   "maxLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 7.99
   },
   "maxWidth": {
-    "type": "Property",
+    "type": "Number",
     "value": 2.80
   },
   "maxDraft": {
-    "type": "Property",
+    "type": "Number",
     "value": 2.55
   },
   "totalCapacitySpotNumber": {
-    "type": "Property",
+    "type": "Number",
     "value": 10
   },
   "availableSpotNumber": {
-    "type": "Property",
+    "type": "Number",
     "value": 3
   },
   "location": {
-    "type": "Geoproperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
