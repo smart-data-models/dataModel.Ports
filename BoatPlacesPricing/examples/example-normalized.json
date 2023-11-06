@@ -2,23 +2,23 @@
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
   "type": "BoatPlacePricing",
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"
   },
   "alternateName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera Port - Pricing of the Places by Categories"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Pricing of the Places by Categories"
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://ccinicecotedazur/docs/tarifs-plaisance-yachting-ports-passage-2019"
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Riviera Port"
   },
   "dateLastReported": {
@@ -26,30 +26,30 @@
     "value": "2020-03-17T08:45:00Z"
   },
   "refSeaPort": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
   },
   "spotCategoryRange": {
-    "type": "property",
+    "type": "StructuredValue",
     "value": [
       "F",
       "G"
     ]
   },
   "minLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 7
   },
   "maxLength": {
-    "type": "Property",
+    "type": "Number",
     "value": 7.99
   },
   "maxWidth": {
-    "type": "Property",
+    "type": "Number",
     "value": 2.80
   },
   "maxDraft": {
-    "type": "Property",
+    "type": "Number",
     "value": 2.55
   },
   "validFrom": {
@@ -61,11 +61,11 @@
     "value": "2021-02-10T17:21:20Z"
   },
   "period": {
-    "type": "Property",
+    "type": "Text",
     "value": "season"
   },
   "passage": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "day": 29.45,
       "week": 200.15,
@@ -73,14 +73,14 @@
     }
   },
   "resident": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "month": 760.41,
       "annual": 9125.00
     }
   },
   "wintering": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "day": 27.00,
       "week": 185.00,
@@ -88,14 +88,14 @@
     }
   },
   "fairing": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "day": 17.30,
       "week": 87.00,
       "month": 260.90
     },
     "location": {
-      "type": "GeoProperty",
+      "type": "geo:json",
       "value": {
         "type": "Polygon",
         "coordinates": [
