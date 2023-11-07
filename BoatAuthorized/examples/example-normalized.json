@@ -27,7 +27,7 @@
   },
   "refSeaPort": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
+    "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
   },
   "refBoatType": {
     "type": "Text",
@@ -49,26 +49,32 @@
       {
         "dayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
         "opens": "07.00",
-        "closes": "20.00"
+        "closes": "20.00",
+        "validFrom": "-01-01",
+        "validThrough": "-31-12"
       },
       {
         "dayOfWeek": "Saturday",
         "opens": "08.30",
-        "closes": "21.00"
+        "closes": "21.00",
+        "validFrom": "-01-01",
+        "validThrough": "-31-12"
       },
       {
         "dayOfWeek": "Sunday",
         "opens": "8.30",
-        "closes": "20.00"
+        "closes": "20.00",
+        "validFrom": "-01-01",
+        "validThrough": "-31-12"
       },
       {
         "dayOfWeek": "PublicHolidays",
         "opens": "8.30",
-        "closes": "19.30"
+        "closes": "19.30",
+        "validFrom": "-01-01",
+        "validThrough": "-31-12"
       }
-    ],
-    "validFrom": "-01-01",
-    "validThrough": "-31-12"
+    ]
   },
   "maxTonnage": {
     "type": "Number",
