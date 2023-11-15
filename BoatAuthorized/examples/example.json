@@ -78,7 +78,7 @@
   "minLength": 3,
   "maxLength": 35,
   "maxWidth": 15,
-  "maxDraft": 6.00,
+  "maxDraft": 6.0,
   "dateLastReported": "2021-12-31T23:59:59",
   "location": {
     "type": "Point",
