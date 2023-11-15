@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
-  "type": "BoatPlacePricing",
+  "type": "BoatPlacesPricing",
   "name": {
     "type": "Text",
     "value": "Riviera-Port-NCE-SPAP-BPA-Range-FG"
@@ -46,7 +46,7 @@
   },
   "maxWidth": {
     "type": "Number",
-    "value": 2.80
+    "value": 2.8
   },
   "maxDraft": {
     "type": "Number",
@@ -69,60 +69,60 @@
     "value": {
       "day": 29.45,
       "week": 200.15,
-      "month": 821.20
+      "month": 821.2
     }
   },
   "resident": {
     "type": "StructuredValue",
     "value": {
       "month": 760.41,
-      "annual": 9125.00
+      "annual": 9125.0
     }
   },
   "wintering": {
     "type": "StructuredValue",
     "value": {
-      "day": 27.00,
-      "week": 185.00,
-      "month": 775.00
+      "day": 27.0,
+      "week": 185.0,
+      "month": 775.0
     }
   },
   "fairing": {
     "type": "StructuredValue",
     "value": {
-      "day": 17.30,
-      "week": 87.00,
-      "month": 260.90
-    },
-    "location": {
-      "type": "geo:json",
-      "value": {
-        "type": "Polygon",
-        "coordinates": [
+      "day": 17.3,
+      "week": 87.0,
+      "month": 260.9
+    }
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "coordinates": [
+        [
           [
-            [
-              100,
-              0
-            ],
-            [
-              101,
-              0
-            ],
-            [
-              101,
-              1
-            ],
-            [
-              100,
-              1
-            ],
-            [
-              100,
-              0
-            ]
+            100,
+            0
+          ],
+          [
+            101,
+            0
+          ],
+          [
+            101,
+            1
+          ],
+          [
+            100,
+            1
+          ],
+          [
+            100,
+            0
           ]
         ]
-      }
+      ],
+      "type": "Polygon"
     }
   }
 }
