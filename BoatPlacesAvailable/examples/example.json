@@ -14,7 +14,7 @@
   ],
   "minLength": 7,
   "maxLength": 7.99,
-  "maxWidth": 2.80,
+  "maxWidth": 2.8,
   "maxDraft": 2.55,
   "totalCapacitySpotNumber": 10,
   "availableSpotNumber": 3,
