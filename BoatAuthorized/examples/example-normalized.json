@@ -25,8 +25,12 @@
     "type": "DateTime",
     "value": "2020-01-01T00:00:01Z"
   },
+  "dateLastReported": {
+    "type": "DateTime",
+    "value": "2021-12-31T23:59:59"
+  },
   "refSeaPort": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
   },
   "refBoatType": {
@@ -34,7 +38,7 @@
     "value": "yatching"
   },
   "refBoatSubType": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "monoHull",
       "catamaran",
@@ -47,32 +51,60 @@
     "type": "StructuredValue",
     "value": [
       {
-        "dayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday",
-        "opens": "07.00",
-        "closes": "20.00",
-        "validFrom": "-01-01",
-        "validThrough": "-31-12"
+        "closes": "20:00:00",
+        "dayOfWeek": "Monday",
+        "opens": "07:00:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
       },
       {
+        "closes": "20:00:00",
+        "dayOfWeek": "Tuesday",
+        "opens": "07:00:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
+      },
+      {
+        "closes": "20:00:00",
+        "dayOfWeek": "Wednesday",
+        "opens": "07:00:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
+      },
+      {
+        "closes": "20:00:00",
+        "dayOfWeek": "Thursday",
+        "opens": "07:00:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
+      },
+      {
+        "closes": "20:00:00",
+        "dayOfWeek": "Friday",
+        "opens": "07:00:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
+      },
+      {
+        "closes": "21:00:00",
         "dayOfWeek": "Saturday",
-        "opens": "08.30",
-        "closes": "21.00",
-        "validFrom": "-01-01",
-        "validThrough": "-31-12"
+        "opens": "08:30:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
       },
       {
+        "closes": "20:00:00",
         "dayOfWeek": "Sunday",
-        "opens": "8.30",
-        "closes": "20.00",
-        "validFrom": "-01-01",
-        "validThrough": "-31-12"
+        "opens": "08:30:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
       },
       {
+        "closes": "19:30:00",
         "dayOfWeek": "PublicHolidays",
-        "opens": "8.30",
-        "closes": "19.30",
-        "validFrom": "-01-01",
-        "validThrough": "-31-12"
+        "opens": "08:30:00",
+        "validFrom": "2021-01-01T00:00:00",
+        "validThrough": "2021-12-31T23:59:59"
       }
     ]
   },
@@ -94,6 +126,16 @@
   },
   "maxDraft": {
     "type": "Number",
-    "value": 6.00
+    "value": 6.0
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "coordinates": [
+        23,
+        45
+      ],
+      "type": "Point"
+    }
   }
 }
