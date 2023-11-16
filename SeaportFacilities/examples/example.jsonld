@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",
-  "type": "SeaPort",
+  "type": "SeaPortFacilities",
   "name": "Riviera-Port-NCE-SP-001",
   "alternateName": "Riviera Port - Main harbor - Commerce & Passengers",
   "description": "Harbor Description and services provided",
@@ -8,7 +8,7 @@
   "location": {
     "type": "Point",
     "coordinates": [
-      43.664810,
+      43.66481,
       7.196545
     ]
   },
@@ -57,10 +57,13 @@
     "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"
   ],
   "owner": [
-    "Departement_06", "CCI06", "MNCA", "Ville_de_Nice"
+    "Departement_06",
+    "CCI06",
+    "MNCA",
+    "Ville_de_Nice"
   ],
   "contractingAuthority": "CCI",
-  "contractingCompany": "Régie Autonome des ports",
+  "contractingCompany": "R\u00e9gie Autonome des ports",
   "contactPoint": {
     "name": "Capitainerie"
   },
@@ -70,7 +73,7 @@
     "merchandise",
     "cruise",
     "ferry",
-    "yatching"
+    "yachting"
   ],
   "authorizedPropulsion": [
     "motor",
@@ -148,7 +151,7 @@
     "EUR",
     "USD"
   ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
-    ]
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
+  ]
 }
