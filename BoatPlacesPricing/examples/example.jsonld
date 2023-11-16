@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:BoatPlacePricing:BoatPlacePricing:MNCA-BPP-Range-FG",
-  "type": "BoatPlacePricing",
+  "type": "BoatPlacesPricing",
   "alternateName": "Riviera Port - Pricing of the Places by Categories",
   "areaServed": "Riviera Port",
   "dateLastReported": "2020-03-17T08:45:00Z",
