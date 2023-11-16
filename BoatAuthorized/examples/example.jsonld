@@ -1,93 +1,93 @@
 {
-    "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",
-    "type": "BoatAuthorized",
-    "alternateName": "Riviera Port - Autorized Boats in the port",
-    "areaServed": "Nice Port",
-    "dateLastReported": "2021-12-31T23:59:59",
-    "dateObserved": "2020-01-01T00:00:01Z",
-    "description": "List of Type and SubType of boats authorized to move and moor in the harbor",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            23,
-            45
-        ]
-    },
-    "maxDraft": 6.0,
-    "maxLength": 35,
-    "maxTonnage": 3855,
-    "maxWidth": 15,
-    "minLength": 3,
-    "name": "Riviera-Port-NCE-BA-001-yatching",
-    "openingHoursSpecification": [
-        {
-            "dayOfWeek": "Monday",
-            "opens": "07:00:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Tuesday",
-            "opens": "07:00:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Wednesday",
-            "opens": "07:00:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Thursday",
-            "opens": "07:00:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Friday",
-            "opens": "07:00:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Saturday",
-            "opens": "08:30:00",
-            "closes": "21:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "Sunday",
-            "opens": "08:30:00",
-            "closes": "20:00:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        },
-        {
-            "dayOfWeek": "PublicHolidays",
-            "opens": "08:30:00",
-            "closes": "19:30:00",
-            "validFrom": "2021-01-01T00:00:00",
-            "validThrough": "2021-12-31T23:59:59"
-        }
-    ],
-    "refBoatSubType": [
-        "monoHull",
-        "catamaran",
-        "yacht",
-        "sailboat",
-        "jetSki"
-    ],
-    "refBoatType": "yatching",
-    "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
-    "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
+  "id": "urn:ngsi-ld:BoatAuthorized:BoatAuthorized:MNCA-NCE-BA-001-yatching",
+  "type": "BoatAuthorized",
+  "alternateName": "Riviera Port - Autorized Boats in the port",
+  "areaServed": "Nice Port",
+  "dateLastReported": "2021-12-31T23:59:59",
+  "dateObserved": "2020-01-01T00:00:01Z",
+  "description": "List of Type and SubType of boats authorized to move and moor in the harbor",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      23,
+      45
     ]
+  },
+  "maxDraft": 6.0,
+  "maxLength": 35,
+  "maxTonnage": 3855,
+  "maxWidth": 15,
+  "minLength": 3,
+  "name": "Riviera-Port-NCE-BA-001-yatching",
+  "openingHoursSpecification": [
+    {
+      "dayOfWeek": "Monday",
+      "opens": "07:00:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "07:00:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "07:00:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "07:00:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "07:00:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "08:30:00",
+      "closes": "21:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "08:30:00",
+      "closes": "20:00:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    },
+    {
+      "dayOfWeek": "PublicHolidays",
+      "opens": "08:30:00",
+      "closes": "19:30:00",
+      "validFrom": "2021-01-01T00:00:00",
+      "validThrough": "2021-12-31T23:59:59"
+    }
+  ],
+  "refBoatSubType": [
+    "monoHull",
+    "catamaran",
+    "yacht",
+    "sailboat",
+    "jetSki"
+  ],
+  "refBoatType": "yatching",
+  "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
+  "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
+  ]
 }
