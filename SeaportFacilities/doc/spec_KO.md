@@ -1,29 +1,29 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-엔티티: 항구 시설  
-==========<!-- /10-Header -->  
+엔티티 SeaportFacilities  
+=====================<!-- /10-Header -->  
 <!-- 15-License -->  
 [오픈 라이선스](https://github.com/smart-data-models//dataModel.Ports/blob/master/SeaportFacilities/LICENSE.md)  
 [문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-글로벌 설명: **데이터 모델은 유람선, 상업 또는 여객 운송을 수용할 수 있는 항구에 대한 정보를 제공하기 위한 것입니다. 각 항구의 매개변수, 위치, 계류 능력, 항만에서 직접 또는 항만 근처에서 일하는 전문가가 제공하는 관련 무료 또는 유료 서비스를 나타낼 수 있습니다.  
-버전: 0.0.1  
+글로벌 설명: **이 데이터 모델은 유람선, 상업 또는 여객 운송을 수용할 수 있는 항구에 대한 정보를 제공하기 위한 것입니다. 각 항구의 매개변수, 위치, 계류 능력, 항구에서 직접 또는 항구 근처에서 일하는 전문가가 제공하는 관련 무료 또는 유료 서비스를 나타낼 수 있습니다.  
+버전: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 속성 목록  
 
 <sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.  
-- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예: 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역 내 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.    
 	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `authorizedPropulsion[array]`: 항구에 입항할 수 있도록 허가된 추진 유형입니다. 모터, 돛, 전기, 노, 원자력, LNG, LPG, 기타의 조합  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatSupplyingServices[array]`: 항구에서 또는 항구 근처에서 일하는 전문가가 제공하는 보트에 대한 보완적인 공급 서비스에 대한 설명입니다. 경비, 연료주유소, 연료탱커트럭, 식수탱커트럭, 급수, 드라이페어링, 워터페어링, 수리, 전문성, 통로, 리프팅크레인, 견인, 폐기물펌프, 보트운반, 보트운송, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `contactPoint[object]`: https://schema.org/ContactPoint  - `contractingAuthority[string]`: 계약 기관의 이름  . Model: [https://schema.org/Text](https://schema.org/Text)- `contractingCompany[string]`: 항만 관리를 담당하는 계약 회사  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `currencyAccepted[array]`: 모델에 정의된 활성 코드 목록의 조합 [Norme ISO 4217](http://en.wikipedia.org/wiki/ISO_4217), [암호화 통화](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) , [거래소 거래 시스템](https://en.wikipedia.org/wiki/Local_exchange_trading_system)  . Model: [https://schema.org/currenciesAccepted, .Currency accepted for payment](https://schema.org/currenciesAccepted, .Currency accepted for payment)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateLastReported[date-time]`: 흐름이 데이터를 성공적으로 보고한 마지막 시간을 나타내는 타임스탬프입니다. 이 리포지토리의 날짜 및 시간(ISO8601 UTC 형식)  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `electricTransport[array]`:  시에서 제안하는 다양한 유형의 전기 교통수단 목록입니다. 전기자동차, 전기자전거, 전기모터바이크, 전기스쿠터 조합  . Model: [http://schema.org/Text](http://schema.org/Text)- `endDate[date-time]`: 항목의 종료 날짜 및 시간(ISO 8601 날짜 형식)입니다.  . Model: [https://schema.org/endDate](https://schema.org/endDate)- `facilities[array]`: 항구에 제안된 시설에 대한 설명. 화장실, 샤워실, 세탁실, 전화, 쓰레기통, 쓰레기통, 컨테이너, 분리수거함, 전기단말기, 수도단말기, 실내예약, 와이파이, 기타의 조합  . Model: [http://schema.org/Text](http://schema.org/Text)- `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `maxDraft[number]`: 항구에 접근할 수 있는 최대 흘수입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maxTonnage[number]`: 항구에 접근할 수 있는 최대 톤수입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **TNE**는 톤 미터법을 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maxWidth[number]`: 항구에 접근할 수 있는 최대 폭입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maximumLength[number]`: 항구에 접근할 수 있는 최대 길이입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `minimumLength[number]`: 항구에 접근할 수 있는 최소 길이입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정합니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `name[string]`: 이 항목의 이름  - `nearbyServices[array]`: 항구 또는 항구 근처의 지리적 영역에 대한 추가 서비스에 대한 설명입니다. 관광안내소, 피팅점, 여행사, 환전소, 의료소, 약국, 식료품점, 레스토랑, 언론사, 바, 상점, 바다여행, 시티투어, 관광여행, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `numberOfPlace[number]`: 항구의 총 장소 수  . Model: [http://schema.org/Number](http://schema.org/Number)- `openingHours[string]`: 비즈니스의 일반적인 영업 시간입니다. 영업 시간은 일 단위로 시작하여 주 단위 시간 범위로 지정한 다음 일별 시간으로 지정할 수 있습니다. 여러 날을 쉼표 ''로 구분하여 나열할 수 있습니다. 일 또는 시간 범위는 하이픈 '-'를 사용하여 지정합니다. 요일은 다음 두 글자 조합을 사용하여 지정합니다: 월, 화, 수, 목, 금, 토, 일요일. 시간은 24:00 형식을 사용하여 지정합니다. 예를 들어 오후 3시는 15:00, 오전 10시는 10:00으로 지정합니다. 다음은 예시입니다: <time itemprop='openingHours' datetime='Tu,Th 16:00-20:00'>화요일 및 목요일 오후 4-8시</time>. 주 7일 영업하는 비즈니스의 경우 <time itemprop='openingHours' datetime='월~수'>월요일부터 일요일, 종일</time>으로 지정할 수 있습니다.  . Model: [https://schema.org/openingHours](https://schema.org/openingHours)- `openingHoursSpecification[array]`: 장소의 영업 시간 또는 장소 내 특정 서비스에 대한 정보를 제공하는 구조화된 값입니다.  . Model: [https://schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `paymentAccepted[array]`: 수락된 결제. 모델에 정의된 활성 코드 목록의 조합: 현금, 신용 카드, 암호화 통화, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `portServicesProvided[array]`: 항구에서 직접 제공하는 서비스에 대한 설명입니다. 항만 사무소, 날씨, 세관 서비스, 포터, 보트 대여, 계류 지원, 취급 지원, 공용 와이파이, 사설 와이파이, 기타의 조합  . Model: [http://schema.org/Text](http://schema.org/Text)- `refBoatAuthorized[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatAuthorized/doc/spec.md)  - `refBoatPlaceAvailable[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlaceAvailable/doc/spec.md)  . Model: [https://schema.org/URL](https://schema.org/URL)- `refBoatPlacePricing[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlacePricing/doc/spec.md)  . Model: [https://schema.org/URL](https://schema.org/URL)- `refDevice[*]`: 두 번째 링크로 사용되는 경우 메인 엔티티 [디바이스](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)에 대한 참조  - `refPointOfInterest[*]`: 리포지토리와 연결된 [관심 지점](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)에 대한 참조  - `rentalSaleServices[array]`: 항구 또는 항구 근처의 지리적 영역에서 전문 판매 또는 대여 기관이 제공하는 서비스에 대한 설명. 보트 렌탈, 보트 판매, 제트스키 렌탈, 제트스키 판매, 자동차 렌탈, 고급 자동차 렌탈, 밴 렌탈, 자전거 렌탈, 스쿠터 렌탈, 캐디, 팔레트 운송, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `routeType[array]`: 도시 교통 모드 GFTS 표준 [STOP](https://developers.google.com/transit/gtfs/reference/#stopstxt)의 다양한 도시 교통 모드 유형(지하철, 버스, 트램, ...)의 목록입니다. '설명' 속성으로만 구성된 값의 조합 트램(0), 지하철(1), 기차(2), 버스(3), 페리(4), 케이블트램(5), 케이블카(6), 푸니쿨라(7), 트롤리버스(11), 모노레일(12)  . Model: [http://schema.org/Text](http://schema.org/Text)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `startDate[date-time]`: 항목의 시작 날짜 및 시간(ISO 8601 날짜 형식)입니다.  . Model: [https://schema.org/startDate](https://schema.org/startDate)- `transportServices[array]`: 전용 교통편 및 셔틀 서비스를 위해 제공되는 서비스에 대한 설명입니다. 조합 : 주차, 공항행 셔틀, 철도행 셔틀, 내부 셔틀, 택시, 헬기장, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `type[string]`: 씨포트시설이어야 합니다.  - `typeOfPort[array]`: 항구의 한 종류. 조합: 선착장, 상품, 크루즈, 페리, 승객, 요트, 낚시, 군사, 강, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `webSite[string]`: 자세한 정보는 항구의 공식 웹사이트로 이동하세요.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `authorizedPropulsion[array]`: 항구에 입항할 수 있도록 허가된 추진 유형. 모터, 돛, 전기, 노, 원자력, LNG, LPG, 기타의 조합  . Model: [https://schema.org/Text](https://schema.org/Text)- `boatSupplyingServices[array]`: 항구에서 또는 항구 근처에서 일하는 전문가가 제공하는 보트에 대한 보완적인 공급 서비스에 대한 설명입니다. 경비, 연료주유소, 연료탱크트럭, 식수탱크트럭, 급수, 드라이페어, 물페어, 수리, 전문성, 통로, 리프팅크레인, 견인, 폐기물물펌프, 보트운반, 보트운송, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `contactPoint[object]`: https://schema.org/ContactPoint  - `contractingAuthority[string]`: 계약 기관의 이름  . Model: [https://schema.org/Text](https://schema.org/Text)- `contractingCompany[string]`: 항만 관리를 담당하는 계약 회사  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `currencyAccepted[array]`: 모델에 정의된 활성 코드 목록의 조합 [Norme ISO 4217](http://en.wikipedia.org/wiki/ISO_4217), [암호화 통화](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) , [거래소 거래 시스템](https://en.wikipedia.org/wiki/Local_exchange_trading_system)  . Model: [https://schema.org/currenciesAccepted, .Currency accepted for payment](https://schema.org/currenciesAccepted, .Currency accepted for payment)- `dataProvider[string]`: 조화 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateLastReported[date-time]`: 플로우가 데이터를 성공적으로 보고한 마지막 시간을 나타내는 타임스탬프입니다. 이 리포지토리의 날짜 및 시간(ISO8601 UTC 형식)  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `electricTransport[array]`:  시에서 제안한 다양한 유형의 전기 교통수단 목록입니다. 전기자동차, 전기자전거, 전기모터바이크, 전기스쿠터의 조합  . Model: [http://schema.org/Text](http://schema.org/Text)- `endDate[date-time]`: 항목의 종료 날짜 및 시간(ISO 8601 날짜 형식)입니다.  . Model: [https://schema.org/endDate](https://schema.org/endDate)- `facilities[array]`: 항구에서 제안된 시설에 대한 설명. 화장실, 샤워실, 세탁실, 전화, 쓰레기통, 쓰레기통, 컨테이너, 분리수거함, 전기단자, 수도단자, 실내예약, 와이파이, 기타의 조합  . Model: [http://schema.org/Text](http://schema.org/Text)- `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인스트링, 다각형, 멀티포인트, 멀티라인스트링, 멀티폴리곤일 수 있습니다.  - `maxDraft[number]`: 항구에 접근할 수 있는 최대 흘수입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maxLength[number]`: 항구에 접근할 수 있는 최대 길이입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maxTonnage[number]`: 항구 접근이 허가된 최대 톤수입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정됩니다. 예를 들어 **TNE**는 톤 미터법을 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `maxWidth[number]`: 항구에 접근할 수 있는 최대 폭입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정합니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `minLength[number]`: 항구에 접근할 수 있는 최소 길이입니다. 단위 코드(텍스트)는 [UN/CEFACT 공통 코드](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)를 사용하여 지정합니다. 예를 들어 **MTR**은 미터를 나타냅니다.  . Model: [http://schema.org/Number](http://schema.org/Number)- `name[string]`: 이 항목의 이름  - `nearbyServices[array]`: 항구 또는 항구 근처의 지리적 영역에 대한 추가 서비스에 대한 설명입니다. 여행사, 피팅점, 여행사, 환전소, 의료기관, 약국, 식료품점, 레스토랑, 언론사, 바, 상점, 바다여행, 시티투어, 관광여행, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `numberOfPlace[number]`: 항구의 총 장소 수  . Model: [http://schema.org/Number](http://schema.org/Number)- `openingHours[string]`: 비즈니스의 일반적인 영업 시간입니다. 영업 시간은 일 단위로 시작하여 주 단위 시간 범위로 지정한 다음 일 단위로 지정할 수 있습니다. 여러 날을 쉼표 ''로 구분하여 나열할 수 있으며, 각 날을 구분합니다. 요일 또는 시간 범위는 하이픈 '-'를 사용하여 지정합니다. 요일은 다음 두 글자 조합을 사용하여 지정합니다: 월, 화, 수, 목, 금, 토, 일요일. 시간은 24:00 형식을 사용하여 지정합니다. 예를 들어 오후 3시는 15:00, 오전 10시는 10:00으로 지정합니다. 다음은 예시입니다: <time itemprop='openingHours' datetime='Tu,Th 16:00-20:00'>화요일 및 목요일 오후 4-8시</time>. 주 7일 영업하는 비즈니스의 경우 <time itemprop='openingHours' datetime='월~수'>월요일~일요일, 하루 종일</time>으로 지정할 수 있습니다.  . Model: [https://schema.org/openingHours](https://schema.org/openingHours)- `openingHoursSpecification[array]`: 장소의 영업 시간 또는 장소 내 특정 서비스에 대한 정보를 제공하는 구조화된 값입니다.  . Model: [https://schema.org/openingHoursSpecification](https://schema.org/openingHoursSpecification)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `paymentAccepted[array]`: 수락된 결제입니다. 모델에 정의된 활성 코드 목록의 조합: 현금, 신용 카드, 암호화 통화, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `portServicesProvided[array]`: 항구에서 직접 제공하는 서비스에 대한 설명. 조합: 항구 사무실, 날씨, 세관 서비스, 포터, 보트 링 대여, 계류장 지원, 취급 지원, 공용 와이파이, 사설 와이파이, 기타  . Model: [http://schema.org/Text](http://schema.org/Text)- `refBoatAuthorized[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatAuthorized/doc/spec.md)  - `refBoatPlaceAvailable[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlaceAvailable/doc/spec.md)  . Model: [https://schema.org/URL](https://schema.org/URL)- `refBoatPlacePricing[array]`: 엔티티] 목록 참조(https://github.com/smart-data-models/dataModel.Port/blob/master/BoatPlacePricing/doc/spec.md)  . Model: [https://schema.org/URL](https://schema.org/URL)- `refDevice[*]`: 두 번째 링크로 사용되는 경우 메인 엔티티 [디바이스] 참조(https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)  - `refPointOfInterest[*]`: 리포지토리와 연결된 [관심 지점](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)에 대한 참조  - `rentalSaleServices[array]`: 항구 또는 항구 근처의 지리적 영역에서 전문 판매 또는 렌탈 대행사가 제공하는 서비스에 대한 설명. 보트 대여, 보트 판매, 제트스키 대여, 제트스키 판매, 자동차 대여, 고급 자동차 대여, 밴 대여, 자전거 대여, 스쿠터 대여, 캐디, 팔레트 운송, 기타의 조합  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `routeType[array]`: 도시 교통 모드 GFTS 표준 [STOP](https://developers.google.com/transit/gtfs/reference/#stopstxt)의 다양한 도시 교통 모드 유형(지하철, 버스, 트램, ...)의 목록입니다. '설명' 속성으로만 구성된 값의 조합 트램(0), 지하철(1), 기차(2), 버스(3), 페리(4), 케이블트램(5), 케이블카(6), 푸니쿨라(7), 트롤리버스(11), 모노레일(12).  . Model: [http://schema.org/Text](http://schema.org/Text)- `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 일련의 문자입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `startDate[date-time]`: 항목의 시작 날짜 및 시간(ISO 8601 날짜 형식)입니다.  . Model: [https://schema.org/startDate](https://schema.org/startDate)- `transportServices[array]`: 전용 교통편 및 셔틀 서비스에 대해 제공되는 서비스에 대한 설명입니다. 조합: 주차, 공항행 셔틀, 철도행 셔틀, 내부 셔틀, 택시, 헬기장, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `type[string]`: SeaPortFacilities여야 합니다.  - `typeOfPort[array]`: 항구의 한 종류. 조합: 선착장, 상품, 크루즈, 페리, 승객, 요트, 낚시, 군사, 강, 기타  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `webSite[string]`: 자세한 정보는 항구 공식 웹사이트로 이동하세요.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `dateLastReported`  - `id`  - `location`  - `type`  - `typeOfPort`  <!-- /35-RequiredProperties -->  
@@ -609,6 +609,14 @@ SeaportFacilities:
         model: http://schema.org/Number    
         type: Property    
         units: MTR    
+    maxLength:    
+      description: 'A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'    
+      minimum: 0    
+      type: number    
+      x-ngsi:    
+        model: http://schema.org/Number    
+        type: Property    
+        units: MTR    
     maxTonnage:    
       description: 'Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric'    
       minimum: 0    
@@ -625,15 +633,7 @@ SeaportFacilities:
         model: http://schema.org/Number    
         type: Property    
         units: MTR    
-    maximumLength:    
-      description: 'A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'    
-      minimum: 0    
-      type: number    
-      x-ngsi:    
-        model: http://schema.org/Number    
-        type: Property    
-        units: MTR    
-    minimumLength:    
+    minLength:    
       description: 'A Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'    
       minimum: 0    
       type: number    
@@ -1049,11 +1049,11 @@ SeaportFacilities:
     - typeOfPort    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModels.Ports/SeaPortFacilities/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -1062,12 +1062,12 @@ SeaportFacilities:
 <!-- 80-Examples -->  
 ## 페이로드 예시  
 #### SeaportFacilities NGSI-v2 키-값 예제  
-다음은 키 값으로 JSON-LD 형식의 SeaportFacilities의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+다음은 JSON-LD 형식의 SeaportFacilities를 키 값으로 사용하는 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
-  "type": "SeaPort",  
+  "type": "SeaPortFacilities",  
   "name": "Riviera-Port-NCE-SP-001",  
   "alternateName": "Riviera Port - Main harbor - Commerce & Passengers",  
   "description": "Harbor Description and services provided",  
@@ -1075,7 +1075,7 @@ SeaportFacilities:
   "location": {  
     "type": "Point",  
     "coordinates": [  
-      43.664810,  
+      43.66481,  
       7.196545  
     ]  
   },  
@@ -1124,18 +1124,23 @@ SeaportFacilities:
     "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"  
   ],  
   "owner": [  
-    "Departement_06", "CCI06", "MNCA", "Ville_de_Nice"  
+    "Departement_06",  
+    "CCI06",  
+    "MNCA",  
+    "Ville_de_Nice"  
   ],  
   "contractingAuthority": "CCI",  
-  "contractingCompany": "Régie Autonome des ports",  
-  "contactPoint": "Capitainerie",  
+  "contractingCompany": "R\u00e9gie Autonome des ports",  
+  "contactPoint": {  
+    "name": "Capitainerie"  
+  },  
   "webSite": "https://riviera-ports.com/ports/port-de-nice",  
   "typeOfPort": [  
     "marina",  
     "merchandise",  
     "cruise",  
     "ferry",  
-    "yatching"  
+    "yachting"  
   ],  
   "authorizedPropulsion": [  
     "motor",  
@@ -1221,6 +1226,428 @@ SeaportFacilities:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
+  "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
+  "type": "SeaPortFacilities",  
+  "name": {  
+    "type": "Text",  
+    "value": "Riviera-Port-NCE-SP-001"  
+  },  
+  "alternateName": {  
+    "type": "Text",  
+    "value": "Riviera Port - Main harbor - Commerce & Passengers"  
+  },  
+  "description": {  
+    "type": "Text",  
+    "value": "Harbor Description and services provided"  
+  },  
+  "seeAlso": {  
+    "type": "Text",  
+    "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        43.66481,  
+        7.196545  
+      ]  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Text",  
+    "value": "Nice Port"  
+  },  
+  "dateLastReported": {  
+    "type": "DateTime",  
+    "value": "2020-03-17T08:45:00Z"  
+  },  
+  "refBoatAuthorized": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-tankers",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-specialist",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-war",  
+      "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-historic"  
+    ]  
+  },  
+  "refBoatPlaceAvailable": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-HI",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-JK",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-LO",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-PQ",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-U",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-VW",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-XZ",  
+      "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-Z02"  
+    ]  
+  },  
+  "refBoatPlacePricing": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-HI",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-JK",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-LO",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-PQ",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-U",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-VW",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-XZ",  
+      "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"  
+    ]  
+  },  
+  "owner": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "Departement_06",  
+      "CCI06",  
+      "MNCA",  
+      "Ville_de_Nice"  
+    ]  
+  },  
+  "contractingAuthority": {  
+    "type": "Text",  
+    "value": "CCI"  
+  },  
+  "contractingCompagny": {  
+    "type": "Text",  
+    "value": "R\u00e9gie Autonome des ports"  
+  },  
+  "contactPoint": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "name": "Capitainerie"  
+    }  
+  },  
+  "webSite": {  
+    "type": "Text",  
+    "value": "https://riviera-ports.com/ports/port-de-nice"  
+  },  
+  "typeOfPort": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "marina",  
+      "merchandise",  
+      "cruise",  
+      "ferry",  
+      "yachting"  
+    ]  
+  },  
+  "authorizedPropulsions": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "motor",  
+      "electric",  
+      "lng"  
+    ]  
+  },  
+  "maxTonnage": {  
+    "type": "Number",  
+    "value": 30000  
+  },  
+  "numberOfPlace": {  
+    "type": "Number",  
+    "value": 120  
+  },  
+  "minLength": {  
+    "type": "Number",  
+    "value": 6  
+  },  
+  "maxLength": {  
+    "type": "Number",  
+    "value": 180  
+  },  
+  "maxWidth": {  
+    "type": "Number",  
+    "value": 25  
+  },  
+  "maxDraft": {  
+    "type": "Number",  
+    "value": 9.65  
+  },  
+  "portServicesProvided": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "harborOffice",  
+      "weather",  
+      "customsServices",  
+      "porters"  
+    ]  
+  },  
+  "boatSupplyingServices": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "fuelStation",  
+      "fuelTankerTruck",  
+      "drinkingWaterTankerTruck",  
+      "dryFairing",  
+      "repair",  
+      "expertise",  
+      "gangways",  
+      "liftingCranes",  
+      "towing",  
+      "wasteWaterPumping",  
+      "boatConveying"  
+    ]  
+  },  
+  "facilities": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "wifi",  
+      "telephone",  
+      "toilets",  
+      "selectiveSortingWaste",  
+      "electricTerminal",  
+      "waterTerminal",  
+      "dustbins",  
+      "dumpsters",  
+      "container"  
+    ]  
+  },  
+  "nearbyServices": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "groceryStores",  
+      "presses",  
+      "exchangeOffice",  
+      "touristicExcursions"  
+    ]  
+  },  
+  "rentalSaleServices": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "boatRental",  
+      "boatSale",  
+      "carRental"  
+    ]  
+  },  
+  "transportServices": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "parking",  
+      "shuttlesToAirport",  
+      "taxis"  
+    ]  
+  },  
+  "routeType": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "tram",  
+      "metro",  
+      "train",  
+      "bus",  
+      "ferry"  
+    ]  
+  },  
+  "electricTransport": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "electricBycicle",  
+      "electricMotorBike"  
+    ]  
+  },  
+  "paymentAccepted": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "Cash",  
+      "CreditCard"  
+    ]  
+  },  
+  "currencyAccepted": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "EUR",  
+      "USD"  
+    ]  
+  }  
+}  
+```  
+</details>  
+#### SeaportFacilities NGSI-LD 키 값 예제  
+다음은 JSON-LD 형식의 SeaportFacilities를 키 값으로 사용하는 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
+  "type": "SeaPortFacilities",  
+  "name": "Riviera-Port-NCE-SP-001",  
+  "alternateName": "Riviera Port - Main harbor - Commerce & Passengers",  
+  "description": "Harbor Description and services provided",  
+  "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      43.66481,  
+      7.196545  
+    ]  
+  },  
+  "areaServed": "Nice Port",  
+  "dateLastReported": "2020-03-17T08:45:00Z",  
+  "refBoatAuthorized": [  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-tankers",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-specialist",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-war",  
+    "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-historic"  
+  ],  
+  "refBoatPlaceAvailable": [  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-HI",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-JK",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-LO",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-PQ",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-U",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-VW",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-XZ",  
+    "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-Z02"  
+  ],  
+  "refBoatPlacePricing": [  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-HI",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-JK",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-LO",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-PQ",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-U",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-VW",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-XZ",  
+    "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"  
+  ],  
+  "owner": [  
+    "Departement_06",  
+    "CCI06",  
+    "MNCA",  
+    "Ville_de_Nice"  
+  ],  
+  "contractingAuthority": "CCI",  
+  "contractingCompany": "R\u00e9gie Autonome des ports",  
+  "contactPoint": {  
+    "name": "Capitainerie"  
+  },  
+  "webSite": "https://riviera-ports.com/ports/port-de-nice",  
+  "typeOfPort": [  
+    "marina",  
+    "merchandise",  
+    "cruise",  
+    "ferry",  
+    "yachting"  
+  ],  
+  "authorizedPropulsion": [  
+    "motor",  
+    "electric",  
+    "lng"  
+  ],  
+  "maxTonnage": 30000,  
+  "numberOfPlace": 120,  
+  "minLength": 6,  
+  "maxLength": 180,  
+  "maxWidth": 25,  
+  "maxDraft": 9.65,  
+  "portServicesProvided": [  
+    "harborOffice",  
+    "weather",  
+    "customsServices",  
+    "porters"  
+  ],  
+  "boatSupplyingServices": [  
+    "fuelStation",  
+    "fuelTankerTruck",  
+    "drinkingWaterTankerTruck",  
+    "dryFairing",  
+    "repair",  
+    "expertise",  
+    "gangways",  
+    "liftingCranes",  
+    "towing",  
+    "wasteWaterPumping",  
+    "boatConveying"  
+  ],  
+  "facilities": [  
+    "wifi",  
+    "telephone",  
+    "toilets",  
+    "selectiveSortingWaste",  
+    "electricTerminal",  
+    "waterTerminal",  
+    "dustbins",  
+    "dumpsters",  
+    "container"  
+  ],  
+  "nearbyServices": [  
+    "groceryStores",  
+    "presses",  
+    "exchangeOffice",  
+    "touristicExcursions"  
+  ],  
+  "rentalSaleServices": [  
+    "boatRental",  
+    "boatSale",  
+    "carRental"  
+  ],  
+  "transportServices": [  
+    "parking",  
+    "shuttlesToAirport",  
+    "taxis"  
+  ],  
+  "routeType": [  
+    "tram",  
+    "metro",  
+    "train",  
+    "bus",  
+    "ferry"  
+  ],  
+  "electricTransport": [  
+    "electricBycicle",  
+    "electricMotorBike"  
+  ],  
+  "paymentAccepted": [  
+    "Cash",  
+    "CreditCard"  
+  ],  
+  "currencyAccepted": [  
+    "EUR",  
+    "USD"  
+  ],  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
+  ]  
+}  
+```  
+</details>  
+#### SeaportFacilities NGSI-LD 정규화 예제  
+다음은 정규화된 JSON-LD 형식의 SeaportFacilities의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
 	"id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
 	"type": "SeaPort",  
 	"name": {  
@@ -1242,7 +1669,7 @@ SeaportFacilities:
 	"location": {  
 		"type": "GeoProperty",  
 		"value": {  
-			"type": "point",  
+			"type": "Point",  
 				"coordinates": [43.664810, 7.196545]  
 			}  
 	},  
@@ -1251,7 +1678,7 @@ SeaportFacilities:
 		"value": "Nice Port"  
 	},  
 	"dateLastReported": {  
-		"type": "DateTime",  
+		"type": "Property",  
 		"value": "2020-03-17T08:45:00Z",  
 		"metadata": {  
 			"TimeInstant": {  
@@ -1262,7 +1689,7 @@ SeaportFacilities:
 	},  
 	"refBoatAuthorized": {  
 		"type": "Relationship",  
-		"Object": ["urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
+		"value": ["urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",  
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",  
 					"urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",  
@@ -1274,7 +1701,7 @@ SeaportFacilities:
 	},  
 	"refBoatPlaceAvailable": {  
 		"type": "Relationship",  
-		"Object": ["urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
+		"value": ["urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",  
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",  
 					"urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
@@ -1292,7 +1719,7 @@ SeaportFacilities:
 	},  
 	"refBoatPlacePricing": {  
 		"type": "Relationship",  
-		"Object": ["urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
+		"value": ["urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",  
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",  
 					"urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",  
@@ -1318,11 +1745,13 @@ SeaportFacilities:
 	},  
 	"contractingCompagny": {  
 		"type": "Property",  
-		"value": "Régie Autonome des ports"  
+		"value": "RÃ©gie Autonome des ports"  
 	},  
 	"contactPoint": {  
 		"type": "Property",  
-		"value": "Capitainerie"  
+		"value": {  
+            "name": "Capitainerie"  
+        }  
 	},  
 	"webSite": {  
 		"type": "Property",  
@@ -1399,431 +1828,7 @@ SeaportFacilities:
 	"currencyAccepted": {  
 		"type": "Property",  
 		"value": ["EUR", "USD"]  
-	}  
-}  
-```  
-</details>  
-#### SeaportFacilities NGSI-LD 키 값 예제  
-다음은 키 값으로 JSON-LD 형식의 SeaportFacilities의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
-    "type": "SeaPort",  
-    "alternateName": {  
-        "type": "Property",  
-        "value": "Riviera Port - Main harbor - Commerce & Passengers"  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Nice Port"  
-    },  
-    "authorizedPropulsions": {  
-        "type": "Property",  
-        "value": [  
-            "motor",  
-            "electric",  
-            "lng"  
-        ]  
-    },  
-    "boatSupplyingServices": {  
-        "type": "Property",  
-        "value": [  
-            "fuelStation",  
-            "fuelTankerTruck",  
-            "drinkingWaterTankerTruck",  
-            "dryFairing",  
-            "repair",  
-            "expertise",  
-            "gangways",  
-            "liftingCranes",  
-            "towing",  
-            "wasteWaterPumping",  
-            "boatConveying"  
-        ]  
-    },  
-    "contactPoint": {  
-        "type": "Property",  
-        "value": "Capitainerie"  
-    },  
-    "contractingAuthority": {  
-        "type": "Property",  
-        "value": "CCI"  
-    },  
-    "contractingCompagny": {  
-        "type": "Property",  
-        "value": "R\u00e9gie Autonome des ports"  
-    },  
-    "currencyAccepted": {  
-        "type": "Property",  
-        "value": [  
-            "EUR",  
-            "USD"  
-        ]  
-    },  
-    "dateLastReported": {  
-        "type": "DateTime",  
-        "value": "2020-03-17T08:45:00Z",  
-        "metadata": {  
-            "TimeInstant": {  
-                "type": "Text",  
-                "value": "2020-03-17TT08:45:00Z"  
-            }  
-        }  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "Harbor Description and services provided"  
-    },  
-    "electricTransport": {  
-        "type": "Property",  
-        "value": [  
-            "electricBycicle",  
-            "electricMotorBike"  
-        ]  
-    },  
-    "facilities": {  
-        "type": "Property",  
-        "value": [  
-            "wifi",  
-            "telephone",  
-            "toilets",  
-            "selectiveSortingWaste",  
-            "electricTerminal",  
-            "waterTerminal",  
-            "dustbins",  
-            "dumpsters",  
-            "container"  
-        ]  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "point",  
-            "coordinates": [  
-                43.66481,  
-                7.196545  
-            ]  
-        }  
-    },  
-    "maxDraft": {  
-        "type": "Property",  
-        "value": 9.65  
-    },  
-    "maxLength": {  
-        "type": "Property",  
-        "value": 180  
-    },  
-    "maxTonnage": {  
-        "type": "Property",  
-        "value": 30000  
-    },  
-    "maxWidth": {  
-        "type": "Property",  
-        "value": 25  
-    },  
-    "minLength": {  
-        "type": "Property",  
-        "value": 6  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "Riviera-Port-NCE-SP-001"  
-    },  
-    "nearbyServices": {  
-        "type": "Property",  
-        "value": [  
-            "groceryStores",  
-            "presses",  
-            "exchangeOffice",  
-            "touristicExcursions"  
-        ]  
-    },  
-    "numberOfPlace": {  
-        "type": "Property",  
-        "value": 120  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "Departement_06",  
-            "CCI06",  
-            "MNCA",  
-            "Ville_de_Nice"  
-        ]  
-    },  
-    "paymentAccepted": {  
-        "type": "Property",  
-        "value": [  
-            "Cash",  
-            "CreditCard"  
-        ]  
-    },  
-    "portServicesProvided": {  
-        "type": "Property",  
-        "value": [  
-            "harborOffice",  
-            "weather",  
-            "customsServices",  
-            "porters"  
-        ]  
-    },  
-    "refBoatAuthorized": {  
-        "type": "Relationship",  
-        "Object": [  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-tankers",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-specialist",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-war",  
-            "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-historic"  
-        ]  
-    },  
-    "refBoatPlaceAvailable": {  
-        "type": "Relationship",  
-        "Object": [  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-HI",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-JK",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-LO",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-PQ",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-U",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-VW",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-XZ",  
-            "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-Z02"  
-        ]  
-    },  
-    "refBoatPlacePricing": {  
-        "type": "Relationship",  
-        "Object": [  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-HI",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-JK",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-LO",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-PQ",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-U",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-VW",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-XZ",  
-            "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"  
-        ]  
-    },  
-    "rentalSaleServices": {  
-        "type": "Property",  
-        "value": [  
-            "boatRental",  
-            "boatSale",  
-            "carRental"  
-        ]  
-    },  
-    "routeType": {  
-        "type": "Property",  
-        "value": [  
-            "tram",  
-            "metro",  
-            "train",  
-            "bus",  
-            "ferry"  
-        ]  
-    },  
-    "seeAlso": {  
-        "type": "Property",  
-        "value": "https://ccinicecotedazur/docs/port-nice_z-card_2015"  
-    },  
-    "transportServices": {  
-        "type": "Property",  
-        "value": [  
-            "parking",  
-            "shuttlesToAirport",  
-            "taxis"  
-        ]  
-    },  
-    "typeOfPort": {  
-        "type": "Property",  
-        "value": [  
-            "marina",  
-            "merchandise",  
-            "cruise",  
-            "ferry",  
-            "yatching"  
-        ]  
-    },  
-    "webSite": {  
-        "type": "Property",  
-        "value": "https://riviera-ports.com/ports/port-de-nice"  
-    },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
-    ]  
-}  
-```  
-</details>  
-#### SeaportFacilities NGSI-LD 정규화 예제  
-다음은 정규화된 JSON-LD 형식의 SeaportFacilities의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
-    "id": "urn:ngsi-ld:SeaPort:SeaPort:MNCA-SP-001",  
-    "type": "SeaPort",  
-    "alternateName": "Riviera Port - Main harbor - Commerce & Passengers",  
-    "areaServed": "Nice Port",  
-    "authorizedPropulsion": [  
-        "motor",  
-        "electric",  
-        "lng"  
-    ],  
-    "boatSupplyingServices": [  
-        "fuelStation",  
-        "fuelTankerTruck",  
-        "drinkingWaterTankerTruck",  
-        "dryFairing",  
-        "repair",  
-        "expertise",  
-        "gangways",  
-        "liftingCranes",  
-        "towing",  
-        "wasteWaterPumping",  
-        "boatConveying"  
-    ],  
-    "contactPoint": "Capitainerie",  
-    "contractingAuthority": "CCI",  
-    "contractingCompany": "R\u00e9gie Autonome des ports",  
-    "currencyAccepted": [  
-        "EUR",  
-        "USD"  
-    ],  
-    "dateLastReported": "2020-03-17T08:45:00Z",  
-    "description": "Harbor Description and services provided",  
-    "electricTransport": [  
-        "electricBycicle",  
-        "electricMotorBike"  
-    ],  
-    "facilities": [  
-        "wifi",  
-        "telephone",  
-        "toilets",  
-        "selectiveSortingWaste",  
-        "electricTerminal",  
-        "waterTerminal",  
-        "dustbins",  
-        "dumpsters",  
-        "container"  
-    ],  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            43.66481,  
-            7.196545  
-        ]  
-    },  
-    "maxDraft": 9.65,  
-    "maxLength": 180,  
-    "maxTonnage": 30000,  
-    "maxWidth": 25,  
-    "minLength": 6,  
-    "name": "Riviera-Port-NCE-SP-001",  
-    "nearbyServices": [  
-        "groceryStores",  
-        "presses",  
-        "exchangeOffice",  
-        "touristicExcursions"  
-    ],  
-    "numberOfPlace": 120,  
-    "owner": [  
-        "Departement_06",  
-        "CCI06",  
-        "MNCA",  
-        "Ville_de_Nice"  
-    ],  
-    "paymentAccepted": [  
-        "Cash",  
-        "CreditCard"  
-    ],  
-    "portServicesProvided": [  
-        "harborOffice",  
-        "weather",  
-        "customsServices",  
-        "porters"  
-    ],  
-    "refBoatAuthorized": [  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-yatching",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-passenger",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-fishing",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-cargo",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-tankers",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-specialist",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-war",  
-        "urn:ngsi-ld:BoatAuthorized:MNCA-NCE-BA-001-historic"  
-    ],  
-    "refBoatPlaceAvailable": [  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-A",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-BC",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-DE",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-FG",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-HI",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-JK",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-LO",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-PQ",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-RT2",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-U",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-VW",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-XZ",  
-        "urn:ngsi-ld:BoatPlaceAvailable:MNCA-BPA-Range-Z02"  
-    ],  
-    "refBoatPlacePricing": [  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-A",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-BC",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-DE",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-FG",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-HI",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-JK",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-LO",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-PQ",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-RT2",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-U",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-VW",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-XZ",  
-        "urn:ngsi-ld:BoatPlacePricing:MNCA-BPP-Range-Z02"  
-    ],  
-    "rentalSaleServices": [  
-        "boatRental",  
-        "boatSale",  
-        "carRental"  
-    ],  
-    "routeType": [  
-        "tram",  
-        "metro",  
-        "train",  
-        "bus",  
-        "ferry"  
-    ],  
-    "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",  
-    "transportServices": [  
-        "parking",  
-        "shuttlesToAirport",  
-        "taxis"  
-    ],  
-    "typeOfPort": [  
-        "marina",  
-        "merchandise",  
-        "cruise",  
-        "ferry",  
-        "yatching"  
-    ],  
-    "webSite": "https://riviera-ports.com/ports/port-de-nice",  
+	},  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"  
     ]  
@@ -1833,7 +1838,7 @@ SeaportFacilities:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+크기 단위를 다루는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
