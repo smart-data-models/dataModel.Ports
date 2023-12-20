@@ -33,11 +33,11 @@
     "type": "Text",
     "value": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001"
   },
-  "refBoatType": {
+  "boatType": {
     "type": "Text",
     "value": "yatching"
   },
-  "refBoatSubType": {
+  "boatSubType": {
     "type": "StructuredValue",
     "value": [
       "monoHull",
