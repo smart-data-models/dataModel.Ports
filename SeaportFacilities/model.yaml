@@ -571,6 +571,14 @@ SeaportFacilities:
         model: http://schema.org/Number
         type: Property
         units: MTR
+    maxLength:
+      description: 'A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: http://schema.org/Number
+        type: Property
+        units: MTR
     maxTonnage:
       description: 'Maximum tonnage authorized to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **TNE** represents Tonne Metric'
       minimum: 0
@@ -587,15 +595,7 @@ SeaportFacilities:
         model: http://schema.org/Number
         type: Property
         units: MTR
-    maximumLength:
-      description: 'A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter'
-      minimum: 0
-      type: number
-      x-ngsi:
-        model: http://schema.org/Number
-        type: Property
-        units: MTR
-    minimumLength:
+    minLength:
       description: 'A Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter'
       minimum: 0
       type: number
@@ -1011,8 +1011,8 @@ SeaportFacilities:
     - typeOfPort
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModels.Ports/SeaPortFacilities/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
