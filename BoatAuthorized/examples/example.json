@@ -8,8 +8,8 @@
   "areaServed": "Nice Port",
   "dateObserved": "2020-01-01T00:00:01Z",
   "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
-  "refBoatType": "yatching",
-  "refBoatSubType": [
+  "boatType": "yatching",
+  "boatSubType": [
     "monoHull",
     "catamaran",
     "yacht",
