@@ -102,7 +102,7 @@
             }
         ]
     },
-    "refBoatSubType": {
+    "boatSubType": {
         "type": "Property",
         "value": [
             "monoHull",
@@ -112,7 +112,7 @@
             "jetSki"
         ]
     },
-    "refBoatType": {
+    "boatType": {
         "type": "Property",
         "value": "yatching"
     },
