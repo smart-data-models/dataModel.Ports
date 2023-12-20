@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModels.Ports/SeaPortFacilities/schema.json",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "title": "Seaport facilities schema",
     "description": "The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger  transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port.",
     "type": "object",
@@ -147,12 +147,12 @@
                     "description": "Property. Model:'http://schema.org/Number'. Total number of place in the harbor",
                     "minimum": 0
                 },
-                "minimumLength": {
+                "minLength": {
                     "type": "number",
                     "description": "Property. Model:'http://schema.org/Number'. Units:'MTR'. A Minimum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MTR** represents Meter",
                     "minimum": 0
                 },
-                "maximumLength": {
+                "maxLength": {
                     "type": "number",
                     "description": "Property. Model:'http://schema.org/Number'. Units:'MTR'. A Maximum length allowed to access the harbor. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) . For instance, **MTR** represents Meter",
                     "minimum": 0
