@@ -77,14 +77,14 @@
       "validThrough": "2021-12-31T23:59:59"
     }
   ],
-  "refBoatSubType": [
+  "boatSubType": [
     "monoHull",
     "catamaran",
     "yacht",
     "sailboat",
     "jetSki"
   ],
-  "refBoatType": "yatching",
+  "boatType": "yatching",
   "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
   "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",
   "@context": [
