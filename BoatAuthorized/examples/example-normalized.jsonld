@@ -9,10 +9,6 @@
         "type": "Property",
         "value": "Nice Port"
     },
-    "dateObserved": {
-        "type": "Property",
-        "value": "2020-01-01T00:00:01Z"
-    },
     "description": {
         "type": "Property",
         "value": "List of Type and SubType of boats authorized to move and moor in the harbor"
