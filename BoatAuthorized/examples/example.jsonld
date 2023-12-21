@@ -4,7 +4,6 @@
   "alternateName": "Riviera Port - Autorized Boats in the port",
   "areaServed": "Nice Port",
   "dateLastReported": "2021-12-31T23:59:59",
-  "dateObserved": "2020-01-01T00:00:01Z",
   "description": "List of Type and SubType of boats authorized to move and moor in the harbor",
   "location": {
     "type": "Point",
