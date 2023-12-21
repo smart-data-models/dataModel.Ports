@@ -6,7 +6,6 @@
   "description": "List of Type and SubType of boats authorized to move and moor in the harbor",
   "seeAlso": "https://ccinicecotedazur/docs/port-nice_z-card_2015",
   "areaServed": "Nice Port",
-  "dateObserved": "2020-01-01T00:00:01Z",
   "refSeaPort": "urn:ngsi-ld:SeaPort:Riviera-Port-NCE-SP-001",
   "boatType": "yatching",
   "boatSubType": [
