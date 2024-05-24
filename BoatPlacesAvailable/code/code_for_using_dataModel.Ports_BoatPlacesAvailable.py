@@ -24,33 +24,38 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "BoatPlacesAvailable"
 subject = "dataModel.Ports"
-availableSpotNumber = {'type': 'Property', 'value': 3}
-attribute = "availableSpotNumber"
-value = availableSpotNumber
-# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
-print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
-
-dateObserved = "{'type': 'DateTime', 'value': '2020-03-17T08:45:00Z', 'metadata': {'TimeInstant': {'type': 'Text', 'value': '2020-03-17T08:45:00Z'}}}"
+dateObserved = "2020-03-17T08:45:00Z"
 attribute = "dateObserved"
 value = dateObserved
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-maxDraft = {'type': 'Property', 'value': 2.55}
+maxDraft = 2.55
 attribute = "maxDraft"
 value = maxDraft
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-maxLength = {'type': 'Property', 'value': 7.99}
+maxLength = 7.99
 attribute = "maxLength"
 value = maxLength
+# The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
+print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
+
+maxWidth = 2.8
+attribute = "maxWidth"
+value = maxWidth
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
