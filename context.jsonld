@@ -15,7 +15,7 @@
         "availableSpotNumber": "https://smartdatamodels.org/dataModel.Ports/availableSpotNumber",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "boatSubType": "https://smartdatamodels.org/dataModel.Ports/boatSubType",
         "boatSupplyingServices": "https://smartdatamodels.org/dataModel.Ports/boatSupplyingServices",
@@ -26,7 +26,7 @@
         "contractingCompany": "https://smartdatamodels.org/dataModel.Ports/contractingCompany",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "currencyAccepted": "https://smartdatamodels.org/dataModel.Ports/currencyAccepted",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
@@ -43,7 +43,7 @@
         "facilities": "https://smartdatamodels.org/dataModel.Ports/facilities",
         "fairing": "https://smartdatamodels.org/dataModel.Ports/fairing",
         "id": "@id",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "maxDraft": "https://smartdatamodels.org/dataModel.Ports/maxDraft",
         "maxLength": "https://smartdatamodels.org/dataModel.Ports/maxLength",
         "maxTonnage": "https://smartdatamodels.org/dataModel.Ports/maxTonnage",
