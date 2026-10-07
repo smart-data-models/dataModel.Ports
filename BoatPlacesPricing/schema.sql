@@ -1,5 +1,5 @@
 /* (Beta) Export of data model BoatPlacesPricing of the subject dataModel.Ports for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE period_type AS ENUM ('high', 'low', 'medium', 'offSeason', 'season', 'summer', 'winter');
+CREATE TYPE BoatPlacesPricing_period_type AS ENUM ('high', 'low', 'medium', 'offSeason', 'season', 'summer', 'winter');
 CREATE TYPE BoatPlacesPricing_type AS ENUM ('BoatPlacesPricing');
 CREATE TABLE BoatPlacesPricing (
   "address" JSON,
@@ -20,7 +20,7 @@ CREATE TABLE BoatPlacesPricing (
   "name" TEXT,
   "owner" JSON,
   "passage" JSON,
-  "period" period_type,
+  "period" BoatPlacesPricing_period_type,
   "refPointOfInterest" JSON,
   "refSeaPort" JSON,
   "resident" JSON,
